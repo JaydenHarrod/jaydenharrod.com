@@ -1,0 +1,20 @@
+// Modular scale using the perfect fourth ratio to derive the scale intervals
+$scale-base-unit: 18px;
+
+// Positive units
+$scale-p0: $scale-base-unit;
+$scale-p1: 24px;
+$scale-p2: 32px;
+$scale-p3: 42px;
+$scale-p4: 56px;
+$scale-p5: 72px;
+$scale-p6: 101px;
+
+// Negative units (0..-12)
+$scale-m0: $scale-base-unit;
+$scale-m1: 14px;
+$scale-m2: 11px;
+$scale-m3: 8px;
+$scale-m4: 6px;
+$scale-m5: 4px;
+$scale-m6: 3px;

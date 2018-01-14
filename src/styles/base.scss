@@ -1,0 +1,23 @@
+@import "normalize.scss";
+@import "./foundation/color.scss";
+@import "./foundation/scale.scss";
+@import "./foundation/typography.scss";
+
+body {
+  background: white;
+  font-family: $font-stack;
+}
+
+.container {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 18px;
+  padding-right: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.col-1 {
+  flex: 1 1;
+}
