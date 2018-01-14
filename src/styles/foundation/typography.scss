@@ -1,0 +1,37 @@
+$font-stack: "GT Walsheim", "Poppins", "Helvetica Neue", sans-serif;
+
+$font-size-huge: 42px;
+$font-size-display: 32px;
+$font-size-heading: 24px;
+$font-size-base: 18px;
+$font-size-caption: 14px;
+$font-size-micro: 11px;
+
+$line-height: 1.4;
+
+$regular: 400;
+$semi-bold: 600;
+
+h1 {
+  font-size: $font-size-huge;
+}
+,
+h2 {
+  font-size: $font-size-display;
+}
+,
+h3 {
+  font-size: $font-size-heading;
+}
+,
+h4 {
+  font-size: $font-size-base;
+}
+,
+h5 {
+  font-size: $font-size-caption;
+}
+,
+h6 {
+  font-size: $font-size-micro;
+}
