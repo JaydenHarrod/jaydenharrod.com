@@ -1,0 +1,9 @@
+.DS_Store
+public
+build
+crash.log
+.env
+.cache
+.eslintcache
+node_modules
+dist
