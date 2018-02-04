@@ -1,7 +1,7 @@
 import React from "react";
-import { Container, Col1 } from "./shared/Layout.js";
+import { Container, Col1 } from "./shared/Layout";
 import logo from "../assets/logo.png";
-import "../styles/components/header.scss";
+import classNames from "../styles/components/header.scss";
 
 class Header extends React.Component {
   render() {

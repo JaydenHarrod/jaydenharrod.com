@@ -5,8 +5,6 @@ const Container = props => {
   return <div className="container">{props.children}</div>;
 };
 
-export default Container;
-
 const Col1 = props => {
   return <div className="col-1">{props.children}</div>;
 };
