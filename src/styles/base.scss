@@ -21,3 +21,13 @@ body {
 .col-1 {
   flex: 1 1;
 }
+
+a {
+  text-decoration: none;
+  color: rgb(67, 102, 153);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #000;
+}

@@ -1,0 +1,15 @@
+@import "../base.scss";
+
+.text-overlay {
+  position: absolute;
+  margin-left: $scale-p0;
+  margin-top: $scale-p2;
+}
+
+.box {
+  height: 175px;
+  margin-top: $scale-p0;
+  margin-right: $scale-p0;
+  margin-bottom: $scale-p0;
+  background-color: #e0e0e0;
+}
