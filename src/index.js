@@ -2,8 +2,9 @@ import React, { Fragment } from "react";
 import ReactDOM from "react-dom";
 import Header from "./components/Header";
 import Landing from "./components/Landing";
-import Story from "./components/Story";
+import Featured from "./components/Featured";
 import ProjectPanels from "./components/ProjectPanels";
+import "./styles/base.scss";
 
 class App extends React.Component {
   render() {
@@ -11,7 +12,6 @@ class App extends React.Component {
       <Fragment>
         <Header />
         <Landing />
-        <Story />
         <ProjectPanels />
       </Fragment>
     );
@@ -19,8 +19,6 @@ class App extends React.Component {
 }
 
 ReactDOM.render(<App />, document.getElementById("root"));
-
-// export default App;
 
 if (module.hot) {
   module.hot.accept();
