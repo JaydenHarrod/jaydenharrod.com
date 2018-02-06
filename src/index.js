@@ -6,18 +6,16 @@ import Story from "./components/Story";
 import ProjectPanels from "./components/ProjectPanels";
 import "./styles/base.scss";
 
-class App extends React.Component {
-  render() {
-    return (
-      <Fragment>
-        <Header />
-        <Landing />
-        <Story />
-        <ProjectPanels />
-      </Fragment>
-    );
-  }
-}
+const App = () => {
+  return (
+    <Fragment>
+      <Header />
+      <Landing />
+      <Story />
+      <ProjectPanels />
+    </Fragment>
+  );
+};
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
