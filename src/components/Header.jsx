@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Col1 } from "./shared/Layout";
-import logo from "../assets/logo.png";
-import classNames from "../styles/components/header.scss";
+import logoUrl from "../assets/logo.png";
+import "../styles/components/header.scss";
 
 class Header extends React.Component {
   render() {
@@ -9,21 +9,18 @@ class Header extends React.Component {
       <div className="header">
         <Container>
           <Col1>
-            <img className="logo" src={logo} alt="React Logo" />
+            <img className="logo" src={logoUrl} alt="Jayden Harrod Logo" />
           </Col1>
           <Col1>
             <span className="menu">
-              <a className="menu-item" href="/about">
+              <a className="menu-item" href="/about" aria-label="Home Button">
                 Home
               </a>
-              <a className="menu-item" href="/video">
+              <a className="menu-item" href="/video" aria-label="Developer Button">
                 Developer
               </a>
-              <a className="menu-item" href="/photo">
+              <a className="menu-item" href="/photo" aria-label="Filmmaker Button">
                 Filmmaker
-              </a>
-              <a className="menu-item" href="/photo">
-                Photos
               </a>
             </span>
           </Col1>

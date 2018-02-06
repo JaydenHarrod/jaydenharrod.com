@@ -6,10 +6,18 @@
   margin-top: $scale-p2;
 }
 
-.box {
+.box-l {
   height: 175px;
   margin-top: $scale-p0;
-  margin-right: $scale-p0;
+  margin-right: 9px;
+  margin-bottom: $scale-p0;
+  background-color: #e0e0e0;
+}
+
+.box-r {
+  height: 175px;
+  margin-top: $scale-p0;
+  margin-left: 9px;
   margin-bottom: $scale-p0;
   background-color: #e0e0e0;
 }
