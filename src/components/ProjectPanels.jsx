@@ -1,6 +1,6 @@
 import React from "react";
 import Box from "./shared/Box"
-import { Container, Col1 } from "./shared/Layout";
+import { Container } from "./shared/Layout";
 
 export const ProjectPanels = props => {
   return (
