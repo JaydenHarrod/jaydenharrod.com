@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Col1 } from "./shared/Layout";
-import classNames from "../styles/components/landing.scss";
+import styles from "../styles/components/landing.scss";
 
 const Landing = props => {
   return (
@@ -8,7 +8,7 @@ const Landing = props => {
       <Container>
         <Col1>
           <h1>Jayden Harrod</h1>
-          <h5>Developer &bull; Filmmaker</h5>
+          <h5>Developer &bull; Filmmaker | Sydney, Australia 🇦🇺</h5>
         </Col1>
       </Container>
     </div>

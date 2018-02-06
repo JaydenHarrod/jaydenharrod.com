@@ -8,20 +8,6 @@ body {
   font-family: $font-stack;
 }
 
-.container {
-  max-width: 720px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 18px;
-  padding-right: 18px;
-  display: flex;
-  align-items: center;
-}
-
-.col-1 {
-  flex: 1 1;
-}
-
 a {
   text-decoration: none;
   color: rgb(67, 102, 153);

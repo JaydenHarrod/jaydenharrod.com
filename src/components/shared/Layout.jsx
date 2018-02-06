@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/base.scss";
+import styles from "../../styles/components/shared/layout.scss";
 
 const Container = props => {
   return <div className="container">{props.children}</div>;
