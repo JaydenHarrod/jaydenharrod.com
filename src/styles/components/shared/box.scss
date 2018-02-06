@@ -2,24 +2,59 @@
 
 .text-overlay {
   position: absolute;
+  font-size: $font-size-display;
   margin-left: $scale-p0;
   margin-top: $scale-p2;
+  color: #fff;
+  z-index: 100;
+  cursor: pointer;
 }
 
 .box-l {
-  height: 175px;
+  max-width: 100%;
+  height: auto;
+  display:block;
   margin-top: $scale-p0;
   margin-right: 9px;
   margin-bottom: $scale-p0;
   border-radius: $scale-m5;
-  background-color: #e0e0e0;
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .box-r {
-  height: 175px;
+  max-width: 100%;
+  height: auto;
+  display:block;
   margin-top: $scale-p0;
   margin-left: 9px;
   margin-bottom: $scale-p0;
   border-radius: $scale-m5;
-  background-color: #e0e0e0;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// Effects
+.disable-text-on:hover {
+  h4 {
+    display: none;
+  }
+}
+
+.box-l:hover {
+  box-shadow: 2px 2px 3px #ccc;
+}
+
+.box-r:hover {
+  box-shadow: 2px 2px 3px #ccc;
+}
+
+@media (max-width: 500px) {
+  .text-overlay {
+    font-size: $font-size-heading;
+  }
 }
