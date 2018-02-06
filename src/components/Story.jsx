@@ -5,8 +5,8 @@ export const Projects = props => (
   <Container>
     <Col1>
       <h2>Story Time</h2>
-      <p>I began my digital journey <u>one decade</u> ago. Since, I have learned  the skills required to take full advantage of the modern web spanning cross design, growth, video, audio, and code.</p>
-      <p>Today, I'm a front-end developer loving the React/Redux pattern for building web apps.</p>
+      <p>I began my digital journey <i>one decade</i> ago. Since, I have learned  the skills required to take full advantage of the modern web spanning across design, growth, video, audio, and code.</p>
+      <p>Today, I'm a front-end developer loving the React H.O.C pattern for building web apps.</p>
     <br></br>
     <h3>10 Years...</h3>
       <p><b>2008:</b> Sold <a href="https://xat.com">xat.com</a> chat room graphics using paint.</p>
