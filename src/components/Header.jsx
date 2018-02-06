@@ -14,16 +14,16 @@ class Header extends React.Component {
           <Col1>
             <span className="menu">
               <a className="menu-item" href="/about">
-                About
+                Home
               </a>
               <a className="menu-item" href="/video">
-                Video
+                Developer
               </a>
               <a className="menu-item" href="/photo">
-                Photo
+                Filmmaker
               </a>
-              <a className="menu-item" href="/code">
-                Code
+              <a className="menu-item" href="/photo">
+                Photos
               </a>
             </span>
           </Col1>

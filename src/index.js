@@ -1,21 +1,19 @@
-import React from "react";
+import React, { Fragment } from "react";
 import ReactDOM from "react-dom";
 import Header from "./components/Header";
 import Landing from "./components/Landing";
-import Featured from "./components/Featured";
-import Projects from "./components/Projects";
-// import Featured from "./components/Featured";
-// import { Container, Col1 } from "./components/shared/Layout";
+import Story from "./components/Story";
+import ProjectPanels from "./components/ProjectPanels";
 
 class App extends React.Component {
   render() {
     return (
-      <div>
+      <Fragment>
         <Header />
         <Landing />
-        <Featured />
-        <Projects />
-      </div>
+        <Story />
+        <ProjectPanels />
+      </Fragment>
     );
   }
 }
