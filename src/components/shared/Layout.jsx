@@ -9,4 +9,8 @@ const Col1 = props => {
   return <div className="col-1">{props.children}</div>;
 };
 
-export { Container, Col1 };
+const TextBox = props => {
+  return <div className="text-box">{props.children}</div>;
+}
+
+export { Container, Col1, TextBox };
