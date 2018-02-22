@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Container, Col1 } from "./shared/Layout";
 import logoUrl from "../assets/logo.png";
-import styles from "../styles/components/header.scss";
+import "../styles/components/header.scss";
 
 class Header extends React.Component {
   render() {
@@ -15,23 +16,21 @@ class Header extends React.Component {
           </Col1>
           <Col1>
             <span className="menu">
-              <a className="menu-item" href="/" aria-label="Home Button">
-                Home
-              </a>
-              <a
-                className="menu-item"
-                href="/developer"
-                aria-label="Developer Button"
-              >
-                Developer
-              </a>
-              <a
-                className="menu-item"
-                href="/filmmaker"
-                aria-label="Filmmaker Button"
-              >
-                Filmmaker
-              </a>
+              <Link to="/">
+                <span className="menu-item" aria-label="Home Button">
+                  Home
+                </span>
+              </Link>
+              <Link to="/developer">
+                <span className="menu-item" aria-label="Developer Button">
+                  Developer
+                </span>
+              </Link>
+              <Link to="/filmmaker">
+                <span className="menu-item" aria-label="Filmmaker Button">
+                  Filmmaker
+                </span>
+              </Link>
             </span>
           </Col1>
         </Container>

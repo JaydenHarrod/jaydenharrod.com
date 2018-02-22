@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Col1 } from "./shared/Layout";
-import styles from "../styles/components/landing.scss";
+import "../styles/components/landing.scss";
 
 const Landing = props => {
   return (

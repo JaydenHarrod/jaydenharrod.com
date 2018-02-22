@@ -1,21 +1,7 @@
-import React, { Fragment } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
-import Header from "./components/Header";
-import Landing from "./components/Landing";
-import Story from "./components/Story";
-import ProjectPanels from "./components/ProjectPanels";
+import App from "./App";
 import "./styles/base.scss";
-
-const App = () => {
-  return (
-    <Fragment>
-      <Header />
-      <Landing />
-      <Story />
-      <ProjectPanels />
-    </Fragment>
-  );
-};
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
