@@ -1,10 +1,10 @@
 import React from "react";
 import { Container, Col1, TextBox } from "./shared/Layout";
 
-export const Projects = props => (
+export const Projects = () => (
   <Container>
     <Col1>
-      <h2>About</h2>
+      <h1>About</h1>
       <p>
         Jayden is a digital media generalist with experience in{" "}
         <b>
@@ -15,11 +15,10 @@ export const Projects = props => (
           He ran global operations for an e-commerce hosting company. Gathered
           millions of views as a YouTuber. Created content for Australia`s
           biggest brands. And began coding HTML and CSS when tables were a thing!
-          Thank goodness we have flexbox now.
         </p>
       </p>
-      <TextBox>
-        <h3>10 Years In Review</h3>
+      {/* <TextBox>
+        <h1>10 Year Review</h1>
         <p>
           <b>2008:</b> Sold $5 chat room graphics using paint.
         </p>
@@ -38,7 +37,7 @@ export const Projects = props => (
           <a href="https://youtube.com/squizzfilms">YouTube</a> channel.
         </p>
         <p>
-          <b>2013:</b> Built an epic studio using Google Adsense.
+          <b>2013:</b> Built a music studio from Google Adsense earnings.
         </p>
         <p>
           <b>2014:</b> Gathered an additional 1,000,000 views and 6,000 subs.
@@ -57,7 +56,7 @@ export const Projects = props => (
         <p>
           <b>2018:</b> Incubating... check back later!
         </p>
-      </TextBox>
+      </TextBox> */}
     </Col1>
   </Container>
 );
