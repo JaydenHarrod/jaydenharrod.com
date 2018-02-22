@@ -1,37 +1,47 @@
 $font-stack: "GT Walsheim", "Poppins", "Helvetica Neue", sans-serif;
 
-$font-size-huge: 42px;
-$font-size-display: 32px;
-$font-size-heading: 24px;
-$font-size-base: 18px;
+$font-size-huge: 2.15rem;
+$font-size-display: 2rem;
+$font-size-heading: 1.24rem;
+$font-size-base: 1rem;
 $font-size-caption: 14px;
 $font-size-micro: 11px;
-
-$line-height: 1.4;
 
 $regular: 400;
 $semi-bold: 600;
 
+p {
+  font-size: $font-size-base;
+  line-height: 1.5555555555556;
+  letter-spacing: 0.022222222222222223rem;
+}
+
 h1 {
   font-size: $font-size-huge;
+  line-height: 2.76rem;
 }
-,
+
 h2 {
   font-size: $font-size-display;
+  margin: 0;
 }
-,
+
 h3 {
   font-size: $font-size-heading;
+  margin: 0;
 }
-,
+
 h4 {
   font-size: $font-size-base;
+  margin: 0;
 }
-,
+
 h5 {
   font-size: $font-size-caption;
+  margin: 0;
 }
-,
+
 h6 {
   font-size: $font-size-micro;
+  margin: 0;
 }
