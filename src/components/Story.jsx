@@ -1,20 +1,17 @@
 import React from "react";
-import { Container, Col1, TextBox } from "./shared/Layout";
+import { Container, Col1 } from "./shared/Layout";
 
 export const Projects = () => (
   <Container>
     <Col1>
       <h1>About</h1>
       <p>
-        Jayden is a digital media generalist with experience in{" "}
-        <b>
-          Web Development, System Admin, Video Production, Music Production,
-        </b>{" "}
-        and <b>Digital Design.</b>
+        Jayden is a digital media generalist with experience in Web Development,
+        System Admin, Video Production, Music Production, and Digital Design.
         <p>
           He ran global operations for an e-commerce hosting company. Gathered
-          millions of views as a YouTuber. Created content for Australia`s
-          biggest brands. And began coding HTML and CSS when tables were a thing!
+          millions of views as a YouTuber. And created content for the biggest
+          Australian brands.
         </p>
       </p>
       {/* <TextBox>

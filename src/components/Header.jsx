@@ -10,9 +10,9 @@ class Header extends React.Component {
       <div className="header">
         <Container>
           <Col1>
-            <a href="/" aria-label="Logo Home Button">
+          <Link to="/">
               <img className="logo" src={logoUrl} alt="Jayden Harrod Logo" />
-            </a>
+            </Link>
           </Col1>
           <Col1>
             <span className="menu">

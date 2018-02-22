@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Box from "../components/shared/Box";
-import { Container, Col1 } from "../components/shared/Layout";
+import reactpostsURL from "../assets/react-posts.png";
+import { Container, Col1, TextBox } from "../components/shared/Layout";
 
 class Developer extends Component {
   render() {
@@ -15,14 +16,17 @@ class Developer extends Component {
             people. The work I enjoy the most is creating functional user
             interfaces based on wireframes and hifi designs.
           </p>
-          <a href="https://github.com/JaydenHarrod/react-redux-crud">
-            <h3 style={{ marginTop: 32 }}>React Posts</h3>
+          <TextBox>
+            <b>Professional Skills: </b>
+            <p>JS (ES6), HTML5, BEM/CSS3, React, Redux, Design Systems</p>
+            <b>Working Knowledge: </b>
+            <p>RESTful APIs, Node, Express, Postgres, Parcel, Convox</p>
+          </TextBox>
+          <a href="https://github.com/JaydenHarrod/react-redux-crud" target="_blank">
+            <h3 style={{ marginTop: 24 }}>React Posts</h3>
           </a>
-          <p>
-            Technologies:{" "}
-            <i>
-              MongoDB, Express, Node, React, Redux, Router, Thunk, Babel, CSS
-            </i>
+          <p style={{ fontStyle: "italic" }}>
+            MongoDB, Express, Node, React, Redux, Router, Thunk, Babel, CSS
           </p>
           <div>
             <a href="https://github.com/JaydenHarrod/react-redux-crud">
@@ -30,7 +34,7 @@ class Developer extends Component {
                 class="box-l"
                 path="/"
                 alt="Developer Image"
-                src="https://camo.githubusercontent.com/dc862d726108fe2b61bec79a77cca227a31ac03f/68747470733a2f2f692e696d6775722e636f6d2f4a663056576e4d2e706e67"
+                src={reactpostsURL}
               />
             </a>
           </div>
