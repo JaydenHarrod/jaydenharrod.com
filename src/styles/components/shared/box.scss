@@ -11,29 +11,29 @@
 }
 
 .box-l {
-  max-width: 100%;
+  max-width: 95%;
   height: auto;
   display:block;
   margin-top: $scale-p0;
-  margin-right: 9px;
   margin-bottom: $scale-p4;
   border-radius: $scale-m5;
+  border: 8px solid transparent;
   img {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
   }
 }
 
 .box-r {
-  max-width: 100%;
+  max-width: 95%;
   height: auto;
   display:block;
   margin-top: $scale-p0;
-  margin-left: 9px;
   margin-bottom: $scale-p4;
   border-radius: $scale-m5;
+  border: 8px solid transparent;
   img {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
   }
 }
