@@ -3,8 +3,8 @@
 .text-overlay {
   position: absolute;
   font-size: $font-size-display;
-  margin-left: $scale-p0;
-  margin-top: $scale-m4;
+  margin-left: 32px;
+  margin-top: 24px;
   color: #fff;
   z-index: 100;
   cursor: pointer;
