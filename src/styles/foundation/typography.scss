@@ -1,11 +1,10 @@
 $font-stack: "GT Walsheim", "Poppins", "Helvetica Neue", sans-serif;
 
-$font-size-huge: 2.15rem;
-$font-size-display: 2rem;
-$font-size-heading: 1.24rem;
+$font-size-huge: 2.369rem;
+$font-size-display: 1.777rem;
+$font-size-heading: 1.333rem;
 $font-size-base: 1rem;
-$font-size-caption: 14px;
-$font-size-micro: 11px;
+$font-size-caption: 0.75rem;
 
 $regular: 400;
 $semi-bold: 600;
@@ -23,7 +22,6 @@ h1 {
 
 h2 {
   font-size: $font-size-display;
-  margin: 0;
 }
 
 h3 {
@@ -38,10 +36,5 @@ h4 {
 
 h5 {
   font-size: $font-size-caption;
-  margin: 0;
-}
-
-h6 {
-  font-size: $font-size-micro;
   margin: 0;
 }

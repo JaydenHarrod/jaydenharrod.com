@@ -1,0 +1,14 @@
+.skill-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.skill-badge {
+    background-color: #fffceb;
+    border-radius: 4px;
+    padding: 8px;
+    margin-right: 8px;
+    margin-top: 18px;
+    border: 1px solid transparent;
+}

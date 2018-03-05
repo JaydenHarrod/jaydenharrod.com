@@ -6,15 +6,26 @@ import "../../styles/components/shared/box.scss";
 export const Box = props => (
   <Col1>
     <div className="disable-text-on">
-      <h1 className="text-overlay">{props.title}</h1>
-      <Link to={props.path}>
-        <img
-          src={props.src}
-          className={props.class}
-          alt={props.alt}
-          aria-label={props.alt}
-        />
-      </Link>
+      <h3 className="text-overlay">{props.title}</h3>
+      {props.link ? (
+        <a href={props.path} target="_blank" rel="noopener noreferrer">
+          <img
+            src={props.src}
+            className={props.class}
+            alt={props.alt}
+            aria-label={props.alt}
+          />
+        </a>
+      ) : (
+          <Link to={props.path}>
+            <img
+              src={props.src}
+              className={props.class}
+              alt={props.alt}
+              aria-label={props.alt}
+            />
+          </Link>
+        )}
     </div>
   </Col1>
 );

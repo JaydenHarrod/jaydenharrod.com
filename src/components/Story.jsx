@@ -4,16 +4,16 @@ import { Container, Col1 } from "./shared/Layout";
 export const Projects = () => (
   <Container>
     <Col1>
-      <h1>About</h1>
+      <h2>About</h2>
       <p>
         Jayden is a digital media generalist with experience in Web Development,
-        System Admin, Video Production, Music Production, and Digital Design.
-        <p>
-          He ran global operations for an e-commerce hosting company. Gathered
-          millions of views as a YouTuber. And created content for the biggest
-          Australian brands.
+        DevOps, Video Production, Photography, Music Production, and Digital Design.
         </p>
-      </p>
+      <p>
+        He ran global operations for an e-commerce hosting company. Gathered
+        millions of views as a YouTuber. And created content for the biggest
+        Australian brands.
+        </p>
       {/* <TextBox>
         <h1>10 Year Review</h1>
         <p>

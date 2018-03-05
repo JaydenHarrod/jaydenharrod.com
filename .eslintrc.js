@@ -31,6 +31,7 @@ module.exports = {
   ],
   rules: {
     'react/display-name': 0,
-    'react/no-unknown-property': 0
+    'react/no-unknown-property': 0,
+    "react/prop-types": 0
   }
 }

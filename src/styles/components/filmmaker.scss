@@ -1,0 +1,29 @@
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.skill-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.skill-badge {
+    background-color: #fffceb;
+    border-radius: 4px;
+    padding: 8px;
+    margin-right: 8px;
+    margin-top: 18px;
+    border: 1px solid transparent;
+}

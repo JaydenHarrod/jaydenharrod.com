@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Box from "../components/shared/Box";
 import reactpostsURL from "../assets/react-posts.png";
 import { Container, Col1, TextBox } from "../components/shared/Layout";
-
+import "../styles/components/developer.scss"
 class Developer extends Component {
   render() {
     return (
@@ -18,25 +18,36 @@ class Developer extends Component {
           </p>
           <TextBox>
             <b>Professional Skills: </b>
-            <p>JS (ES6), HTML5, BEM/CSS3, React, Redux, Design Systems</p>
-            <b>Working Knowledge: </b>
-            <p>RESTful APIs, Node, Express, Postgres, Parcel, Convox</p>
+            <div className="skill-container">
+            <span className="skill-badge">JavaScript (ES6)</span>
+            <span className="skill-badge">HTML5</span>
+            <span className="skill-badge">BEM/CSS3</span>
+            <span className="skill-badge">React</span>
+            <span className="skill-badge">Redux</span>
+            <span className="skill-badge">Node</span>
+            <span className="skill-badge">Express</span>
+            <span className="skill-badge">Postgres</span>
+            <span className="skill-badge">UX/UI Design</span>
+            <span className="skill-badge">Web Accessibility</span>
+            <span className="skill-badge">Design Systems</span>
+            <span className="skill-badge">Responsive Web</span>
+            </div>
           </TextBox>
-          <a href="https://github.com/JaydenHarrod/react-redux-crud" target="_blank">
-            <h3 style={{ marginTop: 24 }}>React Posts</h3>
+          <h2>Projects</h2>
+          <a href="https://github.com/JaydenHarrod/react-redux-crud" target="_blank" rel="noopener noreferrer">
+            <h3 style={{ marginTop: 32 }}>React Posts</h3>
           </a>
           <p style={{ fontStyle: "italic" }}>
-            MongoDB, Express, Node, React, Redux, Router, Thunk, Babel, CSS
+            Technologies: MongoDB, Express, Node, React, Redux, Router, Thunk, Babel, CSS
           </p>
           <div>
-            <a href="https://github.com/JaydenHarrod/react-redux-crud">
-              <Box
-                class="box-l"
-                path="/"
-                alt="Developer Image"
-                src={reactpostsURL}
-              />
-            </a>
+            <Box
+              class="box-l"
+              path="https://github.com/JaydenHarrod/react-redux-crud"
+              link="true"
+              alt="Developer Image"
+              src={reactpostsURL}
+            />
           </div>
         </Col1>
       </Container>
