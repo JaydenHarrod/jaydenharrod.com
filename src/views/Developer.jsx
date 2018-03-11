@@ -23,7 +23,6 @@ class Developer extends Component {
             interfaces based on wireframes and hifi designs.
           </p>
           <TextBox>
-            <h3>Professional Skills</h3>
             <div className="skill-container">
               <span className="skill-badge">JavaScript (ES6)</span>
               <span className="skill-badge">HTML5</span>
@@ -41,11 +40,8 @@ class Developer extends Component {
           </TextBox>
           <h2>Projects</h2>
           <a href="https://github.com/JaydenHarrod/react-redux-crud" target="_blank" rel="noopener noreferrer">
-            <h3 style={{ marginTop: 32 }}>React Posts</h3>
+            <h3>React Posts</h3>
           </a>
-          <p style={{ fontStyle: "italic", marginBottom: "0" }}>
-            Technologies: MongoDB, Express, Node, React, Redux, Router, Thunk, Babel, CSS
-          </p>
           <Box
             class="box-l"
             path="https://github.com/JaydenHarrod/react-redux-crud"
@@ -54,11 +50,8 @@ class Developer extends Component {
             src={reactpostsURL}
           />
           <a href="https://github.com/JaydenHarrod/jh" target="_blank" rel="noopener noreferrer">
-            <h3 style={{ marginTop: 32 }}>JaydenHarrod.com</h3>
+            <h3>JaydenHarrod.com</h3>
           </a>
-          <p style={{ fontStyle: "italic", marginBottom: "0" }}>
-            Technologies: React, Router, Babel, SCSS, Parcel, Helmet
-          </p>
           <Box
             class="box-l"
             path="https://github.com/JaydenHarrod/jh"
