@@ -11,6 +11,7 @@
   "author": "Jayden Harrod",
   "license": "MIT",
   "dependencies": {
+    "animated": "^0.2.2",
     "autoprefixer": "^7.2.5",
     "babel-eslint": "^8.1.2",
     "babel-preset-react-app": "^3.1.0",
@@ -21,7 +22,9 @@
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-router-dom": "^4.2.2"
+    "react-helmet": "^5.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-transition-group": "^2.2.1"
   },
   "postcss": {
     "modules": false,

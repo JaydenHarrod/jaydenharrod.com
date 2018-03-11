@@ -1,12 +1,18 @@
 import React, { Component } from "react";
+import { Helmet } from "react-helmet";
 import Box from "../components/shared/Box";
 import reactpostsURL from "../assets/react-posts.png";
+import jhURL from "../assets/jh-website.png";
 import { Container, Col1, TextBox } from "../components/shared/Layout";
-import "../styles/components/developer.scss"
+import "../styles/components/developer.scss";
+
 class Developer extends Component {
   render() {
     return (
       <Container>
+        <Helmet>
+          <title>Developer | JH</title>
+        </Helmet>
         <Col1>
           <h1>Developer</h1>
           <p>
@@ -17,38 +23,49 @@ class Developer extends Component {
             interfaces based on wireframes and hifi designs.
           </p>
           <TextBox>
-            <b>Professional Skills: </b>
+            <h3>Professional Skills</h3>
             <div className="skill-container">
-            <span className="skill-badge">JavaScript (ES6)</span>
-            <span className="skill-badge">HTML5</span>
-            <span className="skill-badge">BEM/CSS3</span>
-            <span className="skill-badge">React</span>
-            <span className="skill-badge">Redux</span>
-            <span className="skill-badge">Node</span>
-            <span className="skill-badge">Express</span>
-            <span className="skill-badge">Postgres</span>
-            <span className="skill-badge">UX/UI Design</span>
-            <span className="skill-badge">Web Accessibility</span>
-            <span className="skill-badge">Design Systems</span>
-            <span className="skill-badge">Responsive Web</span>
+              <span className="skill-badge">JavaScript (ES6)</span>
+              <span className="skill-badge">HTML5</span>
+              <span className="skill-badge">BEM/CSS3</span>
+              <span className="skill-badge">React</span>
+              <span className="skill-badge">Redux</span>
+              <span className="skill-badge">Node</span>
+              <span className="skill-badge">Express</span>
+              <span className="skill-badge">Postgres</span>
+              <span className="skill-badge">UX/UI Design</span>
+              <span className="skill-badge">Web Accessibility</span>
+              <span className="skill-badge">Design Systems</span>
+              <span className="skill-badge">Responsive Web</span>
             </div>
           </TextBox>
           <h2>Projects</h2>
           <a href="https://github.com/JaydenHarrod/react-redux-crud" target="_blank" rel="noopener noreferrer">
             <h3 style={{ marginTop: 32 }}>React Posts</h3>
           </a>
-          <p style={{ fontStyle: "italic" }}>
+          <p style={{ fontStyle: "italic", marginBottom: "0" }}>
             Technologies: MongoDB, Express, Node, React, Redux, Router, Thunk, Babel, CSS
           </p>
-          <div>
-            <Box
-              class="box-l"
-              path="https://github.com/JaydenHarrod/react-redux-crud"
-              link="true"
-              alt="Developer Image"
-              src={reactpostsURL}
-            />
-          </div>
+          <Box
+            class="box-l"
+            path="https://github.com/JaydenHarrod/react-redux-crud"
+            link="true"
+            alt="React Posts Image"
+            src={reactpostsURL}
+          />
+          <a href="https://github.com/JaydenHarrod/jh" target="_blank" rel="noopener noreferrer">
+            <h3 style={{ marginTop: 32 }}>JaydenHarrod.com</h3>
+          </a>
+          <p style={{ fontStyle: "italic", marginBottom: "0" }}>
+            Technologies: React, Router, Babel, SCSS, Parcel, Helmet
+          </p>
+          <Box
+            class="box-l"
+            path="https://github.com/JaydenHarrod/jh"
+            link="true"
+            alt="JaydenHarrod.com Image"
+            src={jhURL}
+          />
         </Col1>
       </Container>
     );

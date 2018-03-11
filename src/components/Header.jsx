@@ -4,39 +4,37 @@ import { Container, Col1 } from "./shared/Layout";
 import logoUrl from "../assets/logo.png";
 import "../styles/components/header.scss";
 
-class Header extends React.Component {
-  render() {
-    return (
-      <div className="header">
-        <Container>
-          <Col1>
+const Header = () => {
+  return (
+    <div className="header">
+      <Container>
+        <Col1>
           <Link to="/">
-              <img className="logo" src={logoUrl} alt="Jayden Harrod Logo" />
-            </Link>
-          </Col1>
-          <Col1>
-            <span className="menu">
-              <Link to="/">
-                <span className="menu-item" aria-label="Home Button">
-                  Home
-                </span>
-              </Link>
-              <Link to="/developer">
-                <span className="menu-item" aria-label="Developer Button">
-                  Developer
-                </span>
-              </Link>
-              <Link to="/filmmaker">
-                <span className="menu-item" aria-label="Filmmaker Button">
-                  Filmmaker
-                </span>
-              </Link>
+            <img className="logo" src={logoUrl} alt="Jayden Harrod Logo" />
+          </Link>
+        </Col1>
+        <Col1>
+          <span className="menu">
+            <Link to="/">
+              <span className="menu-item" aria-label="Home Button">
+                Home
             </span>
-          </Col1>
-        </Container>
-      </div>
-    );
-  }
+            </Link>
+            <Link to="/developer">
+              <span className="menu-item" aria-label="Developer Button">
+                Developer
+            </span>
+            </Link>
+            <Link to="/filmmaker">
+              <span className="menu-item" aria-label="Filmmaker Button">
+                Filmmaker
+            </span>
+            </Link>
+          </span>
+        </Col1>
+      </Container>
+    </div>
+  )
 }
 
 export default Header;

@@ -16,4 +16,5 @@ a {
 a:hover {
   text-decoration: underline;
   color: #000;
+  transition: color .2s ease-out;
 }
