@@ -5,17 +5,20 @@
   height: 60px;
   padding-top: 18px;
   background-color: #fff;
-  border-bottom: 1px solid #f3f3f3;
+  border-bottom: 1px solid rgba(0,0,0,.1);
 }
 
 .logo {
   transform: rotate(0deg);
   height: 32px;
+  opacity: 0.75;
+  transition: transform .2s ease-in-out;
 }
 
 .logo:hover {
+  opacity: 1;
   transform: rotate(6deg);
-  transition: transform .2s ease-out;
+  transition: transform .2s ease-in-out;
 }
 
 .menu {
@@ -25,7 +28,7 @@
 
 .menu-item {
   float: left;
-  color: #000;
+  color: rgba(0,0,0,.75);
   list-style: none;
   text-decoration: none;
   line-height: 48px;
@@ -34,7 +37,7 @@
 }
 
 .menu-item:hover {
-  color: $color-primary;
+  color: #000;
   text-decoration: none;
   transition: color .2s ease-out;
 }

@@ -5,7 +5,7 @@
 }
 
 .skill-badge {
-    background-color: #fffceb;
+    background-color: #cdecff;
     border-radius: 4px;
     padding: 8px;
     margin-right: 8px;
@@ -14,6 +14,8 @@
 }
 
 .skill-badge:hover {
-    border: 1px solid #ffde37;
+    border: 1px solid #96ccff;
     transition: border .2s ease-out;
+    box-shadow: 1px 1px 3px #ccc;
+    transition: box-shadow .2s ease-out;
 }
