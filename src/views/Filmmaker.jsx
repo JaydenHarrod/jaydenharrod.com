@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Helmet } from "react-helmet";
 import { Container, Col1 } from "../components/shared/Layout";
 import "../styles/components/filmmaker.scss";
 
@@ -6,6 +7,9 @@ class Filmmaker extends Component {
   render() {
     return (
       <Container>
+        <Helmet>
+          <title>Filmmaker | JH</title>
+        </Helmet>
         <Col1>
           <h1>Filmmaker</h1>
           <p>I'm a freelance videographer, photographer, and editor. My speciality in the industry is attention to high quality audio recording, and the use of SFX to create immersive edits. I also strategize videos that recieve high engagement on social media from my days as a YouTube partner.</p>
@@ -27,13 +31,10 @@ class Filmmaker extends Component {
           <div className="video-wrapper"><iframe src="https://player.vimeo.com/video/251011540" width="720" height="405" frameBorder="0" allowFullScreen></iframe></div>
           <div className="video-wrapper"><iframe src="https://player.vimeo.com/video/251011915" width="720" height="405" frameBorder="0" allowFullScreen></iframe></div>
           <div className="video-wrapper"><iframe src="https://player.vimeo.com/video/202331004" width="720" height="405" frameBorder="0" allowFullScreen></iframe></div>
-          <div className="video-wrapper"><iframe src="https://player.vimeo.com/video/251011737" width="720" height="405" frameBorder="0" allowFullScreen></iframe></div>
           <div className="video-wrapper"><iframe src="https://player.vimeo.com/video/251011370" width="720" height="405" frameBorder="0" allowFullScreen></iframe></div>
           <div className="video-wrapper"><iframe src="https://player.vimeo.com/video/251011247" width="720" height="405" frameBorder="0" allowFullScreen></iframe></div>
-          <div className="video-wrapper"><iframe src="https://player.vimeo.com/video/251011327" width="720" height="405" frameBorder="0" allowFullScreen></iframe></div>
           <div className="video-wrapper"><iframe src="https://player.vimeo.com/video/251011285" width="720" height="405" frameBorder="0" allowFullScreen></iframe></div>
           <div className="video-wrapper"><iframe src="https://player.vimeo.com/video/251011507" width="720" height="405" frameBorder="0" allowFullScreen></iframe></div>
-          <div className="video-wrapper"><iframe src="https://player.vimeo.com/video/251012056" width="720" height="405" frameBorder="0" allowFullScreen></iframe></div>
         </Col1>
       </Container>
     );

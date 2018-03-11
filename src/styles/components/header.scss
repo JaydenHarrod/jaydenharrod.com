@@ -9,7 +9,13 @@
 }
 
 .logo {
+  transform: rotate(0deg);
   height: 32px;
+}
+
+.logo:hover {
+  transform: rotate(6deg);
+  transition: transform .2s ease-out;
 }
 
 .menu {
@@ -30,4 +36,5 @@
 .menu-item:hover {
   color: $color-primary;
   text-decoration: none;
+  transition: color .2s ease-out;
 }

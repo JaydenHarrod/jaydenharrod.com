@@ -12,3 +12,8 @@
     margin-top: 18px;
     border: 1px solid transparent;
 }
+
+.skill-badge:hover {
+    border: 1px solid #ffde37;
+    transition: border .2s ease-out;
+}

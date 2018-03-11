@@ -47,10 +47,12 @@
 
 .box-l:hover {
   box-shadow: 2px 2px 3px #ccc;
+  transition: box-shadow .2s ease-out;
 }
 
 .box-r:hover {
   box-shadow: 2px 2px 3px #ccc;
+  transition: box-shadow .2s ease-out;  
 }
 
 @media (max-width: 500px) {

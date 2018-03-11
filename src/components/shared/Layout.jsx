@@ -5,6 +5,10 @@ const Container = props => {
   return <div className="container">{props.children}</div>;
 };
 
+const FullContainer = props => {
+  return <div className="full-container">{props.children}</div>;
+};
+
 const Col1 = props => {
   return <div className="col-1">{props.children}</div>;
 };
@@ -13,4 +17,4 @@ const TextBox = props => {
   return <div className="text-box">{props.children}</div>;
 }
 
-export { Container, Col1, TextBox };
+export { Container, FullContainer, Col1, TextBox };
