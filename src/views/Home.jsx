@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { Helmet } from "react-helmet";
-import Story from "../components/Story";
+import Content from "../components/Content";
 
 class Home extends Component {
   render() {
@@ -9,7 +9,7 @@ class Home extends Component {
         <Helmet>
           <title>Home | JH</title>
         </Helmet>
-        <Story />
+        <Content />
       </Fragment>
     );
   }

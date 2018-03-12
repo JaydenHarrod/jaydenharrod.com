@@ -16,7 +16,7 @@ class Developer extends Component {
         <Col1>
           <h1>Developer</h1>
           <p>
-            I'm a software engineer using full-stack JavaScript, HTML5, CSS3,
+            I&#x27;m a software engineer using full-stack JavaScript, HTML5, CSS3,
             and React to build web products. In my role as a developer, I love
             designing interfaces that feel intuitive and accessible to all
             people. The work I enjoy the most is creating functional user
@@ -24,9 +24,10 @@ class Developer extends Component {
           </p>
           <TextBox>
             <div className="skill-container">
-              <span className="skill-badge">JavaScript (ES6)</span>
               <span className="skill-badge">HTML5</span>
-              <span className="skill-badge">BEM/CSS3</span>
+              <span className="skill-badge">JavaScript</span>
+              <span className="skill-badge">CSS in JS</span>
+              <span className="skill-badge">CSS3</span>
               <span className="skill-badge">React</span>
               <span className="skill-badge">Redux</span>
               <span className="skill-badge">Node</span>
@@ -43,7 +44,7 @@ class Developer extends Component {
             <h3>React Posts</h3>
           </a>
           <Box
-            class="box-l"
+            class="box"
             path="https://github.com/JaydenHarrod/react-redux-crud"
             link="true"
             alt="React Posts Image"
@@ -53,7 +54,7 @@ class Developer extends Component {
             <h3>JaydenHarrod.com</h3>
           </a>
           <Box
-            class="box-l"
+            class="box"
             path="https://github.com/JaydenHarrod/jh"
             link="true"
             alt="JaydenHarrod.com Image"
