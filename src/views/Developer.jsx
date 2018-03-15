@@ -4,6 +4,7 @@ import Box from "../components/shared/Box";
 import reactpostsURL from "../assets/react-posts.png";
 import jhURL from "../assets/jh-website.png";
 import { Container, Col1, TextBox } from "../components/shared/Layout";
+import SocialIcons from "../components/SocialIcons";
 import "../styles/components/developer.scss";
 
 class Developer extends Component {
@@ -14,7 +15,10 @@ class Developer extends Component {
           <title>Developer | JH</title>
         </Helmet>
         <Col1>
-          <h1>Developer</h1>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+            <h1>Developer</h1>
+            <SocialIcons />
+          </div>
           <p>
             I&#x27;m a software engineer using full-stack JavaScript, HTML5, CSS3,
             and React to build web products. In my role as a developer, I love

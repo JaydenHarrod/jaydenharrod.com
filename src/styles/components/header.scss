@@ -5,20 +5,19 @@
   height: 60px;
   padding-top: 18px;
   background-color: #fff;
-  border-bottom: 1px solid rgba(0,0,0,.1);
 }
 
 .logo {
-  transform: rotate(0deg);
+  transform: rotate(6deg);
   width: 34px;
   height: 32px;
-  opacity: 0.75;
+  opacity: 1;
   transition: transform .2s ease-in-out;
 }
 
 .logo:hover {
-  opacity: 1;
-  transform: rotate(6deg);
+  opacity: 0.75;
+  transform: rotate(0deg);
   transition: transform .2s ease-in-out;
 }
 
@@ -27,9 +26,15 @@
   display: flex;
 }
 
+.menu svg {
+  margin-right: 8px;
+}
+
 .menu-item {
   float: left;
-  color: rgba(0,0,0,.75);
+  display: flex;
+  align-items: center;
+  color: #000;
   list-style: none;
   text-decoration: none;
   line-height: 48px;
@@ -39,7 +44,7 @@
 }
 
 .menu-item:hover {
-  color: #000;
+  color: rgba(0,0,0,.75);
   text-decoration: none;
   transition: color .2s ease-in-out;
 }
