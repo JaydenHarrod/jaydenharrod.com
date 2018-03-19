@@ -32,7 +32,7 @@ class Filmmaker extends Component {
               <span className="skill-badge">Livestreaming</span>
             </div>
           </TextBox>
-          <h2 style={{ marginTop: "32px", marginBottom: "0" }}>Projects</h2>
+          <h2 style={{ marginTop: "32px", marginBottom: "8px" }}>Projects</h2>
           <div className="video-wrapper"><iframe title="portfolio video soho app" src="https://player.vimeo.com/video/251011540" width="720" height="405" frameBorder="0" allowFullScreen></iframe></div>
           <div className="video-wrapper"><iframe title="portfolio video in the kitchen with will and steve" src="https://player.vimeo.com/video/251011915" width="720" height="405" frameBorder="0" allowFullScreen></iframe></div>
           <div className="video-wrapper"><iframe title="portfolio video wipehero story" src="https://player.vimeo.com/video/202331004" width="720" height="405" frameBorder="0" allowFullScreen></iframe></div>

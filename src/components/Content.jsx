@@ -16,8 +16,8 @@ export const Content = () => (
       <img src={portraitURL} width="100%" alt="portrait" />
       <p style={{ textAlign: "right", fontSize: "10px" }}>Captured by: <a href="https://www.instagram.com/nicholaswcole/" rel="noopener noreferrer" target="_blank">Nicholas Cole</a></p>
       <Blurb />
-      <Employment />
       <BlogPanel />
+      <Employment />
     </Col1>
   </Container>
 );
