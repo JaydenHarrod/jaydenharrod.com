@@ -1,13 +1,14 @@
 import React from 'react';
 import '../styles/components/PhotoStories.scss';
+import featureURL from '../assets/photos/cy-f.jpg';
 
 const PhotoStories = () => {
     return (
         <div className="photo-stories">
             <div className="ps-picture-container-full">
-                <div className="ps-feature-image"/>
-                <h3 className="ps-title">✨ Southern Highlands ✨</h3>
-                <h4 className="ps-sub">NSW, Australia</h4>
+                <img src={featureURL} width="100%" alt="Featured Image" />
+                <h3 className="ps-title">Cape York</h3>
+                <h4 className="ps-sub">Queensland, Australia</h4>
             </div>
 
             <h2>Other Collections</h2>
