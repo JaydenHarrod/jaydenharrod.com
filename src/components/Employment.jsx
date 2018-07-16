@@ -1,20 +1,34 @@
 import React from 'react';
-import "../styles/components/employment.scss";
+import styled from 'styled-components';
 
+const Container = styled.div`
+  padding-bottom: 24px;
+`;
+const Heading = styled.div`
+  padding-top: 18px;
+`;
+const Paragraph = styled.p`
+  margin-bottom: 0;
+`;
+const DateText = styled.p`
+  font-size: 12px;
+  margin-top: 0;
+  color: rgba(0, 0, 0, 0.54);
+`;
 const Employment = () => {
-    return (
-        <div style={{ paddingBottom: "24px" }}>
-            <h2 style={{ paddingTop: "18px" }}>Employment</h2>
-            <p style={{ marginBottom: "0" }}>hipages: Junior Front-end Developer</p>
-            <p className="p-date">Present</p>
-            <p style={{ marginBottom: "0" }}>Digivizer: Junior Creative / Engineer</p>
-            <p className="p-date">2016-2018</p>
-            <p style={{ marginBottom: "0" }}>PickleHosting: Operations Manager</p>
-            <p className="p-date">2014-2016</p>
-            <p style={{ marginBottom: "0" }}>YouTube: Digital Creative</p>
-            <p className="p-date">2010-2016</p>
-        </div>
-    )
-}
+  return (
+    <Container>
+      <Heading>Employment</Heading>
+      <Paragraph>hipages: Junior Front-end Developer</Paragraph>
+      <DateText>Present</DateText>
+      <Paragraph>Digivizer: Junior Creative / Engineer</Paragraph>
+      <DateText>2016-2018</DateText>
+      <Paragraph>PickleHosting: Operations Manager</Paragraph>
+      <DateText>2014-2016</DateText>
+      <Paragraph>YouTube: Digital Creative</Paragraph>
+      <DateText>2010-2016</DateText>
+    </Container>
+  );
+};
 
 export default Employment;
