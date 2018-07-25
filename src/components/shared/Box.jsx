@@ -1,8 +1,11 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { Col1 } from "./Layout";
-import "../../styles/components/shared/box.scss";
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import { Col1 } from './Layout';
+import '../../styles/components/shared/box.scss';
 
+const DisableText = styled.div`
+`;
 export const Box = props => (
   <Col1>
     <div className="disable-text">
@@ -17,15 +20,15 @@ export const Box = props => (
           />
         </a>
       ) : (
-          <Link to={props.path}>
-            <img
-              src={props.src}
-              className="box"
-              alt={props.alt}
-              aria-label={props.alt}
-            />
-          </Link>
-        )}
+        <Link to={props.path}>
+          <img
+            src={props.src}
+            className="box"
+            alt={props.alt}
+            aria-label={props.alt}
+          />
+        </Link>
+      )}
     </div>
   </Col1>
 );
