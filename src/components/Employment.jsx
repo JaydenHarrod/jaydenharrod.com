@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Container = styled.div`
   padding-bottom: 24px;
 `;
-const Heading = styled.div`
+const Heading = styled.h3`
   padding-top: 18px;
 `;
 const Paragraph = styled.p`
@@ -19,14 +19,14 @@ const Employment = () => {
   return (
     <Container>
       <Heading>Employment</Heading>
-      <Paragraph>hipages: Junior Front-end Developer</Paragraph>
-      <DateText>Present</DateText>
-      <Paragraph>Digivizer: Junior Creative / Engineer</Paragraph>
-      <DateText>2016-2018</DateText>
+      <Paragraph>hipages: Junior Frontend Developer</Paragraph>
+      <DateText>2018 - Present</DateText>
+      <Paragraph>Digivizer: Junior Creative</Paragraph>
+      <DateText>2016 - 2018</DateText>
       <Paragraph>PickleHosting: Operations Manager</Paragraph>
-      <DateText>2014-2016</DateText>
+      <DateText>2014 - 2016</DateText>
       <Paragraph>YouTube: Digital Creative</Paragraph>
-      <DateText>2010-2016</DateText>
+      <DateText>2010 - 2016</DateText>
     </Container>
   );
 };

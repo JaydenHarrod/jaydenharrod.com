@@ -45,9 +45,9 @@ const SkillBadge = styled.div`
     transition: box-shadow 0.2s ease-out;
   }
 `;
-const Heading = styled.h2`
-  margin-top: 32px;
-  margin-bottom: 8px;
+const Heading = styled.h3`
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 `;
 class Filmmaker extends Component {
   render() {
