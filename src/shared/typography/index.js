@@ -32,7 +32,7 @@ export const Paragraph = styled.p`
 `;
 
 export const Anchor = styled.a`
-  font-size: 1rem;
+  font-size: inherit;
   line-height: 1.45rem;
   margin-top: 1rem;
   padding: 0;

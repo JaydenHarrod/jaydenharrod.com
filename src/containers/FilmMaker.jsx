@@ -6,6 +6,7 @@ import { HeadingOne, Paragraph, Anchor } from '../shared/typography';
 import { Card } from '../shared/card';
 import { Label } from '../shared/label';
 import { Video } from '../shared/video';
+import Footer from '../shared/footer';
 
 const FilmMaker = () => {
   return (
@@ -65,6 +66,7 @@ const FilmMaker = () => {
           </Col>
         </Row>
       </Card>
+      <Footer />
     </Container>
   );
 };

@@ -14,6 +14,7 @@ import Travel from '../components/YearInReview/Travel';
 import Technology from '../components/YearInReview/Technology';
 import Media from '../components/YearInReview/Media';
 import Activity from '../components/YearInReview/Activity';
+import Footer from '../shared/footer';
 
 const Hero = styled.div`
   display: flex;
@@ -107,6 +108,7 @@ const YearInReview = () => {
           <Travel />
           <Technology />
           <Finance />
+          <Footer />
         </Col>
       </Row>
     </>

@@ -4,6 +4,7 @@ import { Container, Row, Col } from '../shared/layout';
 import Header from '../shared/header';
 import { HeadingOne, Paragraph } from '../shared/typography';
 import { Card } from '../shared/card';
+import Footer from '../shared/footer';
 
 const Developer = () => {
   return (
@@ -26,6 +27,7 @@ const Developer = () => {
           </Col>
         </Row>
       </Card>
+      <Footer />
     </Container>
   );
 };

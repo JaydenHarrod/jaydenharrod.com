@@ -7,6 +7,7 @@ import { HeadingOne, Paragraph, Anchor } from '../shared/typography';
 import Image from '../shared/image';
 import hero from '../components/images/hero.jpg';
 import { Card } from '../shared/card';
+import Footer from '../shared/footer';
 
 const content = [
   {
@@ -63,21 +64,14 @@ const Home = () => {
               target="_blank"
               href="https://youtube.com/jaydenharrod"
             >
-              Sharing my journey on YouTube
-            </Anchor>
-            <Anchor
-              block
-              target="_blank"
-              href="https://soundcloud.com/allsidesdj"
-            >
-              Releasing music @allsidesdj
+              Sharing dev tips on YouTube
             </Anchor>
             <Anchor
               block
               target="_blank"
               href="https://github.com/jaydenharrod"
             >
-              Coding on Github @jaydenharrod
+              Coding via Github @jaydenharrod
             </Anchor>
             <Anchor
               block
@@ -86,12 +80,20 @@ const Home = () => {
             >
               Instagramming @jaydenharrod
             </Anchor>
+            <Anchor
+              block
+              target="_blank"
+              href="https://soundcloud.com/allsidesdj"
+            >
+              Releasing music @allsidesdj
+            </Anchor>
           </Col>
           <Col xs={12} md={6}>
             <Image src={hero} height="auto" width="362" />
           </Col>
         </Row>
       </Card>
+      <Footer />
     </Container>
   );
 };
