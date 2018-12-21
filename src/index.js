@@ -1,11 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { BrowserRouter } from "react-router-dom";
-import App from "./App";
-import "./styles/base.scss";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import createHistory from 'history/createBrowserHistory';
+import App from './app';
 
-ReactDOM.render(<BrowserRouter><App /></BrowserRouter>, document.getElementById("root"));
+const history = createHistory();
 
-if (module.hot) {
-  module.hot.accept();
-}
+ReactDOM.render(<App history={history} />, document.getElementById('root'));

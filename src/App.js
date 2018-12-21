@@ -1,27 +1,40 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Header from "./components/Header";
-import Home from "./views/Home";
-import Developer from "./views/Developer";
-import Filmmaker from "./views/Filmmaker";
-import PhotosIndex from "./views/PhotosIndex";
-import NotFound from "./views/NotFound";
+import React, { Component } from 'react';
+import { ThemeProvider, createGlobalStyle } from 'styled-components';
+import { Normalize } from 'styled-normalize';
+import { BrowserRouter, Route } from 'react-router-dom';
+import { darkTheme, lightTheme } from './shared/theme';
+import routes from './routes';
 
-const App = () => {
-  return (
-    <Router>
-      <div>
-        <Header />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/developer" component={Developer} />
-          <Route path="/filmmaker" component={Filmmaker} />
-          <Route path="/photos" component={PhotosIndex} />
-          <Route component={NotFound} />
-        </Switch>
-      </div>
-    </Router>
-  )
+const routeComponents = routes.map(({ path, component }, key) => (
+  <Route exact path={path} component={component} key={key} />
+));
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    width: 100%;
+    height: 100%;
+    color: ${props => props.theme.text};
+    background-color: ${props => props.theme.background};
+    font-family: ${props => props.theme.fontFamily};
+  }
+`;
+
+const darkMode = false;
+
+class App extends Component {
+  render() {
+    return (
+      <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+        <>
+          <GlobalStyle />
+          <Normalize />
+          <BrowserRouter history={this.props.history}>
+            <>{routeComponents}</>
+          </BrowserRouter>
+        </>
+      </ThemeProvider>
+    );
+  }
 }
 
 export default App;
