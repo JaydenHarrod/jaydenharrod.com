@@ -21,12 +21,10 @@ const StyledButton = styled.a`
   }
 `;
 
-const Button = ({ children, width, src, target }) => {
+export const Button = ({ children, width, src, target }) => {
   return (
     <StyledButton width={width} href={src} target={target ? target : '_blank'}>
       {children}
     </StyledButton>
   );
 };
-
-export default Button;

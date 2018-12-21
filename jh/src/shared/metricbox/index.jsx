@@ -23,7 +23,7 @@ const Box = styled.div`
   }
 `;
 
-const MetricBox = ({ title, metric }) => {
+export const MetricBox = ({ title, metric }) => {
   return (
     <Box>
       <Paragraph bold mt={0} mb={0} mr="1rem">
@@ -33,5 +33,3 @@ const MetricBox = ({ title, metric }) => {
     </Box>
   );
 };
-
-export default MetricBox;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Paragraph, HeadingOne, TinyText } from '../typography';
 
-const Stats = ({ title, metric, fact }) => {
+export const Stats = ({ title, metric, fact }) => {
   return (
     <div>
       <Paragraph bold mb={0}>
@@ -12,5 +12,3 @@ const Stats = ({ title, metric, fact }) => {
     </div>
   );
 };
-
-export default Stats;

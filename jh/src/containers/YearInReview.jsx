@@ -5,16 +5,17 @@ import { Helmet } from 'react-helmet';
 import {
   HeadingOne,
   HeadingTwo,
+  Footer,
   Anchor,
-  Paragraph
-} from '../shared/typography';
-import { Row, Col } from '../shared/layout';
+  Paragraph,
+  Row,
+  Col
+} from '../shared';
 import Finance from '../components/YearInReview/Finance';
 import Travel from '../components/YearInReview/Travel';
 import Technology from '../components/YearInReview/Technology';
 import Media from '../components/YearInReview/Media';
 import Activity from '../components/YearInReview/Activity';
-import Footer from '../shared/footer';
 
 const Hero = styled.div`
   display: flex;

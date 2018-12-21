@@ -29,7 +29,7 @@ const Logo = styled.img`
   }
 `;
 
-const Header = () => {
+export const Header = () => {
   return (
     <Row display="flex" alignItems="center" p="2rem">
       <ResponsiveCol xs={12}>
@@ -64,5 +64,3 @@ const Header = () => {
     </Row>
   );
 };
-
-export default Header;

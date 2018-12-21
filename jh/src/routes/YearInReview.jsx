@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import Loader from '../shared/loader';
+import { Loader } from '../shared';
 
 const Container = React.lazy(() => import('../containers/YearInReview'));
 
