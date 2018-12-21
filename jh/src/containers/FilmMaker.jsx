@@ -1,12 +1,18 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Container, Row, Col } from '../shared/layout';
-import Header from '../shared/header';
-import { HeadingOne, Paragraph, Anchor } from '../shared/typography';
-import { Card } from '../shared/card';
-import { Label } from '../shared/label';
-import { Video } from '../shared/video';
-import Footer from '../shared/footer';
+import {
+  HeadingOne,
+  Paragraph,
+  Anchor,
+  Card,
+  Label,
+  Video,
+  Footer,
+  Header,
+  Container,
+  Col,
+  Row
+} from '../shared';
 
 const FilmMaker = () => {
   return (

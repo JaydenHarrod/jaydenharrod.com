@@ -1,9 +1,6 @@
 import React from 'react';
-import { HeadingOne } from '../../../shared/typography';
-import { Row } from '../../../shared/layout';
-import { Card } from '../../../shared/card';
+import { HeadingOne, Row, Card, MetricBox } from '../../../shared';
 import TopCitiesBox from './TopCitiesBox';
-import MetricBox from '../../../shared/metricbox';
 import sydney from './cities/sydney.jpg';
 import newcastle from './cities/newcastle.jpg';
 import bowral from './cities/bowral.jpg';

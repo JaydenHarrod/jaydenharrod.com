@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import { Normalize } from 'styled-normalize';
 import { BrowserRouter, Route } from 'react-router-dom';
-import { darkTheme, lightTheme } from './shared/theme';
+import { darkTheme, lightTheme } from './theme';
 import routes from './routes';
 
 const routeComponents = routes.map(({ path, component }, key) => (
   <Route exact path={path} component={component} key={key} />
 ));
 
-const GlobalStyle = createGlobalStyle`
+const Global = createGlobalStyle`
   body {
     width: 100%;
     height: 100%;
@@ -26,11 +26,11 @@ class App extends Component {
     return (
       <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
         <>
-          <GlobalStyle />
-          <Normalize />
           <BrowserRouter history={this.props.history}>
             <>{routeComponents}</>
           </BrowserRouter>
+          <Normalize />
+          <Global />
         </>
       </ThemeProvider>
     );

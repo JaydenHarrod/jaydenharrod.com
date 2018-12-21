@@ -1,8 +1,5 @@
 import React from 'react';
-import { HeadingOne, Paragraph } from '../../../shared/typography';
-import { Card } from '../../../shared/card';
-import { Row } from '../../../shared/layout';
-import MetricBox from '../../../shared/metricbox';
+import { Card, Row, HeadingOne, Paragraph, MetricBox } from '../../../shared';
 import FitBitChart from './FitBitChart';
 
 const Activity = () => {

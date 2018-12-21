@@ -1,14 +1,11 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import { HeadingOne, Paragraph } from '../../../shared/typography';
-import { Card } from '../../../shared/card';
-import { Row, Col } from '../../../shared/layout';
-import Stats from '../../../shared/stats';
-import MediaBox from './MediaBox';
+import { HeadingOne, Paragraph, Card, Row, Col, Stats } from '../../../shared';
 import nineNine from './images/brooklyn-nine-nine.jpg';
 import dirkGently from './images/dirk-gently.jpg';
 import theExpanse from './images/the-expanse.jpg';
 import lostInSpace from './images/lost-in-space.jpg';
+import MediaBox from './MediaBox';
 
 const Media = () => {
   return (

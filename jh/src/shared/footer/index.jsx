@@ -1,7 +1,7 @@
 import React from 'react';
 import { TinyText, Anchor } from '../typography';
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <TinyText center mb="1rem">
       &copy; Jayden Harrod -{' '}
@@ -57,5 +57,3 @@ const Footer = () => {
     </TinyText>
   );
 };
-
-export default Footer;

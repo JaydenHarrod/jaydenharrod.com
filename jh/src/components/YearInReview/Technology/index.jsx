@@ -1,9 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { HeadingOne } from '../../../shared/typography';
-import { Card } from '../../../shared/card';
-import Stats from '../../../shared/stats';
-import { Row } from '../../../shared/layout';
+import { HeadingOne, Card, Stats, Row } from '../../../shared';
 import ig1 from './images/1.jpg';
 import ig2 from './images/2.jpg';
 import ig3 from './images/3.jpg';

@@ -1,13 +1,19 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import ReactTextRotator from 'react-text-rotator';
-import { Container, Row, Col } from '../shared/layout';
-import Header from '../shared/header';
-import { HeadingOne, Paragraph, Anchor } from '../shared/typography';
-import Image from '../shared/image';
+import {
+  Container,
+  Row,
+  Col,
+  HeadingOne,
+  Paragraph,
+  Anchor,
+  Header,
+  Footer,
+  Image,
+  Card
+} from '../shared';
 import hero from '../components/images/hero.jpg';
-import { Card } from '../shared/card';
-import Footer from '../shared/footer';
 
 const content = [
   {

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Paragraph } from '../../../shared/typography';
+import { Paragraph } from '../../../shared';
 
 const Box = styled.div`
   display: flex;
