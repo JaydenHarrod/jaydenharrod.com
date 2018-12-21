@@ -7,7 +7,6 @@ export const ImageBox = styled.img`
   height: ${props => (props.height ? props.height : 'auto')};
   background-image: ${props => props.url};
   transition: all 0.4s ease-in-out;
-  margin-top: 1rem;
   ${space};
   :hover {
     transform: scale(1.01);

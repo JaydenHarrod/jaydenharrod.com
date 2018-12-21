@@ -16,28 +16,23 @@ const content = [
     animation: 'fade'
   },
   {
-    text: 'Web Developer.',
+    text: 'YouTuber.',
     className: 'classB',
     animation: 'fade'
   },
   {
-    text: 'YouTuber.',
+    text: 'Programmer.',
     className: 'classC',
     animation: 'fade'
   },
   {
-    text: 'Music Producer.',
+    text: 'Photographer.',
     className: 'classD',
     animation: 'fade'
   },
   {
-    text: 'Videographer.',
+    text: 'Music Producer.',
     className: 'classE',
-    animation: 'fade'
-  },
-  {
-    text: 'Minimalist.',
-    className: 'classF',
     animation: 'fade'
   }
 ];
@@ -49,43 +44,43 @@ const Home = () => {
         <title>About | Jayden Harrod</title>
       </Helmet>
       <Header />
-      <Card>
+      <Card pl="1rem" pr="1rem" p="2rem">
         <Row pl="1rem" pr="1rem">
           <Col xs={12} md={6}>
-            <HeadingOne>
+            <HeadingOne mt={0}>
               <ReactTextRotator content={content} time={3500} startDelay={0} />
             </HeadingOne>
-            <Paragraph bold>{`Hello, nice to meet you 👋`}</Paragraph>
+            <Paragraph bold>{`Hello 👋`}</Paragraph>
             <Anchor block target="_blank" href="https://hipages.com.au">
-              I'm a web developer at hipages
+              I'm a web developer at hipages.com.au
             </Anchor>
             <Anchor
               block
               target="_blank"
               href="https://youtube.com/jaydenharrod"
             >
-              Sharing dev tips on YouTube
+              Making developer, minimalism, and destination videos for YouTube
             </Anchor>
             <Anchor
               block
               target="_blank"
               href="https://github.com/jaydenharrod"
             >
-              Coding via Github @jaydenharrod
+              Coding a SaaS product on Github
             </Anchor>
             <Anchor
               block
               target="_blank"
               href="https://instagram.com/jaydenharrod"
             >
-              Instagramming @jaydenharrod
+              Sharing destination photos on Instagram
             </Anchor>
             <Anchor
               block
               target="_blank"
               href="https://soundcloud.com/allsidesdj"
             >
-              Releasing music @allsidesdj
+              And produce hard-dance music
             </Anchor>
           </Col>
           <Col xs={12} md={6}>
