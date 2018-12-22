@@ -34,28 +34,46 @@ export const Header = () => {
     <Row display="flex" alignItems="center" p="2rem">
       <ResponsiveCol xs={12}>
         <MenuLink to="/" mt={0}>
-          <Logo src={logo} />
+          <Logo src={logo} alt="Navigate Home" />
         </MenuLink>
         <span>
-          <MenuLink to="/" mt="0" ml="1rem" mr="0.3rem">
+          <MenuLink to="/" mt="0" ml="1rem" mr="0.3rem" title="Navigate Home">
             About
           </MenuLink>
           🏠
         </span>
         <span>
-          <MenuLink to="/developer" mt="0" ml="1rem" mr="0.3rem">
+          <MenuLink
+            to="/developer"
+            mt="0"
+            ml="1rem"
+            mr="0.3rem"
+            title="Navigate to Developer"
+          >
             Developer
           </MenuLink>
           👨‍💻
         </span>
         <span>
-          <MenuLink to="/filmmaker" mt="0" ml="1rem" mr="0.3rem">
+          <MenuLink
+            to="/filmmaker"
+            mt="0"
+            ml="1rem"
+            mr="0.3rem"
+            title="Navigate to Film Maker"
+          >
             Film Maker
           </MenuLink>
           🎥
         </span>
         <span>
-          <MenuLink to="/2018" mt="0" ml="1rem" mr="0.3rem">
+          <MenuLink
+            to="/2018"
+            mt="0"
+            ml="1rem"
+            mr="0.3rem"
+            title="Navigate to Year In Review"
+          >
             Year In Review
           </MenuLink>
           📅
