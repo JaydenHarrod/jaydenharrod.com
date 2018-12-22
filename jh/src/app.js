@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import { Normalize } from 'styled-normalize';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { Router, Route } from 'react-router-dom';
 import { darkTheme, lightTheme } from './theme';
 import routes from './routes';
 
@@ -26,9 +26,9 @@ class App extends Component {
     return (
       <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
         <>
-          <BrowserRouter history={this.props.history}>
+          <Router history={this.props.history}>
             <>{routeComponents}</>
-          </BrowserRouter>
+          </Router>
           <Normalize />
           <Global />
         </>

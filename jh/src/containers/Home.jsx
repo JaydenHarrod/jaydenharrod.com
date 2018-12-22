@@ -48,15 +48,19 @@ const Home = () => {
     <Container>
       <Helmet>
         <title>About | Jayden Harrod</title>
-        <meta name="description">
+        <meta
+          name="description"
+          content="
           Jayden is a designer, developer, film maker, and musician from
-          Australia. He's best known for his YouTube channels.
-        </meta>
-        <meta name="keywords">
+          Australia. He's best known for his YouTube channels."
+        />
+        <meta
+          name="keywords"
+          content="
           jayden harrod, jayden, sydney developer, sydney frontend, remote
           developer, developer blog, how to become a developer, film maker,
-          jayden harrod film maker, jayden harrod website
-        </meta>
+          jayden harrod film maker, jayden harrod website"
+        />
       </Helmet>
       <Header />
       <Card pl="1rem" pr="1rem" p="2rem">
