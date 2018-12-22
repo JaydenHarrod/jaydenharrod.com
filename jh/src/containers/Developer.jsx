@@ -16,6 +16,12 @@ const Developer = () => {
     <Container>
       <Helmet>
         <title>Developer | Jayden Harrod</title>
+        <meta
+          name="description"
+          content="
+          Jayden is a designer, developer, film maker, and musician from
+          Australia. He's best known for his YouTube channels."
+        />
       </Helmet>
       <Header />
       <Card>

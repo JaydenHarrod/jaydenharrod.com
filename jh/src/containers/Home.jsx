@@ -48,6 +48,19 @@ const Home = () => {
     <Container>
       <Helmet>
         <title>About | Jayden Harrod</title>
+        <meta
+          name="description"
+          content="
+          Jayden is a designer, developer, film maker, and musician from
+          Australia. He's best known for his YouTube channels."
+        />
+        <meta
+          name="keywords"
+          content="
+          jayden harrod, jayden, sydney developer, sydney frontend, remote
+          developer, developer blog, how to become a developer, film maker,
+          jayden harrod film maker, jayden harrod website"
+        />
       </Helmet>
       <Header />
       <Card pl="1rem" pr="1rem" p="2rem">
@@ -57,11 +70,17 @@ const Home = () => {
               <ReactTextRotator content={content} time={3500} startDelay={0} />
             </HeadingOne>
             <Paragraph bold>{`Hello 👋`}</Paragraph>
-            <Anchor block target="_blank" href="https://hipages.com.au">
+            <Anchor
+              block
+              rel="noreferrer"
+              target="_blank"
+              href="https://hipages.com.au"
+            >
               I'm a web developer at hipages.com.au
             </Anchor>
             <Anchor
               block
+              rel="noreferrer"
               target="_blank"
               href="https://youtube.com/jaydenharrod"
             >
@@ -69,6 +88,7 @@ const Home = () => {
             </Anchor>
             <Anchor
               block
+              rel="noreferrer"
               target="_blank"
               href="https://github.com/jaydenharrod"
             >
@@ -76,6 +96,7 @@ const Home = () => {
             </Anchor>
             <Anchor
               block
+              rel="noreferrer"
               target="_blank"
               href="https://instagram.com/jaydenharrod"
             >
@@ -83,6 +104,7 @@ const Home = () => {
             </Anchor>
             <Anchor
               block
+              rel="noreferrer"
               target="_blank"
               href="https://soundcloud.com/allsidesdj"
             >
@@ -90,7 +112,7 @@ const Home = () => {
             </Anchor>
           </Col>
           <Col xs={12} md={6}>
-            <Image src={hero} height="auto" width="362" />
+            <Image src={hero} height="auto" width="362" alt="Profile picture" />
           </Col>
         </Row>
       </Card>

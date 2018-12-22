@@ -51,6 +51,12 @@ const YearInReview = () => {
     <>
       <Helmet>
         <title>2018 | Jayden Harrod</title>
+        <meta
+          name="description"
+          content="
+          Jayden is a designer, developer, film maker, and musician from
+          Australia. He's best known for his YouTube channels."
+        />
         <script src="https://apis.google.com/js/platform.js" />
       </Helmet>
       <Hero>
@@ -99,7 +105,9 @@ const YearInReview = () => {
               >
                 Follow on Twitter
               </Anchor>
-              <MenuLink to="/">↩️ Back to About</MenuLink>
+              <MenuLink to="/" title="Navigate to Home">
+                {`↩️ Back to About`}
+              </MenuLink>
             </Col>
           </MenuBar>
         </Col>

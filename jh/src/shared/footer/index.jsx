@@ -7,6 +7,7 @@ export const Footer = () => {
       &copy; Jayden Harrod -{' '}
       <Anchor
         mr="0.3rem"
+        rel="noopener"
         target="_blank"
         href="https://youtube.com/jaydenharrod"
       >
@@ -14,6 +15,7 @@ export const Footer = () => {
       </Anchor>
       <Anchor
         mr="0.3rem"
+        rel="noopener"
         target="_blank"
         href="https://instagram.com/jaydenharrod"
       >
@@ -21,6 +23,7 @@ export const Footer = () => {
       </Anchor>
       <Anchor
         mr="0.3rem"
+        rel="noopener"
         target="_blank"
         href="https://twitter.com/jaydenharrod"
       >
@@ -28,6 +31,7 @@ export const Footer = () => {
       </Anchor>
       <Anchor
         mr="0.3rem"
+        rel="noopener"
         target="_blank"
         href="https://github.com/jaydenharrod"
       >
@@ -35,6 +39,7 @@ export const Footer = () => {
       </Anchor>
       <Anchor
         mr="0.3rem"
+        rel="noopener"
         target="_blank"
         href="https://medium.com/@jaydenharrod"
       >
@@ -42,6 +47,7 @@ export const Footer = () => {
       </Anchor>
       <Anchor
         mr="0.3rem"
+        rel="noopener"
         target="_blank"
         href="https://linkedin.com/in/jaydenharrod"
       >
@@ -49,6 +55,7 @@ export const Footer = () => {
       </Anchor>
       <Anchor
         mr="0.3rem"
+        rel="noopener"
         target="_blank"
         href="https://facebook.com/harrodjayden"
       >

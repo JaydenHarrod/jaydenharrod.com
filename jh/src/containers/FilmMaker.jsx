@@ -19,6 +19,12 @@ const FilmMaker = () => {
     <Container>
       <Helmet>
         <title>Film Maker | Jayden Harrod</title>
+        <meta
+          name="description"
+          content="
+          Jayden is a film maker and editor based in Sydney. Offering affordable
+          videography services with a focus on destinations and experiences."
+        />
       </Helmet>
       <Header />
       <Card>
