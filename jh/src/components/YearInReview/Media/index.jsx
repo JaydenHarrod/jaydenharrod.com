@@ -121,9 +121,9 @@ const Media = () => {
         </Col>
       </Row>
 
-      <Card header title="YouTube">
+      <Card header title="YouTube" pt={0}>
         <Row mb="1rem">
-          <Col lg={6}>
+          <Col lg={6} mt="2rem">
             <div
               class="g-ytsubscribe"
               data-channel="SquizzFilms"
@@ -138,7 +138,7 @@ const Media = () => {
             <Stats title="VIEWS" metric="75K" />
             <Stats title="SUBSCRIBERS" metric="-116" />
           </Col>
-          <Col lg={6} justifyContent="right">
+          <Col lg={6} mt="2rem">
             <div
               class="g-ytsubscribe"
               data-channelid="UCOdFl-yPqum9818JPntA6DQ"

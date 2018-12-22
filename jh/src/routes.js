@@ -1,6 +1,6 @@
 import Home from './routes/Home';
 import YearInReview from './routes/YearInReview';
-import Developer from './routes/Developer';
+import Projects from './routes/Projects';
 import FilmMaker from './routes/FilmMaker';
 
 const routes = [
@@ -9,8 +9,8 @@ const routes = [
     component: Home
   },
   {
-    path: '/developer',
-    component: Developer
+    path: '/projects',
+    component: Projects
   },
   {
     path: '/filmmaker',

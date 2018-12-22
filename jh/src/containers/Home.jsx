@@ -84,7 +84,7 @@ const Home = () => {
               target="_blank"
               href="https://youtube.com/jaydenharrod"
             >
-              Making developer, minimalism, and destination videos for YouTube
+              Recording developer, minimalism, and travel videos for YouTube
             </Anchor>
             <Anchor
               block
@@ -92,7 +92,7 @@ const Home = () => {
               target="_blank"
               href="https://github.com/jaydenharrod"
             >
-              Coding a SaaS product on Github
+              Coding web apps on Github
             </Anchor>
             <Anchor
               block
@@ -100,7 +100,7 @@ const Home = () => {
               target="_blank"
               href="https://instagram.com/jaydenharrod"
             >
-              Sharing destination photos on Instagram
+              Sharing travel photos on Instagram
             </Anchor>
             <Anchor
               block
@@ -108,7 +108,7 @@ const Home = () => {
               target="_blank"
               href="https://soundcloud.com/allsidesdj"
             >
-              And produce hard-dance music
+              Producing Hardstyle music
             </Anchor>
           </Col>
           <Col xs={12} md={6}>

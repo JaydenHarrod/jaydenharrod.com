@@ -18,9 +18,8 @@ const Activity = () => {
 
       <Card header title="Fitbit">
         <Paragraph mb="1rem" mt={0}>
-          I purchased a Fitbit in January but didn't start consistently wearing
-          it til June. The work-week step challenge (as a competitive person)
-          pushed me to walk and run and now developed into a great weekly habit.
+          The work-week step challenge (as a competitive person) pushed me to
+          walk and run and now developed into a great weekly habit.
         </Paragraph>
         <Row justifyContent="center" mb="1rem">
           <MetricBox title="STEPS" metric="2.5M" />

@@ -8,7 +8,7 @@ const baseTheme = {
   black: 'rgb(0, 0, 0)',
   darkGrey: 'rgb(100, 100, 100)',
   grey: 'rgb(175, 175, 175)',
-  lightGrey: 'rgb(230, 230, 230)',
+  lightGrey: 'rgb(244,248,250)',
   white: 'rgb(255, 255, 255)',
   fontFamily:
     '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
@@ -30,7 +30,7 @@ const baseTheme = {
 };
 
 export const lightTheme = {
-  background: 'rgb(230, 230, 230)',
+  background: 'rgb(244,248,250)',
   text: '#000',
   ...baseTheme
 };

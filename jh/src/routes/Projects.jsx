@@ -1,9 +1,9 @@
 import React, { Suspense } from 'react';
 import { Loader } from '../shared';
 
-const Container = React.lazy(() => import('../containers/Developer'));
+const Container = React.lazy(() => import('../containers/Projects'));
 
-const Developer = () => {
+const Projects = () => {
   return (
     <Suspense fallback={<Loader />}>
       <Container />
@@ -11,4 +11,4 @@ const Developer = () => {
   );
 };
 
-export default Developer;
+export default Projects;
