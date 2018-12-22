@@ -7,7 +7,16 @@ import logo from '../../components/images/logo.png';
 
 const MenuLink = Anchor.withComponent(RouteLink);
 
-const ResponsiveCol = styled(Col)`
+const StyledRow = styled(Row)`
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: ${props => (props.full ? '#fff' : 'inherit')};
+  box-shadow: ${props =>
+    props.full ? '0px 2px 6px rgb(175, 175, 175)' : 'none'};
+`;
+
+const StyledCol = styled(Col)`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,6 +30,8 @@ const Logo = styled.img`
   width: 34px;
   height: 32px;
   opacity: 1;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   transition: transform 0.2s ease-in-out;
   :hover {
     opacity: 0.75;
@@ -29,28 +40,36 @@ const Logo = styled.img`
   }
 `;
 
-export const Header = () => {
+export const Header = ({ full }) => {
   return (
-    <Row display="flex" alignItems="center" p="2rem">
-      <ResponsiveCol xs={12}>
+    <StyledRow full={full}>
+      <StyledCol xs={12}>
         <MenuLink to="/" mt={0}>
           <Logo src={logo} alt="Navigate Home" />
         </MenuLink>
         <span>
-          <MenuLink to="/" mt="0" ml="1rem" mr="0.3rem" title="Navigate Home">
+          <MenuLink
+            to="/"
+            mt="0"
+            ml="1rem"
+            mr="0.3rem"
+            mb="0.5rem"
+            title="Navigate Home"
+          >
             About
           </MenuLink>
           🏠
         </span>
         <span>
           <MenuLink
-            to="/developer"
+            to="/projects"
             mt="0"
             ml="1rem"
             mr="0.3rem"
-            title="Navigate to Developer"
+            mb="0.5rem"
+            title="Navigate to Projects"
           >
-            Developer
+            Projects
           </MenuLink>
           👨‍💻
         </span>
@@ -60,6 +79,7 @@ export const Header = () => {
             mt="0"
             ml="1rem"
             mr="0.3rem"
+            mb="0.5rem"
             title="Navigate to Film Maker"
           >
             Film Maker
@@ -67,18 +87,20 @@ export const Header = () => {
           🎥
         </span>
         <span>
+          <span style={{ color: 'red' }}>New:</span>
           <MenuLink
             to="/2018"
             mt="0"
-            ml="1rem"
+            ml="0.3rem"
             mr="0.3rem"
+            mb="0.5rem"
             title="Navigate to Year In Review"
           >
             Year In Review
           </MenuLink>
           📅
         </span>
-      </ResponsiveCol>
-    </Row>
+      </StyledCol>
+    </StyledRow>
   );
 };

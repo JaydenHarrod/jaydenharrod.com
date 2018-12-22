@@ -11,11 +11,11 @@ import {
   Paragraph
 } from '../shared';
 
-const Developer = () => {
+const Projects = () => {
   return (
     <Container>
       <Helmet>
-        <title>Developer | Jayden Harrod</title>
+        <title>Projects | Jayden Harrod</title>
         <meta
           name="description"
           content="
@@ -27,13 +27,16 @@ const Developer = () => {
       <Card>
         <Row pl="1rem" pr="1rem">
           <Col xs={12}>
-            <HeadingOne>Developer </HeadingOne>
+            <HeadingOne>Projects </HeadingOne>
             <Paragraph>
-              Frontend developer using full-stack JavaScript, HTML, CSS, and
-              React to build web products. In my role as a developer, I love
-              designing interfaces that feel intuitive and accessible to all
-              people. The work I enjoy the most is creating functional user
-              interfaces.
+              The best way to summarise what I do is to say "I enjoy making
+              things"
+            </Paragraph>
+            <Paragraph>
+              Things come in many forms. Design, code, devops, marketing, photo,
+              video, music, and everything in-between. This page is a place to
+              collate and showcase the variety of projects I have completed over
+              the years.
             </Paragraph>
           </Col>
         </Row>
@@ -43,4 +46,4 @@ const Developer = () => {
   );
 };
 
-export default Developer;
+export default Projects;

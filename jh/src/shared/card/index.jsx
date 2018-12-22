@@ -9,7 +9,7 @@ const Container = styled.div`
   border-radius: 8px;
   background: #fff;
   margin-bottom: 1rem;
-  box-shadow: 0px 2px 4px ${props => props.theme.grey};
+  box-shadow: 0px 2px 6px ${props => props.theme.grey};
   @media (max-width: 30rem) {
     border-radius: 0;
   }
