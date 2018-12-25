@@ -2,6 +2,7 @@ import Home from './routes/Home';
 import YearInReview from './routes/YearInReview';
 import Projects from './routes/Projects';
 import FilmMaker from './routes/FilmMaker';
+import Goals from './routes/Goals';
 
 const routes = [
   {
@@ -19,6 +20,10 @@ const routes = [
   {
     path: '/2018',
     component: YearInReview
+  },
+  {
+    path: '/goals',
+    component: Goals
   }
 ];
 

@@ -87,7 +87,6 @@ export const Header = ({ full }) => {
           🎥
         </span>
         <span>
-          <span style={{ color: '#e00000' }}>New:</span>
           <MenuLink
             to="/2018"
             mt="0"
@@ -96,9 +95,23 @@ export const Header = ({ full }) => {
             mb="0.5rem"
             title="Navigate to Year In Review"
           >
-            Year In Review
+            2018
           </MenuLink>
           📅
+        </span>
+        <span>
+          <span style={{ color: '#e00000' }}>New:</span>
+          <MenuLink
+            to="/goals"
+            mt="0"
+            ml="0.3rem"
+            mr="0.3rem"
+            mb="0.5rem"
+            title="Navigate to Goals"
+          >
+            Goals
+          </MenuLink>
+          🎉
         </span>
       </StyledCol>
     </StyledRow>
