@@ -1,5 +1,14 @@
 import React from 'react';
-import { HeadingOne, Row, Card, MetricBox } from '../../../shared';
+import {
+  HeadingOne,
+  Row,
+  Card,
+  MetricBox,
+  Video,
+  Modal,
+  Switch,
+  Image
+} from '../../../shared';
 import TopCitiesBox from './TopCitiesBox';
 import sydney from './cities/sydney.jpg';
 import newcastle from './cities/newcastle.jpg';
@@ -47,6 +56,32 @@ const Travel = () => {
           <MetricBox title="PLACES" metric="375" />
           <MetricBox title="DISTANCE" metric="537,855" />
         </Row>
+      </Card>
+      <Card
+        header
+        title="Featured trip"
+        pl="1rem"
+        style={{ position: 'relative' }}
+      >
+        <Switch>
+          {({ on, flick }) => (
+            <>
+              <Image
+                onClick={flick}
+                src="http://i3.ytimg.com/vi/aguE5W3kHXU/maxresdefault.jpg"
+                playIcon
+              />
+              {on && (
+                <Modal onRequestClose={flick}>
+                  <Video
+                    src="https://www.youtube.com/embed/aguE5W3kHXU"
+                    title="Young Endeavour video"
+                  />
+                </Modal>
+              )}
+            </>
+          )}
+        </Switch>
       </Card>
     </>
   );
