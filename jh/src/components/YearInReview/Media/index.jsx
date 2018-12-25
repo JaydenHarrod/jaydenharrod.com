@@ -126,6 +126,7 @@ const Media = () => {
           <Col lg={6} mt="2rem">
             <div
               class="g-ytsubscribe"
+              title="Subscribe to SquizzFilms on YouTube"
               data-channel="SquizzFilms"
               data-layout="full"
               data-count="default"
@@ -141,6 +142,7 @@ const Media = () => {
           <Col lg={6} mt="2rem">
             <div
               class="g-ytsubscribe"
+              title="Subscribe to JaydenHarrod on YouTube"
               data-channelid="UCOdFl-yPqum9818JPntA6DQ"
               data-layout="full"
               data-count="default"
