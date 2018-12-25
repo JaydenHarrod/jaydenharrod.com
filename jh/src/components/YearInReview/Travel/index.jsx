@@ -68,6 +68,7 @@ const Travel = () => {
             <>
               <Image
                 onClick={flick}
+                alt="Image of tall ship"
                 src="http://i3.ytimg.com/vi/aguE5W3kHXU/maxresdefault.jpg"
                 playIcon
               />

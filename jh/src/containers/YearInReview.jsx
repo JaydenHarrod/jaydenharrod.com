@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link as RouteLink } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { Footer, Anchor, Paragraph, Row, Col, Header } from '../shared';
 import Finance from '../components/YearInReview/Finance';
@@ -26,8 +25,6 @@ const scrollTo = selector => e => {
     behavior: 'smooth'
   });
 };
-
-const MenuLink = Anchor.withComponent(RouteLink);
 
 const YearInReview = () => {
   return (
@@ -76,17 +73,6 @@ const YearInReview = () => {
               <Anchor block onClick={scrollTo('#finance')}>
                 Finance
               </Anchor>
-              <Anchor
-                block
-                href="https://twitter.com/jaydenharrod"
-                target="_blank"
-                mb="2rem"
-              >
-                Follow on Twitter
-              </Anchor>
-              <MenuLink to="/" title="Navigate to Home">
-                {`↩️ Back to About`}
-              </MenuLink>
             </Col>
           </SideMenu>
         </Col>

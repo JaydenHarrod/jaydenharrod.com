@@ -87,7 +87,7 @@ export const Header = ({ full }) => {
           🎥
         </span>
         <span>
-          <span style={{ color: 'red' }}>New:</span>
+          <span style={{ color: '#e00000' }}>New:</span>
           <MenuLink
             to="/2018"
             mt="0"

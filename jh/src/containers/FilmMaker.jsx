@@ -27,7 +27,7 @@ const RenderVideo = ({ videoSrc, imageSrc, title }) => {
       <Switch>
         {({ on, flick }) => (
           <>
-            <Image onClick={flick} src={imageSrc} />
+            <Image onClick={flick} src={imageSrc} alt={title} />
             {on && (
               <Modal onRequestClose={flick}>
                 <Video src={videoSrc} title={title} />

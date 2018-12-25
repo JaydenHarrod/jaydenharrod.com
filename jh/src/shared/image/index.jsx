@@ -26,10 +26,10 @@ const PlayIcon = styled.div`
   cursor: pointer;
 `;
 
-export const Image = ({ height, src, onClick, playIcon }) => {
+export const Image = ({ height, src, onClick, playIcon, alt }) => {
   return (
     <>
-      <ImageBox height={height} src={src} onClick={onClick} />
+      <ImageBox height={height} src={src} onClick={onClick} alt={alt} />
       {playIcon && <PlayIcon onClick={onClick} />}
     </>
   );
