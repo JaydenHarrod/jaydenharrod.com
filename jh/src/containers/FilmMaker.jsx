@@ -11,8 +11,34 @@ import {
   Header,
   Container,
   Col,
-  Row
+  Image,
+  Row,
+  Modal,
+  Switch,
+  HeadingTwo
 } from '../shared';
+
+const RenderVideo = ({ videoSrc, imageSrc, title }) => {
+  return (
+    <div style={{ postion: 'relative' }}>
+      <Paragraph bold mb="0.5rem">
+        {title}
+      </Paragraph>
+      <Switch>
+        {({ on, flick }) => (
+          <>
+            <Image onClick={flick} src={imageSrc} />
+            {on && (
+              <Modal onRequestClose={flick}>
+                <Video src={videoSrc} title={title} />
+              </Modal>
+            )}
+          </>
+        )}
+      </Switch>
+    </div>
+  );
+};
 
 const FilmMaker = () => {
   return (
@@ -55,25 +81,31 @@ const FilmMaker = () => {
             <Label text="Documentary" />
             <Label text="Social Media" />
             <Label text="Ads" />
-            <Video
-              src="https://player.vimeo.com/video/251011540"
-              title="Soho promotional video"
+            <HeadingTwo>Tap an image to play</HeadingTwo>
+            <RenderVideo
+              imageSrc="https://i.vimeocdn.com/video/677248506.webp?mw=2200&mh=1238&q=70"
+              videoSrc="https://player.vimeo.com/video/251011540"
+              title="Sohoapp promotional launch #ad | sohoapp.com"
             />
-            <Video
-              src="https://player.vimeo.com/video/251011915"
-              title="Will and Steve cooking video"
+            <RenderVideo
+              imageSrc="https://i.vimeocdn.com/video/677249032.webp?mw=2200&mh=1238&q=70"
+              videoSrc="https://player.vimeo.com/video/251011915"
+              title="Will and Steve in the kitchen social short | lenovo.com.au"
             />
-            <Video
-              src="https://player.vimeo.com/video/202331004"
-              title="WipeHero documentary video"
+            <RenderVideo
+              imageSrc="https://i.vimeocdn.com/video/616335173.webp?mw=1400&mh=788&q=70"
+              videoSrc="https://player.vimeo.com/video/202331004"
+              title="WipeHero INCUBATE documentary | wipehero.com.au"
             />
-            <Video
-              src="https://player.vimeo.com/video/251011507"
-              title="A month of timelapse footage"
+            <RenderVideo
+              imageSrc="https://i.vimeocdn.com/video/677248431.webp?mw=1400&mh=788&q=70"
+              videoSrc="https://player.vimeo.com/video/251011507"
+              title="Timelapse showreel"
             />
-            <Video
-              src="https://player.vimeo.com/video/251011370"
-              title="Umina beach cinematography"
+            <RenderVideo
+              imageSrc="https://i.vimeocdn.com/video/677248275.webp?mw=1400&mh=788&q=70"
+              videoSrc="https://player.vimeo.com/video/251011370"
+              title="Umina Beach Sony cinematics"
             />
           </Col>
         </Row>

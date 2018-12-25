@@ -16,3 +16,5 @@ export {
   TinyText
 } from './typography';
 export { Video } from './video';
+export { Switch } from './switch';
+export { Modal } from './modal';

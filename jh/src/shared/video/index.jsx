@@ -6,7 +6,6 @@ const VideoFrame = styled.div`
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
   padding-top: 25px;
-  height: 0;
   ${space}
   iframe {
     position: absolute;
@@ -21,11 +20,9 @@ export const Video = ({ src, title, ...rest }) => {
   return (
     <VideoFrame {...rest}>
       <iframe
-        width="720px"
-        height="405px"
+        src={src}
         title={title}
         frameBorder="0"
-        src={src}
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       />
