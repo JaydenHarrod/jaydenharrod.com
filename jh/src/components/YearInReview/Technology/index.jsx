@@ -35,14 +35,14 @@ const Technology = () => {
         <Stats title="UPLOADED ⬆️" metric="78.98GB" />
       </Card>
       <Card header title="Github" pt={0}>
-        <Stats title="CONTRIBUTIONS" metric="730" />
+        <Stats title="CONTRIBUTIONS" metric="752" />
       </Card>
       <Card header title="Instagram" pt={0}>
         <Row justifyContent="space-between" pl="1rem" pr="1rem" mb="1rem">
           <Stats title="NEW PHOTOS" metric="35" />
           <Stats
             title="LIKES"
-            metric="2,370"
+            metric="2,375"
             fact="(67.68 avg likes per photo)"
           />
         </Row>
