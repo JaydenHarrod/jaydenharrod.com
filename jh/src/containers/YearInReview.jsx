@@ -1,13 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
-import { Footer, Anchor, Paragraph, Row, Col, Header } from '../shared';
+import { Footer, Anchor, Paragraph, Row, Col } from '../shared';
 import Finance from '../components/YearInReview/Finance';
 import Travel from '../components/YearInReview/Travel';
 import Technology from '../components/YearInReview/Technology';
 import Media from '../components/YearInReview/Media';
 import Activity from '../components/YearInReview/Activity';
 import Summary from '../components/YearInReview/Summary';
+import Music from '../components/YearInReview/Music';
 
 const SideMenu = styled.div`
   padding-top: 1rem;
@@ -39,7 +40,6 @@ const YearInReview = () => {
         />
         <script src="https://apis.google.com/js/platform.js" />
       </Helmet>
-      <Header full />
       <Row justifyContent="center">
         <Col
           xs={0}
@@ -70,18 +70,25 @@ const YearInReview = () => {
               <Anchor block onClick={scrollTo('#technology')}>
                 Technology
               </Anchor>
+              <Anchor block onClick={scrollTo('#music')}>
+                Music
+              </Anchor>
               <Anchor block onClick={scrollTo('#finance')}>
                 Finance
+              </Anchor>
+              <Anchor block href="/">
+                Go to Home ↩️
               </Anchor>
             </Col>
           </SideMenu>
         </Col>
-        <Col xs={12} sm={10} md={8} lg={8} order={{ xs: 2, lg: 1 }}>
+        <Col xs={12} sm={8} md={6} order={{ xs: 2, lg: 1 }}>
           <Summary />
           <Activity />
           <Media />
           <Travel />
           <Technology />
+          <Music />
           <Finance />
           <Footer />
         </Col>

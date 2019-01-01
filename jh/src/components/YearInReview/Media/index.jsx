@@ -82,10 +82,10 @@ const Media = () => {
             pb={0}
             style={{ minHeight: '526px' }}
           >
-            <Stats title="EPISODES WATCHED" metric="367" />
+            <Stats title="EPISODES WATCHED" metric="384" />
             <Stats
               title="EST HOURS WATCHED"
-              metric="146"
+              metric="150"
               fact="(6 full days binged)"
             />
             <Paragraph bold mb="1rem">

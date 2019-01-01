@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link as RouteLink } from 'react-router-dom';
-import { Row, Col } from '../layout';
+import { Row, Col, Container } from '../layout';
 import { Anchor } from '../typography';
 import logo from '../../components/images/logo.png';
 
@@ -42,65 +42,67 @@ const Logo = styled.img`
 
 export const Header = ({ full }) => {
   return (
-    <StyledRow full={full}>
-      <StyledCol xs={12}>
-        <MenuLink to="/" mt={0}>
-          <Logo src={logo} alt="Navigate Home" />
-        </MenuLink>
-        <span>
-          <MenuLink
-            to="/"
-            mt="0"
-            ml="1rem"
-            mr="0.3rem"
-            mb="0.5rem"
-            title="Navigate Home"
-          >
-            About
+    <Container>
+      <StyledRow full={full}>
+        <StyledCol xs={12}>
+          <MenuLink to="/" mt={0}>
+            <Logo src={logo} alt="Navigate Home" />
           </MenuLink>
-          🏠
-        </span>
-        <span>
-          <MenuLink
-            to="/projects"
-            mt="0"
-            ml="1rem"
-            mr="0.3rem"
-            mb="0.5rem"
-            title="Navigate to Projects"
-          >
-            Projects
-          </MenuLink>
-          👨‍💻
-        </span>
-        <span>
-          <MenuLink
-            to="/filmmaker"
-            mt="0"
-            ml="1rem"
-            mr="0.3rem"
-            mb="0.5rem"
-            title="Navigate to Film Maker"
-          >
-            Film Maker
-          </MenuLink>
-          🎥
-        </span>
-        <span>
-          <span style={{ color: '#e00000' }}>New:</span>
-          <MenuLink
-            to="/2018"
-            mt="0"
-            ml="0.3rem"
-            mr="0.3rem"
-            mb="0.5rem"
-            title="Navigate to Year In Review"
-          >
-            Year In Review
-          </MenuLink>
-          📅
-        </span>
-      </StyledCol>
-    </StyledRow>
+          <span>
+            <MenuLink
+              to="/"
+              mt="0"
+              ml="1rem"
+              mr="0.3rem"
+              mb="0.5rem"
+              title="Navigate Home"
+            >
+              About
+            </MenuLink>
+            🏠
+          </span>
+          <span>
+            <MenuLink
+              to="/projects"
+              mt="0"
+              ml="1rem"
+              mr="0.3rem"
+              mb="0.5rem"
+              title="Navigate to Projects"
+            >
+              Projects
+            </MenuLink>
+            👨‍💻
+          </span>
+          <span>
+            <MenuLink
+              to="/filmmaker"
+              mt="0"
+              ml="1rem"
+              mr="0.3rem"
+              mb="0.5rem"
+              title="Navigate to Film Maker"
+            >
+              Film Maker
+            </MenuLink>
+            🎥
+          </span>
+          <span>
+            <span style={{ color: '#e00000' }}>New:</span>
+            <MenuLink
+              to="/2018"
+              mt="0"
+              ml="0.3rem"
+              mr="0.3rem"
+              mb="0.5rem"
+              title="Navigate to Year In Review"
+            >
+              Year In Review
+            </MenuLink>
+            📅
+          </span>
+        </StyledCol>
+      </StyledRow>
+    </Container>
   );
 };
