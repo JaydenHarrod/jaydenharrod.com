@@ -7,7 +7,7 @@ const baseTheme = {
   info: 'rgb(34, 166, 179)',
   black: 'rgb(0, 0, 0)',
   darkGrey: 'rgb(100, 100, 100)',
-  grey: 'rgb(175, 175, 175)',
+  grey: 'rgb(200, 200, 200)',
   lightGrey: 'rgb(244,248,250)',
   white: 'rgb(255, 255, 255)',
   fontFamily:

@@ -11,9 +11,9 @@ export const Container = styled.div`
 `;
 
 export const Row = styled(RFRow)`
-  ${space}
+  ${space};
 `;
 
 export const Col = styled(RFCol)`
-  ${space}
+  ${space};
 `;

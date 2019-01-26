@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { HeadingOne, Card, Stats, Row } from '../../../shared';
+import { HeadingOne, Card, Stats, Row, Col, Anchor } from '../../../shared';
 import ig1 from './images/1.jpg';
 import ig2 from './images/2.jpg';
 import ig3 from './images/3.jpg';
@@ -28,30 +28,48 @@ const Technology = () => {
           💻
         </span>
       </HeadingOne>
-      <Card header title="Whatpulse" pt={0}>
-        <Stats title="KEYS ⌨️" metric="3,374,383" />
-        <Stats title="CLICKS 🖱" metric="2,282,244" />
-        <Stats title="DOWNLOADED ⬇️" metric="1.5TB" />
-        <Stats title="UPLOADED ⬆️" metric="78.98GB" />
-      </Card>
-      <Card header title="Github" pt={0}>
-        <Stats title="CONTRIBUTIONS" metric="752" />
-      </Card>
-      <Card header title="Instagram" pt={0}>
-        <Row justifyContent="space-between" pl="1rem" pr="1rem" mb="1rem">
-          <Stats title="NEW PHOTOS" metric="35" />
-          <Stats
-            title="LIKES"
-            metric="2,375"
-            fact="(67.68 avg likes per photo)"
-          />
+      <Card header title="Whatpulse" pt={0} ml="1rem" mr="1rem">
+        <Row justifyContent="space-between">
+          <Stats title="KEYS ⌨️" metric="3,374,383" />
+          <Stats title="CLICKS 🖱" metric="2,282,244" />
+          <Stats title="DOWNLOADED ⬇️" metric="1.5TB" />
+          <Stats title="UPLOADED ⬆️" metric="78.98GB" />
         </Row>
+      </Card>
+      <Row justifyContent="space-evenly" gutter="1rem">
+        <Col xs={12} md={6} lg={6} order={{ xs: 2, lg: 1 }}>
+          <Card header title="Github" pt={0} pb="1rem">
+            <Stats title="CONTRIBUTIONS" metric="752" />
+          </Card>
+        </Col>
+        <Col xs={12} md={6} lg={6} order={{ xs: 2, lg: 1 }}>
+          <Card header title="Instagram" pt={0} ml="1rem" mr="1rem">
+            <Row justifyContent="space-between" alignItems="top">
+              <Stats title="PHOTOS POSTED" metric="35" />
+              <Stats title="LIKES" metric="2,375" />
+            </Row>
+          </Card>
+        </Col>
+      </Row>
+      <Card header title="@jaydenharrod">
         <Row justifyContent="center" pl="1rem" pr="1rem">
           <Image alt="ig-photo" src={ig1} />
           <Image alt="ig-photo" src={ig4} />
           <Image alt="ig-photo" src={ig2} />
           <Image alt="ig-photo" src={ig5} />
           <Image alt="ig-photo" src={ig3} />
+        </Row>
+      </Card>
+      <Card header title="Todoist" pt={0} ml="1rem" mr="1rem">
+        <Row justifyContent="space-between">
+          <Stats title="TASKS" metric="871" />
+          <Stats title="KARMA POINTS" metric="4,061" />
+          <Stats title="LEADERBOARD" metric="TOP 14%" />
+        </Row>
+        <Row justifyContent="center">
+          <Anchor href="https://todoist.com/review/2018/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJjQ3hsSEdiVSIsInVpZCI6NzI4ODk1NywieWVhciI6MjAxOH0.voIbruxMAflDQiOXT2tmkfUXipkwE6uQISNzMuP257o">
+            Take a look at my 2018 productivity report from Todoist
+          </Anchor>
         </Row>
       </Card>
     </>

@@ -11,11 +11,11 @@ const routeComponents = routes.map(({ path, component }, key) => (
 
 const Global = createGlobalStyle`
   body {
-    width: 100%;
-    height: 100%;
-    color: ${props => props.theme.text};
+    margin: 0;
+    padding: 0;
     background-color: ${props => props.theme.background};
     font-family: ${props => props.theme.fontFamily};
+    color: ${props => props.theme.text};
   }
 `;
 

@@ -126,22 +126,6 @@ const Media = () => {
           <Col lg={6} mt="2rem">
             <div
               class="g-ytsubscribe"
-              title="Subscribe to SquizzFilms on YouTube"
-              data-channel="SquizzFilms"
-              data-layout="full"
-              data-count="default"
-            />
-            <Stats
-              title="WATCH TIME (mins)"
-              metric="152K"
-              fact="(more than the duration of winter)"
-            />
-            <Stats title="VIEWS" metric="75K" />
-            <Stats title="SUBSCRIBERS" metric="-116" />
-          </Col>
-          <Col lg={6} mt="2rem">
-            <div
-              class="g-ytsubscribe"
               title="Subscribe to JaydenHarrod on YouTube"
               data-channelid="UCOdFl-yPqum9818JPntA6DQ"
               data-layout="full"
@@ -154,6 +138,22 @@ const Media = () => {
             />
             <Stats title="VIEWS" metric="40K" />
             <Stats title="SUBSCRIBERS" metric="+304" />
+          </Col>
+          <Col lg={6} mt="2rem">
+            <div
+              class="g-ytsubscribe"
+              title="Subscribe to SquizzFilms on YouTube"
+              data-channel="SquizzFilms"
+              data-layout="full"
+              data-count="default"
+            />
+            <Stats
+              title="WATCH TIME (mins)"
+              metric="152K"
+              fact="(more than the duration of winter)"
+            />
+            <Stats title="VIEWS" metric="75K" />
+            <Stats title="SUBSCRIBERS" metric="-116" />
           </Col>
         </Row>
       </Card>

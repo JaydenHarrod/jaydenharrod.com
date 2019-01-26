@@ -16,14 +16,14 @@ const Music = () => {
       </HeadingOne>
       <Card header title="Allsides">
         <Paragraph mt={0}>
-          I release hard dance music under the alias Allsides and 2018 was the
-          kick off. I released my first single followed by a 12 track album
-          avaliable on all major portals. Listen below on Spotify!
+          In 2018 I kick started my hard dance music alias Allsides. I released
+          my first single followed by a 12 track album avaliable on all major
+          portals.
         </Paragraph>
         <iframe
           src="https://open.spotify.com/embed/album/6a6fFUtrcQZzyMaDrgPnR2"
           title="Spotify album embed"
-          width="300"
+          width="100%"
           height="380"
           frameBorder="0"
           allowTransparency="true"
