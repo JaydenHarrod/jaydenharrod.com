@@ -34,7 +34,6 @@ const Travel = () => {
           ✈️
         </span>
       </HeadingOne>
-
       <Card header title="Most Visited" pl="2rem" pb={0}>
         <Row justifyContent="center">
           <TopCitiesBox city="Sydney" src={sydney} />
@@ -49,12 +48,20 @@ const Travel = () => {
           <TopCitiesBox city="Clovelly" src={clovelly} />
         </Row>
       </Card>
-      <Card header title="All-time" pl="1rem">
+      <Card header title="2018 location data" pl="1rem">
+        <Row justifyContent="center" mt="0.5rem" mb={0}>
+          <MetricBox title="COUNTRIES" metric="1" />
+          <MetricBox title="CITIES" metric="27" />
+          <MetricBox title="PLACES" metric="36" />
+          <MetricBox title="DISTANCE" metric="15,869 km" />
+        </Row>
+      </Card>
+      <Card header title="All-time location data" pl="1rem">
         <Row justifyContent="center" mt="0.5rem" mb={0}>
           <MetricBox title="COUNTRIES" metric="6" />
           <MetricBox title="CITIES" metric="128" />
           <MetricBox title="PLACES" metric="375" />
-          <MetricBox title="DISTANCE" metric="537,855" />
+          <MetricBox title="DISTANCE" metric="537,855 km" />
         </Row>
       </Card>
       <Card

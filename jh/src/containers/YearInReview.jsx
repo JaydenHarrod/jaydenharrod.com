@@ -53,7 +53,7 @@ const YearInReview = () => {
           <SideMenu>
             <Col>
               <Paragraph bold mt={0}>
-                Jump to section
+                Chapters
               </Paragraph>
               <Anchor block onClick={scrollTo('#summary')}>
                 Summary
@@ -77,12 +77,18 @@ const YearInReview = () => {
                 Finance
               </Anchor>
               <Anchor block href="/">
-                Go to Home ↩️
+                ↩️ Home
               </Anchor>
             </Col>
           </SideMenu>
         </Col>
-        <Col xs={12} sm={8} md={6} order={{ xs: 2, lg: 1 }}>
+        <Col
+          alignItems="center"
+          xs={12}
+          sm={10}
+          md={8}
+          order={{ xs: 2, lg: 1 }}
+        >
           <Summary />
           <Activity />
           <Media />
