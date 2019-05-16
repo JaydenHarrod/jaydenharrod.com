@@ -74,9 +74,9 @@ const Home = () => {
               block
               rel="noreferrer"
               target="_blank"
-              href="https://hipages.com.au"
+              href="https://mudbath.com.au"
             >
-              I'm a web developer at hipages.com.au
+              I'm a web developer at mudbath.com.au
             </Anchor>
             <Anchor
               block
@@ -84,7 +84,7 @@ const Home = () => {
               target="_blank"
               href="https://youtube.com/jaydenharrod"
             >
-              Recording developer, minimalism, and travel videos for YouTube
+              Posting developer, minimalism, and travel videos for YouTube
             </Anchor>
             <Anchor
               block
