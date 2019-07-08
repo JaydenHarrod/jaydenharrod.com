@@ -70,14 +70,7 @@ const Home = () => {
               <ReactTextRotator content={content} time={3500} startDelay={0} />
             </HeadingOne>
             <Paragraph bold>{`Hello 👋`}</Paragraph>
-            <Anchor
-              block
-              rel="noreferrer"
-              target="_blank"
-              href="https://mudbath.com.au"
-            >
-              I'm a web developer at mudbath.com.au
-            </Anchor>
+              I'm a frontend developer from #Newy
             <Anchor
               block
               rel="noreferrer"

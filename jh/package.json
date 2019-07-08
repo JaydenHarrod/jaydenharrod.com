@@ -8,21 +8,21 @@
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-flexa": "^0.8.3",
-    "react-focus-lock": "^1.17.6",
+    "react-flexa": "^0.9.0",
+    "react-focus-lock": "^2.0.3",
     "react-helmet": "^5.2.0",
     "react-loadable": "^5.5.0",
-    "react-router-dom": "^4.3.1",
-    "react-scrolllock": "^3.0.2",
+    "react-router-dom": "^5.0.1",
+    "react-scrolllock": "^4.0.1",
     "react-text-rotator": "^0.0.5",
     "recharts": "^1.4.1",
     "styled-components": "^4.1.2",
     "styled-normalize": "^8.0.4",
-    "styled-spinkit": "^0.4.0",
-    "styled-system": "^3.1.11"
+    "styled-spinkit": "^0.7.3",
+    "styled-system": "^5.0.12"
   },
   "devDependencies": {
-    "react-scripts": "2.1.1",
+    "react-scripts": "3.0.1",
     "rimraf": "^2.6.2"
   },
   "scripts": {
