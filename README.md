@@ -1,6 +1,6 @@
 # jaydenharrod.com
 
-Portfolio Website - Built In React Using Responsive Web
+Portfolio Website
 
 ## Technology
 
