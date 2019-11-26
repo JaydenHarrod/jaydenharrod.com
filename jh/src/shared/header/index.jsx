@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Link as RouteLink } from 'react-router-dom';
-import { Row, Col, Container } from '../layout';
-import { Anchor } from '../typography';
-import logo from '../../components/images/logo.png';
+import React from "react";
+import styled from "styled-components";
+import { Link as RouteLink } from "react-router-dom";
+import { Row, Col, Container } from "../layout";
+import { Anchor } from "../typography";
+import logo from "../../components/images/logo.png";
 
 const MenuLink = Anchor.withComponent(RouteLink);
 
@@ -11,9 +11,9 @@ const StyledRow = styled(Row)`
   display: flex;
   align-items: center;
   padding: 1rem;
-  background-color: ${props => (props.full ? '#fff' : 'inherit')};
+  background-color: ${props => (props.full ? "#fff" : "inherit")};
   box-shadow: ${props =>
-    props.full ? '0px 2px 6px rgb(175, 175, 175)' : 'none'};
+    props.full ? "0px 2px 6px rgb(175, 175, 175)" : "none"};
 `;
 
 const StyledCol = styled(Col)`
@@ -40,7 +40,13 @@ const Logo = styled.img`
   }
 `;
 
-export const Header = ({ full }) => {
+const MobileNav = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+export const Header = ({ props, full }) => {
+  console.log('props', props)
   return (
     <Container>
       <StyledRow full={full}>
@@ -48,7 +54,7 @@ export const Header = ({ full }) => {
           <MenuLink to="/" mt={0}>
             <Logo src={logo} alt="Navigate Home" />
           </MenuLink>
-          <span>
+          <MobileNav>
             <MenuLink
               to="/"
               mt="0"
@@ -57,24 +63,9 @@ export const Header = ({ full }) => {
               mb="0.5rem"
               title="Navigate Home"
             >
-              About
+              Home
             </MenuLink>
-            🏠
-          </span>
-          <span>
-            <MenuLink
-              to="/projects"
-              mt="0"
-              ml="1rem"
-              mr="0.3rem"
-              mb="0.5rem"
-              title="Navigate to Projects"
-            >
-              Projects
-            </MenuLink>
-            👨‍💻
-          </span>
-          <span>
+
             <MenuLink
               to="/filmmaker"
               mt="0"
@@ -85,22 +76,18 @@ export const Header = ({ full }) => {
             >
               Film Maker
             </MenuLink>
-            🎥
-          </span>
-          <span>
-            <span style={{ color: '#e00000' }}>New:</span>
+
             <MenuLink
               to="/2018"
               mt="0"
-              ml="0.3rem"
+              ml="1rem"
               mr="0.3rem"
               mb="0.5rem"
               title="Navigate to Year In Review"
             >
-              Year In Review
+              2018
             </MenuLink>
-            📅
-          </span>
+          </MobileNav>
         </StyledCol>
       </StyledRow>
     </Container>

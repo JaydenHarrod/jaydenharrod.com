@@ -6,8 +6,6 @@ import {
   Row,
   Col,
   HeadingOne,
-  Paragraph,
-  Anchor,
   Header,
   Footer,
   Image,
@@ -64,47 +62,11 @@ const Home = () => {
       </Helmet>
       <Header />
       <Card pl="1rem" pr="1rem" p="2rem">
-        <Row pl="1rem" pr="1rem">
+        <Row justifyContent="center" pl="1rem" pr="1rem">
           <Col xs={12} md={6}>
-            <HeadingOne mt={0}>
+            <HeadingOne center mt={0} mb={3}>
               <ReactTextRotator content={content} time={3500} startDelay={0} />
             </HeadingOne>
-            <Paragraph bold>{`Hello 👋`}</Paragraph>
-              I'm a frontend developer from #Newy
-            <Anchor
-              block
-              rel="noreferrer"
-              target="_blank"
-              href="https://youtube.com/jaydenharrod"
-            >
-              Posting developer, minimalism, and travel videos for YouTube
-            </Anchor>
-            <Anchor
-              block
-              rel="noreferrer"
-              target="_blank"
-              href="https://github.com/jaydenharrod"
-            >
-              Coding web apps on Github
-            </Anchor>
-            <Anchor
-              block
-              rel="noreferrer"
-              target="_blank"
-              href="https://instagram.com/jaydenharrod"
-            >
-              Sharing travel photos on Instagram
-            </Anchor>
-            <Anchor
-              block
-              rel="noreferrer"
-              target="_blank"
-              href="https://soundcloud.com/allsidesdj"
-            >
-              Producing Hardstyle music
-            </Anchor>
-          </Col>
-          <Col xs={12} md={6}>
             <Image src={hero} height="auto" width="362" alt="Profile picture" />
           </Col>
         </Row>

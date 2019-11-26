@@ -58,7 +58,7 @@ const FinancePieChart = () => {
           fill="#8884d8"
         >
           {data.map((entry, index) => (
-            <Cell fill={COLORS[index % COLORS.length]} />
+            <Cell key={index} fill={COLORS[index % COLORS.length]} />
           ))}
         </Pie>
         <Legend />

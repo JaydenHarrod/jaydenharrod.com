@@ -5,7 +5,7 @@ import { space } from 'styled-system';
 const ImageBox = styled.img`
   max-width: 100%;
   min-height: 120px;
-  height: ${props => (props.height ? props.height : 'auto')};
+  height: ${props => (props.height ? props.height : 'unset')};
   background-image: ${props => props.url};
   transition: all 0.4s ease-in-out;
   cursor: pointer;

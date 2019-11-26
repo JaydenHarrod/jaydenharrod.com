@@ -77,7 +77,7 @@ const YearInReview = () => {
                 Finance
               </Anchor>
               <Anchor block href="/">
-                ↩️ Home
+                <span role="img" aria-label="back button">↩️ </span>Home
               </Anchor>
             </Col>
           </SideMenu>

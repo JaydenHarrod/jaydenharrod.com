@@ -4,7 +4,7 @@ import { TinyText, Anchor } from '../typography';
 export const Footer = () => {
   return (
     <TinyText center mb="1rem">
-      &copy; Jayden Harrod -{' '}
+      &copy; Jayden Harrod {' '}
       <Anchor
         mr="0.3rem"
         rel="noopener"
@@ -44,14 +44,6 @@ export const Footer = () => {
         href="https://medium.com/@jaydenharrod"
       >
         Medium
-      </Anchor>
-      <Anchor
-        mr="0.3rem"
-        rel="noopener"
-        target="_blank"
-        href="https://linkedin.com/in/jaydenharrod"
-      >
-        LinkedIn
       </Anchor>
       <Anchor
         mr="0.3rem"
