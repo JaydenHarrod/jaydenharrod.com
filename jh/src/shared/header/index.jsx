@@ -46,7 +46,7 @@ const MobileNav = styled.div`
 `;
 
 export const Header = ({ props, full }) => {
-  console.log('props', props)
+  const activePath = window.location.pathname;
   return (
     <Container>
       <StyledRow full={full}>
@@ -62,6 +62,7 @@ export const Header = ({ props, full }) => {
               mr="0.3rem"
               mb="0.5rem"
               title="Navigate Home"
+              active={activePath === "/" ? true : false}
             >
               Home
             </MenuLink>
@@ -73,6 +74,7 @@ export const Header = ({ props, full }) => {
               mr="0.3rem"
               mb="0.5rem"
               title="Navigate to Film Maker"
+              active={activePath === "/filmmaker" ? true : false}
             >
               Film Maker
             </MenuLink>
@@ -84,8 +86,9 @@ export const Header = ({ props, full }) => {
               mr="0.3rem"
               mb="0.5rem"
               title="Navigate to Year In Review"
+              active={activePath === "/2018" ? true : false}
             >
-              2018
+              Year-In-Review
             </MenuLink>
           </MobileNav>
         </StyledCol>

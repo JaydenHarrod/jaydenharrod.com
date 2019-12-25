@@ -1,14 +1,22 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Helmet } from 'react-helmet';
-import { Footer, Anchor, Paragraph, Row, Col } from '../shared';
-import Finance from '../components/YearInReview/Finance';
-import Travel from '../components/YearInReview/Travel';
-import Technology from '../components/YearInReview/Technology';
-import Media from '../components/YearInReview/Media';
-import Activity from '../components/YearInReview/Activity';
-import Summary from '../components/YearInReview/Summary';
-import Music from '../components/YearInReview/Music';
+import React from "react";
+import styled from "styled-components";
+import { Helmet } from "react-helmet";
+import {
+  Footer,
+  Anchor,
+  Paragraph,
+  Row,
+  Col,
+  Header,
+  Container
+} from "../shared";
+import Finance from "../components/YearInReview/Finance";
+import Travel from "../components/YearInReview/Travel";
+import Technology from "../components/YearInReview/Technology";
+import Media from "../components/YearInReview/Media";
+import Activity from "../components/YearInReview/Activity";
+import Summary from "../components/YearInReview/Summary";
+import Music from "../components/YearInReview/Music";
 
 const SideMenu = styled.div`
   padding-top: 1rem;
@@ -23,9 +31,14 @@ const scrollTo = selector => e => {
   e && e.preventDefault();
   window.scrollTo({
     top: document.querySelector(selector).offsetTop - 0,
-    behavior: 'smooth'
+    behavior: "smooth"
   });
 };
+
+const Border = styled.div`
+  box-shadow: 2px 3px 4px ${props => props.theme.grey};
+  border-top: 1px solid ${props => props.theme.grey};
+`;
 
 const YearInReview = () => {
   return (
@@ -40,14 +53,18 @@ const YearInReview = () => {
         />
         <script src="https://apis.google.com/js/platform.js" />
       </Helmet>
+      <Container>
+        <Header />
+      </Container>
+      <Border />
       <Row justifyContent="center">
         <Col
           xs={0}
           md={2}
           style={{
-            position: 'sticky',
-            alignSelf: 'flex-start',
-            top: '0'
+            position: "sticky",
+            alignSelf: "flex-start",
+            top: "0"
           }}
         >
           <SideMenu>
@@ -55,29 +72,32 @@ const YearInReview = () => {
               <Paragraph bold mt={0}>
                 Chapters
               </Paragraph>
-              <Anchor block onClick={scrollTo('#summary')}>
+              <Anchor block onClick={scrollTo("#summary")}>
                 Summary
               </Anchor>
-              <Anchor block onClick={scrollTo('#activity')}>
+              <Anchor block onClick={scrollTo("#activity")}>
                 Activity
               </Anchor>
-              <Anchor block onClick={scrollTo('#media')}>
+              <Anchor block onClick={scrollTo("#media")}>
                 Media
               </Anchor>
-              <Anchor block onClick={scrollTo('#travel')}>
+              <Anchor block onClick={scrollTo("#travel")}>
                 Travel
               </Anchor>
-              <Anchor block onClick={scrollTo('#technology')}>
+              <Anchor block onClick={scrollTo("#technology")}>
                 Technology
               </Anchor>
-              <Anchor block onClick={scrollTo('#music')}>
+              <Anchor block onClick={scrollTo("#music")}>
                 Music
               </Anchor>
-              <Anchor block onClick={scrollTo('#finance')}>
+              <Anchor block onClick={scrollTo("#finance")}>
                 Finance
               </Anchor>
               <Anchor block href="/">
-                <span role="img" aria-label="back button">↩️ </span>Home
+                <span role="img" aria-label="back button">
+                  ↩️{" "}
+                </span>
+                Home
               </Anchor>
             </Col>
           </SideMenu>

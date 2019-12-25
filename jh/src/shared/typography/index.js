@@ -39,9 +39,9 @@ export const Anchor = styled.a`
   display: ${props => (props.block ? 'block' : '')};
   text-align: ${props => (props.center ? 'center' : 'left')};
   font-weight: ${props => (props.bold ? '600' : 'normal')};
-  color: ${props => props.theme.darkGrey};
-  cursor: pointer;
+  color: ${props => props.active ? props.theme.text : props.theme.darkGrey};
   text-decoration: none;
+  cursor: pointer;
   ${space};
   :hover {
     color: ${props => props.theme.text};

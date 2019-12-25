@@ -1,10 +1,10 @@
-import React from 'react';
-import styled from 'styled-components';
-import { space } from 'styled-system';
+import React from "react";
+import styled from "styled-components";
+import { space } from "styled-system";
 
 const StyledButton = styled.a`
   display: block;
-  width: ${props => (props.width ? props.width : '')};
+  width: ${props => (props.width ? props.width : "")};
   border-radius: 4px;
   padding: 0.5rem 1rem;
   text-align: center;
@@ -23,7 +23,7 @@ const StyledButton = styled.a`
 
 export const Button = ({ children, width, src, target }) => {
   return (
-    <StyledButton width={width} href={src} target={target ? target : '_blank'}>
+    <StyledButton width={width} href={src} target={target ? target : "_blank"}>
       {children}
     </StyledButton>
   );
