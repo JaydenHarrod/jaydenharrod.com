@@ -16,13 +16,7 @@ const Music = () => {
     <>
       <div id="music" />
       <HeadingOne center mt="2rem" mb="2rem">
-        <span role="img" aria-label="related-emoji">
-          🎹
-        </span>{" "}
-        Media{" "}
-        <span role="img" aria-label="related-emoji">
-          🎹
-        </span>
+        Digital Creator
       </HeadingOne>
       <Card header title="YouTube" pt={0}>
         <Row mb="1rem">
@@ -52,8 +46,8 @@ const Music = () => {
           </Col>
         </Row>
       </Card>
-      <Card header inverse title="Allsides" pb={0}>
-        <Paragraph inverse mt={0}>
+      <Card header title="Allsides">
+        <Paragraph mt={0}>
           Progress on my music alias Allsides was slow this year. I spent a lot
           of time relearning sound design and composition. By far the biggest
           improvement was using NimbleKick VST for automatic kick pitching,
@@ -68,10 +62,6 @@ const Music = () => {
           allowTransparency="true"
           allow="encrypted-media"
         />
-      </Card>
-      <Card header inverse title="Spotify" pt={0} pb={0}>
-        <Image src={wrapped} />
-        <Image src={decade} />
       </Card>
     </>
   );

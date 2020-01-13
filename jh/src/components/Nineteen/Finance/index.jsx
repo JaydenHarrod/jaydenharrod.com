@@ -7,15 +7,21 @@ const Finance = () => {
     <>
       <div id="finance" />
       <HeadingOne center mb="2rem" mt="2rem">
-        <span role="img" aria-label="related-emoji">
-          💰
-        </span>{" "}
-        Finances{" "}
-        <span role="img" aria-label="related-emoji">
-          💰
-        </span>
+        Finance
       </HeadingOne>
       <Card header title="Expenses">
+        <MetricBox
+          vertical
+          color="rgb(36, 101, 65)"
+          title="income increased"
+          metric="38%"
+        />
+        <MetricBox
+          vertical
+          color="rgb(36, 101, 65)"
+          title="car purchased"
+          metric="$10,000"
+        />
         <MetricBox
           vertical
           color="rgb(101, 36, 36)"
@@ -27,12 +33,6 @@ const Finance = () => {
           color="rgb(101, 36, 36)"
           title="monthly avg"
           metric="$4,300"
-        />
-        <MetricBox
-          vertical
-          color="rgb(101, 36, 36)"
-          title="car purchased"
-          metric="$10,000"
         />
         <MetricBox
           vertical

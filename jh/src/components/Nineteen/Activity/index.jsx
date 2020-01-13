@@ -1,7 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 
-import { Card, HeadingOne, Paragraph, Row } from "../../../shared";
+import {
+  Card,
+  HeadingOne,
+  Paragraph,
+  Row,
+  Stats,
+  Anchor
+} from "../../../shared";
 import TopCitiesBox from "../../YearInReview/Travel/TopCitiesBox";
 import sydney from "./cities/sydney.jpg";
 import newcastle from "./cities/newcastle.jpg";
@@ -20,6 +27,10 @@ const ActivityBox = styled("div")`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  text-align: center;
+  :hover {
+    background: #eeee;
+  }
 `;
 
 const EmojiIcon = styled("span")`
@@ -32,13 +43,7 @@ const Activity = () => {
     <>
       <div id="activity" />
       <HeadingOne center mt="2rem" mb="2rem">
-        <span role="img" aria-label="related-emoji">
-          ⌚️
-        </span>{" "}
-        Activity{" "}
-        <span role="img" aria-label="related-emoji">
-          ⌚️
-        </span>
+        Stats
       </HeadingOne>
       <Card header title="Activities">
         <Row justifyContent="space-evenly">
@@ -55,23 +60,56 @@ const Activity = () => {
             6km kayaked
           </ActivityBox>
           <ActivityBox>
-            {" "}
             <EmojiIcon role="img" aria-label="related-emoji">
               ⛺
             </EmojiIcon>
             2 camping trips
           </ActivityBox>
+          <ActivityBox>
+            <EmojiIcon role="img" aria-label="related-emoji">
+              🏠
+            </EmojiIcon>
+            moved 3 times
+          </ActivityBox>
+          <ActivityBox>
+            <EmojiIcon role="img" aria-label="related-emoji">
+              👨‍💻
+            </EmojiIcon>
+            7 companies
+          </ActivityBox>
         </Row>
       </Card>
-      <HeadingOne center mt="2rem" mb="2rem">
-        <span role="img" aria-label="related-emoji">
-          ✈️
-        </span>{" "}
-        Travel{" "}
-        <span role="img" aria-label="related-emoji">
-          ✈️
-        </span>
-      </HeadingOne>
+
+      <Card header title="Todoist" pt={0} ml="1rem" mr="1rem">
+        <Row justifyContent="space-evenly">
+          <Stats title="TASKS" metric="1182" />
+          <Stats title="KARMA POINTS" metric="6,483" />
+          <Stats title="LEADERBOARD" metric="TOP 10%" />
+        </Row>
+        <Row justifyContent="center">
+          <Anchor href="https://todoist.com/review/2019/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJjQ3hsSEdiVSIsInVpZCI6NzI4ODk1NywieWVhciI6MjAxOH0.voIbruxMAflDQiOXT2tmkfUXipkwE6uQISNzMuP257o">
+            Take a peek at my productivity report from Todoist
+          </Anchor>
+        </Row>
+      </Card>
+
+      <Card header title="Streaming" pt={0} ml="1rem" mr="1rem">
+        <Row justifyContent="space-evenly">
+          <Stats title="YOUTUBE WATCHED" metric="400 hours" />
+          <Stats title="SPOTIFY LISTENED" metric="27,241 mins" />
+          <Stats title="NETFLIX EPISODES" metric="100" />
+        </Row>
+      </Card>
+
+      <Card header title="Whatpulse" pt={0} ml="1rem" mr="1rem">
+        <Row justifyContent="space-between">
+          <Stats title="KEYS ⌨️" metric="2,799,881" />
+          <Stats title="CLICKS 🖱" metric="3,011,896" />
+          <Stats title="DOWNLOADED ⬇️" metric="1.30TB" />
+          <Stats title="UPLOADED ⬆️" metric="63.98GB" />
+        </Row>
+      </Card>
+
       <Card header title="Most Visited" pl="2rem" pb={0}>
         <Row justifyContent="center">
           <TopCitiesBox city="Newcastle" src={newcastle} />
