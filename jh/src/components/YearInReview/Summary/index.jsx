@@ -6,13 +6,7 @@ const Summary = () => {
     <>
       <div id="summary" />
       <HeadingOne center mt="2rem" mb="2rem">
-        <span role="img" aria-label="related-emoji">
-          📜
-        </span>{" "}
-        Year In Review - 2018{" "}
-        <span role="img" aria-label="related-emoji">
-          📜
-        </span>
+        Two Thousand and Eighteen
       </HeadingOne>
       <Card>
         <HeadingTwo mt={0}>Year Summary</HeadingTwo>

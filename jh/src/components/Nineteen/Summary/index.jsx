@@ -32,13 +32,7 @@ const Summary = ({ handleToggle, toggle }) => {
     <>
       <div id="summary" />
       <HeadingOne center mt="2rem" mb="2rem">
-        <span role="img" aria-label="related-emoji">
-          📜
-        </span>{" "}
-        Year In Review - 2019{" "}
-        <span role="img" aria-label="related-emoji">
-          📜
-        </span>
+        Two Thousand and Nineteen
       </HeadingOne>
       <Card pb={1}>
         {/* Summary Component */}

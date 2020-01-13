@@ -1,5 +1,13 @@
 import React from "react";
-import { Card, HeadingOne, Paragraph, Image } from "../../../shared";
+import {
+  Card,
+  HeadingOne,
+  Paragraph,
+  Image,
+  Row,
+  Col,
+  Stats
+} from "../../../shared";
 import wrapped from "./spotify-wrapped-2019.jpg";
 import decade from "./spotify-wrapped-decade.jpg";
 
@@ -16,6 +24,34 @@ const Music = () => {
           🎹
         </span>
       </HeadingOne>
+      <Card header title="YouTube" pt={0}>
+        <Row mb="1rem">
+          <Col lg={6} mt="2rem">
+            <div
+              className="g-ytsubscribe"
+              title="Subscribe to JaydenHarrod on YouTube"
+              data-channelid="UCOdFl-yPqum9818JPntA6DQ"
+              data-layout="full"
+              data-count="default"
+            />
+            <Stats title="WATCH TIME (mins)" metric="24,300" />
+            <Stats title="VIEWS" metric="16.7K" />
+            <Stats title="SUBSCRIBERS" metric="+77" />
+          </Col>
+          <Col lg={6} mt="2rem">
+            <div
+              className="g-ytsubscribe"
+              title="Subscribe to SquizzFilms on YouTube"
+              data-channel="SquizzFilms"
+              data-layout="full"
+              data-count="default"
+            />
+            <Stats title="WATCH TIME (mins)" metric="55,200" />
+            <Stats title="VIEWS" metric="32.8K" />
+            <Stats title="SUBSCRIBERS" metric="-149" />
+          </Col>
+        </Row>
+      </Card>
       <Card header inverse title="Allsides" pb={0}>
         <Paragraph inverse mt={0}>
           Progress on my music alias Allsides was slow this year. I spent a lot

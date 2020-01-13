@@ -1,15 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
-import {
-  Paragraph,
-  Row,
-  Col,
-  Header,
-  Container,
-  HeadingTwo,
-  Footer
-} from "../shared";
+import { Row, Col, Header, Container, Footer } from "../shared";
 import Finance from "../components/Nineteen/Finance";
 import Summary from "../components/Nineteen/Summary";
 import Media from "../components/Nineteen/Media";
