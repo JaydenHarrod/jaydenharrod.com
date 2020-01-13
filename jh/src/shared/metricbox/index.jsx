@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Paragraph, HeadingOne } from '../typography';
+import React from "react";
+import styled from "styled-components";
+import { Paragraph, HeadingOne } from "../typography";
 
 const Box = styled.div`
   display: flex;
@@ -8,24 +8,25 @@ const Box = styled.div`
   flex-grow: 1;
   align-items: center;
   margin-bottom: 1rem;
-  margin-right: 1rem;
-  margin-left: 1rem;
+  margin-left: ${props => (props.vertical ? props.vertical : "1rem")};
+  margin-right: ${props => (props.vertical ? props.vertical : "1rem")};
   padding: 1rem;
   color: #fff;
   box-shadow: 0px 2px 4px ${props => props.theme.grey};
-  background-color: ${props => props.theme.info};
+  background-color: ${props => (props.color ? props.color : props.theme.info)};
   background-position: center center;
   background-blend-mode: multiply;
   background-size: cover;
+  border-radius: 4px;
   transition: all 0.3s ease-in-out;
   :hover {
     transform: scale(1.05);
   }
 `;
 
-export const MetricBox = ({ title, metric }) => {
+export const MetricBox = ({ title, metric, color, vertical }) => {
   return (
-    <Box>
+    <Box color={color} vertical={vertical}>
       <Paragraph bold mt={0} mb={0} mr="1rem">
         {title}
       </Paragraph>

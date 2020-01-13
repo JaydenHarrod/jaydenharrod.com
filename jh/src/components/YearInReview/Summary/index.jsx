@@ -1,23 +1,15 @@
-import React from 'react';
-import { Card, HeadingOne, Paragraph } from '../../../shared';
+import React from "react";
+import { Card, HeadingOne, Paragraph, HeadingTwo } from "../../../shared";
 
 const Summary = () => {
   return (
     <>
       <div id="summary" />
       <HeadingOne center mt="2rem" mb="2rem">
-        <span role="img" aria-label="related-emoji">
-          📜
-        </span>{' '}
-        Year-In-Review{' '}
-        <span role="img" aria-label="related-emoji">
-          📜
-        </span>
+        Two Thousand and Eighteen
       </HeadingOne>
       <Card>
-        <Paragraph bold mt={0}>
-          It's been a big one!
-        </Paragraph>
+        <HeadingTwo mt={0}>Year Summary</HeadingTwo>
         <Paragraph>
           In January, I discovered the world of life logging. When apps like
           Fitbit, MyFitnessPal and MoneyBrilliant revealed real-time insights

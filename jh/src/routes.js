@@ -1,5 +1,6 @@
 import Home from './routes/Home';
-import YearInReview from './routes/YearInReview';
+import Eighteen from './routes/Eighteen';
+import Nineteen from './routes/Nineteen';
 import Projects from './routes/Projects';
 import FilmMaker from './routes/FilmMaker';
 
@@ -18,7 +19,11 @@ const routes = [
   },
   {
     path: '/2018',
-    component: YearInReview
+    component: Eighteen
+  },
+  {
+    path: '/2019',
+    component: Nineteen
   }
 ];
 

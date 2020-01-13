@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Paragraph } from '../../../shared';
+import React from "react";
+import styled from "styled-components";
+import { Paragraph } from "../../../shared";
 
 const Box = styled.div`
   display: flex;
@@ -13,7 +13,7 @@ const Box = styled.div`
   margin-right: 1rem;
   margin-bottom: 1rem;
   border-radius: 8px;
-  border: 1px solid ${props => props.theme.lightGrey};
+  border: 1px solid rgb(222, 222, 222);
 `;
 
 const ImageBox = styled.div`
