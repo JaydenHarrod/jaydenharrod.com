@@ -88,7 +88,19 @@ export const Header = ({ props, full }) => {
               title="Navigate to Year In Review"
               active={activePath === "/2018" ? true : false}
             >
-              Year-In-Review
+              YIR 2018
+            </MenuLink>
+            
+            <MenuLink
+              to="/2019"
+              mt="0"
+              ml="1rem"
+              mr="0.3rem"
+              mb="0.5rem"
+              title="Navigate to Year In Review"
+              active={activePath === "/2019" ? true : false}
+            >
+              YIR 2019
             </MenuLink>
           </MobileNav>
         </StyledCol>
