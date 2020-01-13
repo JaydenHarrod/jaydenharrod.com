@@ -9,9 +9,11 @@ import {
   Header,
   Container,
   HeadingTwo,
-  HeadingOne
+  Footer
 } from "../shared";
 import Finance from "../components/Nineteen/Finance";
+import Summary from "../components/Nineteen/Summary";
+import Music from "../components/Nineteen/Music";
 
 const SideMenu = styled.div`
   padding-top: 1rem;
@@ -40,17 +42,16 @@ class Nineteen extends Component {
     toggle: false
   };
 
+  handleToggle = () => {
+    if (this.state.toggle) {
+      return this.setState({ toggle: false });
+    } else {
+      return this.setState({ toggle: true });
+    }
+  };
+
   render() {
     const { toggle } = this.state;
-    console.log("toggle", toggle);
-
-    const handleToggle = () => {
-      if (toggle) {
-        return this.setState({ toggle: false });
-      } else {
-        return this.setState({ toggle: true });
-      }
-    };
 
     return (
       <>
@@ -120,104 +121,14 @@ class Nineteen extends Component {
             md={8}
             order={{ xs: 2, lg: 1 }}
           >
-            <HeadingOne>Year In Review - 2019</HeadingOne>
-
-            {/* Summary Component */}
-            <HeadingTwo>Summary</HeadingTwo>
-            <Paragraph>
-              2019 was a year of changed life priorities. After 3 years of
-              dealing with the anxiety that comes with an over populated city,
-              the impossible financial demands, and the logistical nightmare
-              involved when socialising with friends or spending time outdoors,
-              I decided that there must be a better life to be had somewhere
-              else, and that the job hub of Australia wasn't the only answer for
-              a successful career. After all, I used to live in a small country
-              town, Sydney was not my identity or a place I saw myself living
-              long-term. With the reward potentials high, I took a huge risk and
-              moved back to my hometown of Newcastle, NSW to completely redefine
-              how I lived my life and it's been the greatest adventure yet.
-            </Paragraph>
-            <HeadingTwo>Achievements</HeadingTwo>
-            <Paragraph>
-              Major life changes offer a great reset in motivation and vision. I
-              made good use of it!
-            </Paragraph>
-            <Paragraph>
-              <button onClick={() => handleToggle()}>Toggle List</button>
-            </Paragraph>
-            {toggle && (
-              <>
-                <Paragraph>
-                  - Started the year with wisdoms surgery to never deal with it
-                  again
-                </Paragraph>
-                <Paragraph>
-                  - Purchased studio monitors for life (Presonus Sceptre S8s)
-                </Paragraph>
-                <Paragraph>
-                  - Strategically purchased my first car in cash (Mazda 3)
-                </Paragraph>
-                <Paragraph>
-                  - Ran 5KMs in 25 mins (all-time personal best)
-                </Paragraph>
-                <Paragraph>
-                  - Left working at hipages, despite loving it
-                </Paragraph>
-                <Paragraph>
-                  - Started a new job in a Newcastle based agency
-                </Paragraph>
-                <Paragraph>
-                  - Invested in sleep quality by getting a Queen Koala mattress
-                  bundle
-                </Paragraph>
-                <Paragraph>
-                  - Went on a Landcare leadership retreat on the Central Coast
-                </Paragraph>
-                <Paragraph>
-                  - Became a Christian and started going to Church
-                </Paragraph>
-                <Paragraph>
-                  - Climbed the Young Endeavour again whilst it was in port
-                </Paragraph>
-                <Paragraph>
-                  - Went to the hotrod Rattletrap at Crowdy Head
-                </Paragraph>
-                <Paragraph>
-                  - Witnessed the best sunrise ever (
-                  <a href="https://www.instagram.com/jaydenharrod/">
-                    see for yourself!
-                  </a>
-                  )
-                </Paragraph>
-                <Paragraph>- Saw my friend Jared get married</Paragraph>
-                <Paragraph>
-                  - Photographed the HUSTLE event in Port Stephens
-                </Paragraph>
-                <Paragraph>
-                  - Decided agency life was not for me and left
-                </Paragraph>
-                <Paragraph>
-                  - Took a month of work completely to rest after burn out
-                </Paragraph>
-                <Paragraph>
-                  - Started working at a product company, loving it
-                </Paragraph>
-                <Paragraph>- Become a Redfrog volenteer</Paragraph>
-                <Paragraph>- Completed a time capsule wardrobe</Paragraph>
-                <Paragraph>- Got my full licence and passport</Paragraph>
-                <Paragraph>
-                  - Moved into a new place and completed my dream home
-                  office/studio
-                </Paragraph>
-                <Paragraph>
-                  - Release a track under my music alias Allsides
-                </Paragraph>
-              </>
-            )}
+            <Summary toggle={toggle} handleToggle={this.handleToggle} />
 
             {/* Activity Component */}
             <HeadingTwo>Activity</HeadingTwo>
-            <Paragraph>I stopped wearing my fitbit and started using a car. I predict my activity has decreased significantly from last year.</Paragraph>
+            <Paragraph>
+              I stopped wearing my fitbit and started using a car. I predict my
+              activity has decreased significantly from last year.
+            </Paragraph>
             <Paragraph>12 bush walks</Paragraph>
             <Paragraph>1 6km kayak</Paragraph>
             <Paragraph>3 bike trips</Paragraph>
@@ -234,12 +145,9 @@ class Nineteen extends Component {
             <HeadingTwo>Technology</HeadingTwo>
             <Paragraph>blah</Paragraph>
 
-            {/* Music Component */}
-            <HeadingTwo>Music</HeadingTwo>
-            <Paragraph>blah</Paragraph>
-
-            {/* Finance Component */}
-            <Finance/>
+            <Music />
+            <Finance />
+            <Footer />
           </Col>
         </Row>
       </>

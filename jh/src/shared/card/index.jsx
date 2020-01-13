@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import { space } from 'styled-system';
-import { HeadingTwo } from '../typography';
+import React from "react";
+import styled from "styled-components";
+import { space } from "styled-system";
+import { HeadingTwo } from "../typography";
 
 const Container = styled.div`
   height: auto;
@@ -17,6 +17,8 @@ const Container = styled.div`
 
 const Padding = styled.div`
   padding: 1rem;
+  background-color: ${props => (props.inverse === true ? "#000" : "#fff")};
+  color: ${props => (props.inverse === false ? "#000" : "unset")};
   ${space};
 `;
 
@@ -34,7 +36,7 @@ const Header = styled.div`
   }
 `;
 
-export const Card = ({ header, title, children, ...rest }) => {
+export const Card = ({ header, title, children, inverse, ...rest }) => {
   return (
     <>
       <Container>
@@ -45,7 +47,9 @@ export const Card = ({ header, title, children, ...rest }) => {
             </HeadingTwo>
           </Header>
         )}
-        <Padding {...rest}>{children}</Padding>
+        <Padding inverse={inverse} {...rest}>
+          {children}
+        </Padding>
       </Container>
     </>
   );
