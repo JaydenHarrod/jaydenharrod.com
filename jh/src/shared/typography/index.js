@@ -1,14 +1,14 @@
-import styled from 'styled-components';
-import { space } from 'styled-system';
+import styled from "styled-components";
+import { space } from "styled-system";
 
 export const HeadingOne = styled.h1`
   font-size: 2.074rem;
-  display: ${props => (props.inline ? 'inline' : '')};
+  display: ${props => (props.inline ? "inline" : "")};
   line-height: 1.2;
   margin-top: 1rem;
   margin-bottom: 0;
   padding: 0;
-  text-align: ${props => (props.center ? 'center' : 'left')};
+  text-align: ${props => (props.center ? "center" : "left")};
   ${space};
 `;
 
@@ -17,7 +17,7 @@ export const HeadingTwo = styled.h2`
   line-height: 1.2;
   margin: 1.414rem 0 0.5rem;
   padding: 0;
-  text-align: ${props => (props.center ? 'center' : 'left')};
+  text-align: ${props => (props.center ? "center" : "left")};
   ${space};
 `;
 
@@ -26,8 +26,9 @@ export const Paragraph = styled.p`
   line-height: 1.45rem;
   margin-top: 1rem;
   padding: 0;
-  text-align: ${props => (props.center ? 'center' : 'left')};
-  font-weight: ${props => (props.bold ? '600' : 'normal')};
+  text-align: ${props => (props.center ? "center" : "left")};
+  font-weight: ${props => (props.bold ? "600" : "normal")};
+  color: ${props => (props.inverse ? "white" : "unset")};
   ${space};
 `;
 
@@ -36,10 +37,10 @@ export const Anchor = styled.a`
   line-height: 1.45rem;
   margin-top: 1rem;
   padding: 0;
-  display: ${props => (props.block ? 'block' : '')};
-  text-align: ${props => (props.center ? 'center' : 'left')};
-  font-weight: ${props => (props.bold ? '600' : 'normal')};
-  color: ${props => props.active ? props.theme.text : props.theme.darkGrey};
+  display: ${props => (props.block ? "block" : "")};
+  text-align: ${props => (props.center ? "center" : "left")};
+  font-weight: ${props => (props.bold ? "600" : "normal")};
+  color: ${props => (props.active ? props.theme.text : props.theme.darkGrey)};
   text-decoration: none;
   cursor: pointer;
   ${space};
@@ -57,6 +58,6 @@ export const TinyText = styled.p`
   line-height: 1.45rem;
   margin: 0.1rem 0 0 0;
   padding: 0;
-  text-align: ${props => (props.center ? 'center' : 'left')};
+  text-align: ${props => (props.center ? "center" : "left")};
   ${space};
 `;

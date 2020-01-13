@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
 import {
-  Anchor,
   Paragraph,
   Row,
   Col,
@@ -13,24 +12,8 @@ import {
 } from "../shared";
 import Finance from "../components/Nineteen/Finance";
 import Summary from "../components/Nineteen/Summary";
-import Music from "../components/Nineteen/Music";
-
-const SideMenu = styled.div`
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: #fff;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  box-shadow: 1px 3px 3px ${props => props.theme.grey};
-`;
-
-const scrollTo = selector => e => {
-  e && e.preventDefault();
-  window.scrollTo({
-    top: document.querySelector(selector).offsetTop - 0,
-    behavior: "smooth"
-  });
-};
+import Media from "../components/Nineteen/Media";
+import Activity from "../components/Nineteen/Activity";
 
 const Border = styled.div`
   box-shadow: 2px 3px 4px ${props => props.theme.grey};
@@ -60,7 +43,7 @@ class Nineteen extends Component {
           <meta
             name="description"
             content="
-          Jayden is a designer, developer, film maker, and musician from
+          Jayden is a designer, developer, film maker, and Mediaian from
           Australia. He's best known for his YouTube channels."
           />
           <script src="https://apis.google.com/js/platform.js" />
@@ -70,50 +53,6 @@ class Nineteen extends Component {
         </Container>
         <Border />
         <Row justifyContent="center">
-          <Col
-            xs={0}
-            md={2}
-            style={{
-              position: "sticky",
-              alignSelf: "flex-start",
-              top: "0"
-            }}
-          >
-            <SideMenu>
-              <Col>
-                <Paragraph bold mt={0}>
-                  Chapters
-                </Paragraph>
-                <Anchor block onClick={scrollTo("#summary")}>
-                  Summary
-                </Anchor>
-                <Anchor block onClick={scrollTo("#activity")}>
-                  Activity
-                </Anchor>
-                <Anchor block onClick={scrollTo("#media")}>
-                  Media
-                </Anchor>
-                <Anchor block onClick={scrollTo("#travel")}>
-                  Travel
-                </Anchor>
-                <Anchor block onClick={scrollTo("#technology")}>
-                  Technology
-                </Anchor>
-                <Anchor block onClick={scrollTo("#music")}>
-                  Music
-                </Anchor>
-                <Anchor block onClick={scrollTo("#finance")}>
-                  Finance
-                </Anchor>
-                <Anchor block href="/">
-                  <span role="img" aria-label="back button">
-                    ↩️{" "}
-                  </span>
-                  Home
-                </Anchor>
-              </Col>
-            </SideMenu>
-          </Col>
           <Col
             alignItems="center"
             xs={12}
@@ -132,20 +71,8 @@ class Nineteen extends Component {
             <Paragraph>12 bush walks</Paragraph>
             <Paragraph>1 6km kayak</Paragraph>
             <Paragraph>3 bike trips</Paragraph>
-
-            {/* Media Component */}
-            <HeadingTwo>Media</HeadingTwo>
-            <Paragraph>blah</Paragraph>
-
-            {/* Travel Component */}
-            <HeadingTwo>Travel</HeadingTwo>
-            <Paragraph>blah</Paragraph>
-
-            {/* Technology Component */}
-            <HeadingTwo>Technology</HeadingTwo>
-            <Paragraph>blah</Paragraph>
-
-            <Music />
+            <Activity />
+            <Media />
             <Finance />
             <Footer />
           </Col>
