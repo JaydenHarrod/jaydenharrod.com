@@ -61,16 +61,6 @@ class Nineteen extends Component {
             order={{ xs: 2, lg: 1 }}
           >
             <Summary toggle={toggle} handleToggle={this.handleToggle} />
-
-            {/* Activity Component */}
-            <HeadingTwo>Activity</HeadingTwo>
-            <Paragraph>
-              I stopped wearing my fitbit and started using a car. I predict my
-              activity has decreased significantly from last year.
-            </Paragraph>
-            <Paragraph>12 bush walks</Paragraph>
-            <Paragraph>1 6km kayak</Paragraph>
-            <Paragraph>3 bike trips</Paragraph>
             <Activity />
             <Media />
             <Finance />
