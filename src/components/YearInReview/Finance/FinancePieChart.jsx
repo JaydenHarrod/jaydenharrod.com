@@ -2,19 +2,14 @@ import React from "react";
 import { PieChart, Pie, Cell, Legend, ResponsiveContainer } from "recharts";
 
 const data = [
-  { value: 15000, name: "Auto & Transport" },
-  { value: 6000, name: "Rent" },
-  { value: 6000, name: "Shopping" },
-  { value: 6000, name: "Dining" },
-  { value: 5000, name: "Gifts & Donations" },
-  { value: 4000, name: "Groceries" },
-  { value: 2500, name: "Health" },
-  { value: 2200, name: "Travel" },
-  { value: 1500, name: "Hobbies" },
-  { value: 1500, name: "Homewares" },
-  { value: 1500, name: "Utilities" },
-  { value: 600, name: "Personal Care" }
+  { value: 13591, name: "Rent" },
+  { value: 8696, name: "Shopping" },
+  { value: 3239, name: "Dining" },
+  { value: 3076, name: "Groceries" },
+  { value: 2254, name: "Transport" },
+  { value: 1874, name: "Misc" }
 ];
+
 const COLORS = [
   "rgb(101, 36, 36)",
   "rgb(116, 41, 41)",
@@ -32,7 +27,7 @@ const COLORS = [
 
 const renderLabel = function(entry) {
   return `${entry.name} ($${entry.value.toLocaleString()})`;
-}
+};
 
 const FinancePieChart = () => {
   return (
@@ -41,7 +36,7 @@ const FinancePieChart = () => {
         <Pie
           isAnimationActive={true}
           data={data}
-          cx={500}
+          cx="50%"
           cy={250}
           outerRadius={200}
           fill="#8884d8"
