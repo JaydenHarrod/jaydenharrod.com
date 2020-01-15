@@ -1,13 +1,14 @@
+/* eslint-disable jsx-a11y/accessible-emoji */
 import React from "react";
 import styled from "styled-components";
 
 import {
   Card,
   HeadingOne,
-  Paragraph,
   Row,
   Stats,
-  Anchor
+  Anchor,
+  MetricBox
 } from "../../../shared";
 import TopCitiesBox from "../../YearInReview/Travel/TopCitiesBox";
 import sydney from "./cities/sydney.jpg";
@@ -117,6 +118,15 @@ const Activity = () => {
           <TopCitiesBox city="Gloucester" src={gloucester} />
           <TopCitiesBox city="Brisbane" src={brisbane} />
           <TopCitiesBox city="Wingham" src={wingham} />
+        </Row>
+      </Card>
+
+      <Card header title="All-time location data" pl="1rem">
+        <Row justifyContent="center" mt="0.5rem" mb={0}>
+          <MetricBox title="COUNTRIES" metric="6" />
+          <MetricBox title="CITIES" metric="183" />
+          <MetricBox title="PLACES" metric="425" />
+          <MetricBox title="DISTANCE" metric="624,855 km" />
         </Row>
       </Card>
     </>

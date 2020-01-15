@@ -1,6 +1,6 @@
 [build]
-base = "jh/"
-publish = "jh/build/"
+base = "."
+publish = "build/"
 command = "yarn build"
 
 [[redirects]]
