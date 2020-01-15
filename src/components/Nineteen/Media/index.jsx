@@ -1,5 +1,48 @@
 import React from "react";
-import { Card, HeadingOne, Paragraph, Row, Col, Stats } from "../../../shared";
+import {
+  Card,
+  HeadingOne,
+  Paragraph,
+  Row,
+  Col,
+  Stats,
+  Switch,
+  Image,
+  Modal,
+  Video
+} from "../../../shared";
+
+import ig1 from "./images/1.jpg";
+import ig2 from "./images/2.jpg";
+import ig3 from "./images/3.jpg";
+import ig4 from "./images/4.jpg";
+import ig5 from "./images/5.jpg";
+import ig6 from "./images/6.jpg";
+import ig7 from "./images/7.jpg";
+import ig8 from "./images/8.jpg";
+import ig9 from "./images/9.jpg";
+
+const RenderVideo = ({ videoSrc, imageSrc, title }) => {
+  return (
+    <div style={{ postion: "relative" }}>
+      <Paragraph bold mb="0.5rem">
+        {title}
+      </Paragraph>
+      <Switch>
+        {({ on, flick }) => (
+          <>
+            <Image onClick={flick} src={imageSrc} alt={title} />
+            {on && (
+              <Modal onRequestClose={flick}>
+                <Video src={videoSrc} title={title} />
+              </Modal>
+            )}
+          </>
+        )}
+      </Switch>
+    </div>
+  );
+};
 
 const Music = () => {
   return (
@@ -60,8 +103,26 @@ const Music = () => {
           </Card>
         </Col>
       </Row>
-      <Card header title="Media">
-        photos, videos
+
+      <Card header title="Murphy The Frug" pt={0}>
+        <RenderVideo
+          imageSrc="https://external-syd2-1.xx.fbcdn.net/safe_image.php?d=AQDdl0rxsZaezr9g&w=960&h=480&url=https%3A%2F%2Fi.vimeocdn.com%2Ffilter%2Foverlay%3Fsrc0%3Dhttps%253A%252F%252Fi.vimeocdn.com%252Fvideo%252F846855906_1280x640.jpg%26src1%3Dhttps%253A%252F%252Ff.vimeocdn.com%252Fimages_v6%252Fshare%252Fplay_icon_overlay.png&_nc_hash=AQDl0MDiHVqPKVtD"
+          videoSrc="https://player.vimeo.com/video/384943841"
+        />
+      </Card>
+
+      <Card header title="IG @jaydenharrod">
+        <Row justifyContent="center" pl="1rem" pr="1rem">
+          <Image alt="ig-photo" src={ig1} />
+          <Image alt="ig-photo" src={ig2} />
+          <Image alt="ig-photo" src={ig3} />
+          <Image alt="ig-photo" src={ig4} />
+          <Image alt="ig-photo" src={ig5} />
+          <Image alt="ig-photo" src={ig6} />
+          <Image alt="ig-photo" src={ig7} />
+          <Image alt="ig-photo" src={ig8} />
+          <Image alt="ig-photo" src={ig9} />
+        </Row>
       </Card>
     </>
   );
