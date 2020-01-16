@@ -2,13 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
 import { Footer, Row, Col, Header, Container } from "../shared";
-import Finance from "../components/YearInReview/Finance";
-import Travel from "../components/YearInReview/Travel";
-import Technology from "../components/YearInReview/Technology";
-import Media from "../components/YearInReview/Media";
-import Activity from "../components/YearInReview/Activity";
+
 import Summary from "../components/YearInReview/Summary";
-import Music from "../components/YearInReview/Music";
+import Stats from "../components/YearInReview/Stats";
+import Creator from "../components/YearInReview/Creator";
+import Finance from "../components/YearInReview/Finance";
 
 const Border = styled.div`
   box-shadow: 2px 3px 4px ${props => props.theme.grey};
@@ -41,11 +39,8 @@ const YearInReview = () => {
           order={{ xs: 2, lg: 1 }}
         >
           <Summary />
-          <Activity />
-          <Media />
-          <Travel />
-          <Technology />
-          <Music />
+          <Stats />
+          <Creator />
           <Finance />
           <Footer />
         </Col>

@@ -56,10 +56,10 @@ const RenderVideo = ({ videoSrc, imageSrc, title }) => {
   );
 };
 
-const Music = () => {
+const Creator = () => {
   return (
     <>
-      <div id="music" />
+      <div id="creator" />
       <HeadingOne center mt="2rem" mb="2rem">
         Digital Creator
       </HeadingOne>
@@ -144,4 +144,4 @@ const Music = () => {
   );
 };
 
-export default Music;
+export default Creator;

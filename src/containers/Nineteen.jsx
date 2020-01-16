@@ -2,10 +2,11 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
 import { Row, Col, Header, Container, Footer } from "../shared";
-import Finance from "../components/Nineteen/Finance";
+
 import Summary from "../components/Nineteen/Summary";
-import Media from "../components/Nineteen/Media";
-import Activity from "../components/Nineteen/Activity";
+import Stats from "../components/Nineteen/Stats";
+import Creator from "../components/Nineteen/Creator";
+import Finance from "../components/Nineteen/Finance";
 
 const Border = styled.div`
   box-shadow: 2px 3px 4px ${props => props.theme.grey};
@@ -35,7 +36,7 @@ class Nineteen extends Component {
           <meta
             name="description"
             content="
-          Jayden is a designer, developer, film maker, and Mediaian from
+          Jayden is a designer, developer, film maker, and Creatorian from
           Australia. He's best known for his YouTube channels."
           />
           <script src="https://apis.google.com/js/platform.js" />
@@ -53,8 +54,8 @@ class Nineteen extends Component {
             order={{ xs: 2, lg: 1 }}
           >
             <Summary toggle={toggle} handleToggle={this.handleToggle} />
-            <Activity />
-            <Media />
+            <Stats />
+            <Creator />
             <Finance />
             <Footer />
           </Col>

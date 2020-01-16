@@ -10,7 +10,7 @@ export const Stats = ({ title, metric, fact, inverse }) => {
       <HeadingOne inverse={inverse} mt={0}>
         {metric}
       </HeadingOne>
-      {fact && <TinyText>{fact}</TinyText>}
+      {fact && <TinyText inverse={inverse}>{fact}</TinyText>}
     </div>
   );
 };

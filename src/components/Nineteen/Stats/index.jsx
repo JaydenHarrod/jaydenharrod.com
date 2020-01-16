@@ -6,16 +6,16 @@ import {
   Card,
   HeadingOne,
   Row,
-  Stats,
+  Stats as StatsBox,
   Anchor,
   MetricBox
 } from "../../../shared";
-import TopCitiesBox from "../../YearInReview/Travel/TopCitiesBox";
 import sydney from "./cities/sydney.jpg";
 import newcastle from "./cities/newcastle.jpg";
 import brisbane from "./cities/brisbane.jpg";
 import wingham from "./cities/wingham.jpg";
 import gloucester from "./cities/gloucester.jpg";
+import TopCitiesBox from "../../YearInReview/Stats/TopCitiesBox";
 
 const ActivityBox = styled("div")`
   width: 120px;
@@ -41,14 +41,14 @@ const EmojiIcon = styled("span")`
   margin-bottom: 8px;
 `;
 
-const Activity = () => {
+const Stats = () => {
   return (
     <>
-      <div id="activity" />
+      <div id="stats" />
       <HeadingOne center mt="2rem" mb="2rem">
         Stats
       </HeadingOne>
-      <Card header title="Facts" pt="0.5rem" pb="0.5rem" pl={0} pr={0}>
+      <Card header title="Facts" pt="0.5rem" pb="0.5rem">
         <Row justifyContent="space-evenly">
           <ActivityBox>
             <EmojiIcon role="img" aria-label="related-emoji">
@@ -91,9 +91,9 @@ const Activity = () => {
 
       <Card header title="Todoist" pt={0} ml="1rem" mr="1rem">
         <Row justifyContent="space-between">
-          <Stats title="TASKS" metric="1182" />
-          <Stats title="KARMA POINTS" metric="6,483" />
-          <Stats title="LEADERBOARD" metric="TOP 10%" />
+          <StatsBox title="TASKS" metric="1182" />
+          <StatsBox title="KARMA POINTS" metric="6,483" />
+          <StatsBox title="LEADERBOARD" metric="TOP 10%" />
         </Row>
         <Row justifyContent="center">
           <Anchor href="https://todoist.com/review/2019/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJjQ3hsSEdiVSIsInVpZCI6NzI4ODk1NywieWVhciI6MjAxOH0.voIbruxMAflDQiOXT2tmkfUXipkwE6uQISNzMuP257o">
@@ -104,18 +104,18 @@ const Activity = () => {
 
       <Card header title="Streaming" pt={0} ml="1rem" mr="1rem">
         <Row justifyContent="space-between">
-          <Stats title="YOUTUBE WATCHED" metric="400 hours" />
-          <Stats title="SPOTIFY LISTENED" metric="27,241 mins" />
-          <Stats title="NETFLIX EPISODES" metric="100" />
+          <StatsBox title="YOUTUBE WATCHED" metric="400 hours" />
+          <StatsBox title="SPOTIFY LISTENED" metric="27,241 mins" />
+          <StatsBox title="NETFLIX EPISODES" metric="100" />
         </Row>
       </Card>
 
       <Card header title="Whatpulse" pt={0} ml="1rem" mr="1rem">
         <Row justifyContent="space-between">
-          <Stats title="KEYS ⌨️" metric="2,799,881" />
-          <Stats title="CLICKS 🖱" metric="3,011,896" />
-          <Stats title="DOWNLOADED ⬇️" metric="1.30TB" />
-          <Stats title="UPLOADED ⬆️" metric="64GB" />
+          <StatsBox title="KEYS ⌨️" metric="2,799,881" />
+          <StatsBox title="CLICKS 🖱" metric="3,011,896" />
+          <StatsBox title="DOWNLOADED ⬇️" metric="1.30TB" />
+          <StatsBox title="UPLOADED ⬆️" metric="64GB" />
         </Row>
       </Card>
 
@@ -141,4 +141,4 @@ const Activity = () => {
   );
 };
 
-export default Activity;
+export default Stats;
