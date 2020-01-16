@@ -25,9 +25,11 @@ import ig9 from "./images/9.jpg";
 const RenderVideo = ({ videoSrc, imageSrc, title }) => {
   return (
     <div style={{ postion: "relative" }}>
-      <Paragraph bold mb="0.5rem">
-        {title}
-      </Paragraph>
+      {title && (
+        <Paragraph bold mb="0.5rem">
+          {title}
+        </Paragraph>
+      )}
       <Switch>
         {({ on, flick }) => (
           <>
@@ -104,24 +106,28 @@ const Music = () => {
         </Col>
       </Row>
 
-      <Card header title="Murphy The Frug" pt={0}>
+      <Card header inverse title="Murphy The Frug" pt={0}>
         <RenderVideo
-          imageSrc="https://external-syd2-1.xx.fbcdn.net/safe_image.php?d=AQDdl0rxsZaezr9g&w=960&h=480&url=https%3A%2F%2Fi.vimeocdn.com%2Ffilter%2Foverlay%3Fsrc0%3Dhttps%253A%252F%252Fi.vimeocdn.com%252Fvideo%252F846855906_1280x640.jpg%26src1%3Dhttps%253A%252F%252Ff.vimeocdn.com%252Fimages_v6%252Fshare%252Fplay_icon_overlay.png&_nc_hash=AQDl0MDiHVqPKVtD"
+          imageSrc="https://i.vimeocdn.com/video/846857707.webp?mw=1000&mh=500"
           videoSrc="https://player.vimeo.com/video/384943841"
         />
       </Card>
 
-      <Card header title="IG @jaydenharrod">
-        <Row justifyContent="center" pl="1rem" pr="1rem">
-          <Image alt="ig-photo" src={ig1} />
-          <Image alt="ig-photo" src={ig2} />
-          <Image alt="ig-photo" src={ig3} />
-          <Image alt="ig-photo" src={ig4} />
-          <Image alt="ig-photo" src={ig5} />
-          <Image alt="ig-photo" src={ig6} />
-          <Image alt="ig-photo" src={ig7} />
-          <Image alt="ig-photo" src={ig8} />
-          <Image alt="ig-photo" src={ig9} />
+      <Card header inverse title="IG @jaydenharrod" pb="0.4rem" pt={0}>
+        <Row justifyContent="center">
+          <Image width="33%" height="400px" alt="ig-photo" src={ig1} />
+          <Image width="33%" height="400px" alt="ig-photo" src={ig2} />
+          <Image width="33%" height="400px" alt="ig-photo" src={ig3} />
+        </Row>
+        <Row justifyContent="center">
+          <Image width="33%" height="400px" alt="ig-photo" src={ig4} />
+          <Image width="33%" height="400px" alt="ig-photo" src={ig5} />
+          <Image width="33%" height="400px" alt="ig-photo" src={ig6} />
+        </Row>
+        <Row justifyContent="center">
+          <Image width="33%" height="400px" alt="ig-photo" src={ig7} />
+          <Image width="33%" height="400px" alt="ig-photo" src={ig8} />
+          <Image width="33%" height="400px" alt="ig-photo" src={ig9} />
         </Row>
       </Card>
     </>

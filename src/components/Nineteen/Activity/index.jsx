@@ -124,9 +124,9 @@ const Activity = () => {
       <Card header title="All-time location data" pl="1rem">
         <Row justifyContent="center" mt="0.5rem" mb={0}>
           <MetricBox title="COUNTRIES" metric="6" />
-          <MetricBox title="CITIES" metric="183" />
-          <MetricBox title="PLACES" metric="425" />
-          <MetricBox title="DISTANCE" metric="624,855 km" />
+          <MetricBox title="CITIES" metric="198" />
+          <MetricBox title="PLACES" metric="448" />
+          <MetricBox title="DISTANCE" metric="543,021 km" />
         </Row>
       </Card>
     </>

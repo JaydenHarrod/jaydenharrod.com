@@ -3,11 +3,12 @@ import styled from "styled-components";
 import { space } from "styled-system";
 
 const ImageBox = styled.img`
-  width: 100%;
+  width: ${props => (props.width ? props.width : "100%")};
   max-width: 100%;
   min-height: 120px;
   height: ${props => (props.height ? props.height : "unset")};
   background-image: ${props => props.url};
+  background-size: cover;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
   ${space};
@@ -28,10 +29,16 @@ const PlayIcon = styled.div`
   cursor: pointer;
 `;
 
-export const Image = ({ height, src, onClick, playIcon, alt }) => {
+export const Image = ({ width, height, src, onClick, playIcon, alt }) => {
   return (
     <>
-      <ImageBox height={height} src={src} onClick={onClick} alt={alt} />
+      <ImageBox
+        width={width}
+        height={height}
+        src={src}
+        onClick={onClick}
+        alt={alt}
+      />
       {playIcon && <PlayIcon onClick={onClick} />}
     </>
   );
