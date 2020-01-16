@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Paragraph } from '../../../shared';
+import React from "react";
+import styled from "styled-components";
+import { Paragraph } from "../../../shared";
 
 const Box = styled.div`
   display: flex;
@@ -26,14 +26,18 @@ const Box = styled.div`
 const MediaBox = ({ entity, src, type }) => {
   return (
     <>
-      {type === 'spotify' && (
+      {type === "spotify" && (
         <Box src={src} color="rgb(29,185,84, 0.5)">
-          <Paragraph bold>{entity}</Paragraph>
+          <Paragraph inverse={true} bold>
+            {entity}
+          </Paragraph>
         </Box>
       )}
-      {type === 'netflix' && (
+      {type === "netflix" && (
         <Box src={src} color="rgb(229, 9, 20, 0.5)">
-          <Paragraph bold>{entity}</Paragraph>
+          <Paragraph inverse={true} bold>
+            {entity}
+          </Paragraph>
         </Box>
       )}
     </>

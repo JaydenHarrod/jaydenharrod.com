@@ -24,13 +24,15 @@ const Box = styled.div`
   }
 `;
 
-export const MetricBox = ({ title, metric, color, vertical }) => {
+export const MetricBox = ({ title, metric, color, vertical, inverse }) => {
   return (
     <Box color={color} vertical={vertical}>
-      <Paragraph bold mt={0} mb={0} mr="1rem">
+      <Paragraph inverse={inverse} bold mt={0} mb={0} mr="1rem">
         {title}
       </Paragraph>
-      <HeadingOne mt={0}>{metric}</HeadingOne>
+      <HeadingOne inverse={inverse} mt={0}>
+        {metric}
+      </HeadingOne>
     </Box>
   );
 };

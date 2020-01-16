@@ -29,6 +29,8 @@ const ActivityBox = styled("div")`
   align-items: center;
   justify-content: space-between;
   text-align: center;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
   :hover {
     background: #eeee;
   }
@@ -46,7 +48,7 @@ const Activity = () => {
       <HeadingOne center mt="2rem" mb="2rem">
         Stats
       </HeadingOne>
-      <Card header title="Activities">
+      <Card header title="Facts" pt="0.5rem" pb="0.5rem" pl={0} pr={0}>
         <Row justifyContent="space-evenly">
           <ActivityBox>
             <EmojiIcon role="img" aria-label="related-emoji">
@@ -78,24 +80,30 @@ const Activity = () => {
             </EmojiIcon>
             7 companies
           </ActivityBox>
+          <ActivityBox>
+            <EmojiIcon role="img" aria-label="related-emoji">
+              🏆
+            </EmojiIcon>
+            best year award
+          </ActivityBox>
         </Row>
       </Card>
 
       <Card header title="Todoist" pt={0} ml="1rem" mr="1rem">
-        <Row justifyContent="space-evenly">
+        <Row justifyContent="space-between">
           <Stats title="TASKS" metric="1182" />
           <Stats title="KARMA POINTS" metric="6,483" />
           <Stats title="LEADERBOARD" metric="TOP 10%" />
         </Row>
         <Row justifyContent="center">
           <Anchor href="https://todoist.com/review/2019/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJjQ3hsSEdiVSIsInVpZCI6NzI4ODk1NywieWVhciI6MjAxOH0.voIbruxMAflDQiOXT2tmkfUXipkwE6uQISNzMuP257o">
-            Take a peek at my productivity report from Todoist
+            2019 productivity report from Todoist
           </Anchor>
         </Row>
       </Card>
 
       <Card header title="Streaming" pt={0} ml="1rem" mr="1rem">
-        <Row justifyContent="space-evenly">
+        <Row justifyContent="space-between">
           <Stats title="YOUTUBE WATCHED" metric="400 hours" />
           <Stats title="SPOTIFY LISTENED" metric="27,241 mins" />
           <Stats title="NETFLIX EPISODES" metric="100" />
@@ -107,7 +115,7 @@ const Activity = () => {
           <Stats title="KEYS ⌨️" metric="2,799,881" />
           <Stats title="CLICKS 🖱" metric="3,011,896" />
           <Stats title="DOWNLOADED ⬇️" metric="1.30TB" />
-          <Stats title="UPLOADED ⬆️" metric="63.98GB" />
+          <Stats title="UPLOADED ⬆️" metric="64GB" />
         </Row>
       </Card>
 
@@ -126,7 +134,7 @@ const Activity = () => {
           <MetricBox title="COUNTRIES" metric="6" />
           <MetricBox title="CITIES" metric="198" />
           <MetricBox title="PLACES" metric="448" />
-          <MetricBox title="DISTANCE" metric="543,021 km" />
+          <MetricBox title="DISTANCE" metric="543,000 km" />
         </Row>
       </Card>
     </>

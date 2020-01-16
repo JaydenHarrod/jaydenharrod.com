@@ -1,13 +1,15 @@
-import React from 'react';
-import { Paragraph, HeadingOne, TinyText } from '../typography';
+import React from "react";
+import { Paragraph, HeadingOne, TinyText } from "../typography";
 
-export const Stats = ({ title, metric, fact }) => {
+export const Stats = ({ title, metric, fact, inverse }) => {
   return (
     <div>
-      <Paragraph bold mb={0}>
+      <Paragraph inverse={inverse} bold mb={0}>
         {title}
       </Paragraph>
-      <HeadingOne mt={0}>{metric}</HeadingOne>
+      <HeadingOne inverse={inverse} mt={0}>
+        {metric}
+      </HeadingOne>
       {fact && <TinyText>{fact}</TinyText>}
     </div>
   );

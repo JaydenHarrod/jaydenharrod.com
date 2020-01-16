@@ -6,7 +6,7 @@ import { HeadingTwo } from "../typography";
 const Container = styled.div`
   height: auto;
   width: 100%;
-  border-radius: 8px;
+  border-radius: 4px;
   background: #fff;
   margin-bottom: 1rem;
   box-shadow: 0px 1px 6px ${props => props.theme.grey};
@@ -27,8 +27,8 @@ const Header = styled.div`
   align-items: center;
   height: 4rem;
   color: #fff;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
   background-color: #000;
   padding-left: 1rem;
   @media (max-width: 30rem) {
@@ -42,7 +42,7 @@ export const Card = ({ header, title, children, inverse, ...rest }) => {
       <Container>
         {header && (
           <Header>
-            <HeadingTwo mt={0} mb={0}>
+            <HeadingTwo inverse={true} mt={0} mb={0}>
               {title}
             </HeadingTwo>
           </Header>

@@ -23,23 +23,27 @@ const Finance = () => {
               color="rgb(36, 101, 65)"
               title="income increase"
               metric="38%"
+              inverse
             />
             <MetricBox
               color="rgb(36, 101, 65)"
-              title="car purchase"
-              metric="$10K"
+              title="financial independence target"
+              metric="4.5%"
+              inverse
             />
           </Col>
           <Col lg={6} sm={12}>
             <MetricBox
               color="rgb(101, 36, 36)"
-              title="total spent"
-              metric="$52K"
+              title="expense increase"
+              metric="57%"
+              inverse
             />
             <MetricBox
               color="rgb(101, 36, 36)"
-              title="yoy spent"
-              metric="+57%"
+              title="total spent 2019"
+              metric="$52K"
+              inverse
             />
           </Col>
         </Row>

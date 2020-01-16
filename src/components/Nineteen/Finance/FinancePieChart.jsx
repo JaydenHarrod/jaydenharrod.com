@@ -35,23 +35,31 @@ const renderLabel = function(entry) {
 };
 
 const FinancePieChart = () => {
+  const mobile = window.innerWidth <= 700;
   return (
-    <ResponsiveContainer height={550} width="100%">
+    <ResponsiveContainer height={500} width="100%">
       <PieChart>
         <Pie
           isAnimationActive={true}
           data={data}
           cx="50%"
-          cy={250}
-          outerRadius={200}
+          cy={200}
+          outerRadius={150}
           fill="#8884d8"
-          label={renderLabel}
+          label={mobile ? null : renderLabel}
         >
           {data.map((entry, index) => (
             <Cell key={index} fill={COLORS[index % COLORS.length]} />
           ))}
         </Pie>
-        <Legend />
+        <Legend
+          payload={data.map((item, index) => ({
+            id: item.name,
+            type: "line",
+            color: COLORS[index % COLORS.length],
+            value: `${item.name} ($${item.value.toLocaleString()})`
+          }))}
+        />
       </PieChart>
     </ResponsiveContainer>
   );
