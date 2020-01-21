@@ -17,13 +17,12 @@ import wingham from "./cities/wingham.jpg";
 import gloucester from "./cities/gloucester.jpg";
 import TopCitiesBox from "../../YearInReview/Stats/TopCitiesBox";
 
-const ActivityBox = styled("div")`
+const FactBox = styled("div")`
   width: 120px;
   padding: 10px;
   background: #e8e8e8;
   color: #4c3a2e;
   border-radius: 4px;
-  border: 1px solid #a5a5a5;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,42 +49,42 @@ const Stats = () => {
       </HeadingOne>
       <Card header title="Facts" pt="0.5rem" pb="0.5rem">
         <Row justifyContent="space-evenly">
-          <ActivityBox>
+          <FactBox>
             <EmojiIcon role="img" aria-label="related-emoji">
               🥾
             </EmojiIcon>
             12 hikes
-          </ActivityBox>
-          <ActivityBox>
+          </FactBox>
+          <FactBox>
             <EmojiIcon role="img" aria-label="related-emoji">
               🛶
             </EmojiIcon>
             6km kayaked
-          </ActivityBox>
-          <ActivityBox>
+          </FactBox>
+          <FactBox>
             <EmojiIcon role="img" aria-label="related-emoji">
               ⛺
             </EmojiIcon>
             2 camping trips
-          </ActivityBox>
-          <ActivityBox>
+          </FactBox>
+          <FactBox>
             <EmojiIcon role="img" aria-label="related-emoji">
               🏠
             </EmojiIcon>
             moved 3 times
-          </ActivityBox>
-          <ActivityBox>
+          </FactBox>
+          <FactBox>
             <EmojiIcon role="img" aria-label="related-emoji">
               👨‍💻
             </EmojiIcon>
             7 companies
-          </ActivityBox>
-          <ActivityBox>
+          </FactBox>
+          <FactBox>
             <EmojiIcon role="img" aria-label="related-emoji">
               🏆
             </EmojiIcon>
             best year award
-          </ActivityBox>
+          </FactBox>
         </Row>
       </Card>
 

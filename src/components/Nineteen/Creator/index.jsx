@@ -32,7 +32,7 @@ const Image = styled("img")`
   height: 384px;
 `;
 
-const RenderVideo = ({ videoSrc, imageSrc, title }) => {
+const RenderVideo = ({ imageSrc, videoSrc, title }) => {
   return (
     <div style={{ postion: "relative" }}>
       {title && (
@@ -43,7 +43,9 @@ const RenderVideo = ({ videoSrc, imageSrc, title }) => {
       <Switch>
         {({ on, flick }) => (
           <>
-            <ResponsiveImage onClick={flick} src={imageSrc} alt={title} />
+            <div onClick={flick}>
+              <ResponsiveImage src={imageSrc} alt={title} />
+            </div>
             {on && (
               <Modal onRequestClose={flick}>
                 <Video src={videoSrc} title={title} />
@@ -116,7 +118,7 @@ const Creator = () => {
         <ResponsiveImage src={homestudio} />
       </Card>
 
-      <Card inverse header title="Murphy The Frug" pt={0}>
+      <Card inverse header title="Film: Murphy The Frug" pt={0}>
         <RenderVideo
           imageSrc="https://i.vimeocdn.com/video/846857707.webp?mw=1000&mh=500"
           videoSrc="https://player.vimeo.com/video/384943841"

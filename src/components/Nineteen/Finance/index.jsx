@@ -27,7 +27,7 @@ const Finance = () => {
             />
             <MetricBox
               color="rgb(36, 101, 65)"
-              title="financial independence target"
+              title="F.I.R.E target"
               metric="4.5%"
               inverse
             />
