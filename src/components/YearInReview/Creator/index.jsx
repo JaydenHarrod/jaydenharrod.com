@@ -26,8 +26,6 @@ const Image = styled("img")`
   object-fit: cover;
   display: flex;
   flex-grow: 1;
-  width: 384px;
-  height: 384px;
 `;
 
 const Media = () => {
@@ -135,11 +133,11 @@ const Media = () => {
 
       <Card inverse header title="Instagram @jaydenharrod" pt={0}>
         <Row justifyContent="center" pl="1rem" pr="1rem">
-          <Image alt="ig-photo" src={ig1} />
-          <Image alt="ig-photo" src={ig4} />
-          <Image alt="ig-photo" src={ig2} />
-          <Image alt="ig-photo" src={ig5} />
-          <Image alt="ig-photo" src={ig3} />
+          <Image width="33%" alt="ig-photo" src={ig1} />
+          <Image width="33%" alt="ig-photo" src={ig4} />
+          <Image width="33%" alt="ig-photo" src={ig2} />
+          <Image width="33%" alt="ig-photo" src={ig5} />
+          <Image width="33%" alt="ig-photo" src={ig3} />
         </Row>
       </Card>
     </>

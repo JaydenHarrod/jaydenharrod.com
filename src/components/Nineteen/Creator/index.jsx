@@ -28,7 +28,6 @@ const Image = styled("img")`
   object-fit: cover;
   display: flex;
   flex-grow: 1;
-  height: auto;
 `;
 
 const RenderVideo = ({ imageSrc, videoSrc, title }) => {
@@ -119,19 +118,19 @@ const Creator = () => {
 
       <Card header inverse title="Instagram @jaydenharrod" pb={0} pt={0}>
         <Row justifyContent="center">
-          <Image width="33%" height="400px" alt="ig-photo" src={ig4} />
-          <Image width="33%" height="400px" alt="ig-photo" src={ig9} />
-          <Image width="33%" height="400px" alt="ig-photo" src={ig3} />
+          <Image width="33%" alt="ig-photo" src={ig4} />
+          <Image width="33%" alt="ig-photo" src={ig9} />
+          <Image width="33%" alt="ig-photo" src={ig3} />
         </Row>
         <Row justifyContent="center">
-          <Image width="33%" height="400px" alt="ig-photo" src={ig1} />
-          <Image width="33%" height="400px" alt="ig-photo" src={ig7} />
-          <Image width="33%" height="400px" alt="ig-photo" src={ig5} />
+          <Image width="33%" alt="ig-photo" src={ig1} />
+          <Image width="33%" alt="ig-photo" src={ig7} />
+          <Image width="33%" alt="ig-photo" src={ig5} />
         </Row>
         <Row justifyContent="center">
-          <Image width="33%" height="400px" alt="ig-photo" src={ig6} />
-          <Image width="33%" height="400px" alt="ig-photo" src={ig2} />
-          <Image width="33%" height="400px" alt="ig-photo" src={ig8} />
+          <Image width="33%" alt="ig-photo" src={ig6} />
+          <Image width="33%" alt="ig-photo" src={ig2} />
+          <Image width="33%" alt="ig-photo" src={ig8} />
         </Row>
       </Card>
     </>
