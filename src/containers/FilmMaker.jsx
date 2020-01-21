@@ -1,5 +1,5 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
+import React from "react";
+import { Helmet } from "react-helmet";
 import {
   HeadingOne,
   Paragraph,
@@ -16,11 +16,11 @@ import {
   Modal,
   Switch,
   HeadingTwo
-} from '../shared';
+} from "../shared";
 
 const RenderVideo = ({ videoSrc, imageSrc, title }) => {
   return (
-    <div style={{ postion: 'relative' }}>
+    <div style={{ postion: "relative" }}>
       <Paragraph bold mb="0.5rem">
         {title}
       </Paragraph>
@@ -83,27 +83,27 @@ const FilmMaker = () => {
             <Label text="Ads" />
             <HeadingTwo>Tap an image to play</HeadingTwo>
             <RenderVideo
-              imageSrc="https://i.vimeocdn.com/video/677248506.webp?mw=2200&mh=1238&q=70"
+              imageSrc="https://i.vimeocdn.com/video/677248506_1280x720.jpg"
               videoSrc="https://player.vimeo.com/video/251011540"
               title="Sohoapp promotional launch #ad | sohoapp.com"
             />
             <RenderVideo
-              imageSrc="https://i.vimeocdn.com/video/677249032.webp?mw=2200&mh=1238&q=70"
+              imageSrc="https://i.vimeocdn.com/video/677249032_1280x720.jpg"
               videoSrc="https://player.vimeo.com/video/251011915"
               title="Will and Steve in the kitchen social short | lenovo.com.au"
             />
             <RenderVideo
-              imageSrc="https://i.vimeocdn.com/video/616335173.webp?mw=1400&mh=788&q=70"
+              imageSrc="https://i.vimeocdn.com/video/616335173_1280x720.jpg?q=60"
               videoSrc="https://player.vimeo.com/video/202331004"
               title="WipeHero INCUBATE documentary | wipehero.com.au"
             />
             <RenderVideo
-              imageSrc="https://i.vimeocdn.com/video/677248431.webp?mw=1400&mh=788&q=70"
+              imageSrc="https://i.vimeocdn.com/video/677248431_1280x720.jpg"
               videoSrc="https://player.vimeo.com/video/251011507"
               title="Timelapse showreel"
             />
             <RenderVideo
-              imageSrc="https://i.vimeocdn.com/video/677248275.webp?mw=1400&mh=788&q=70"
+              imageSrc="https://i.vimeocdn.com/video/677248275_1280x720.jpg"
               videoSrc="https://player.vimeo.com/video/251011370"
               title="Umina Beach Sony cinematics"
             />

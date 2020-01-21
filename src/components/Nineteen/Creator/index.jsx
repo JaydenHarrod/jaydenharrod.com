@@ -43,9 +43,7 @@ const RenderVideo = ({ imageSrc, videoSrc, title }) => {
       <Switch>
         {({ on, flick }) => (
           <>
-            <div onClick={flick}>
-              <ResponsiveImage src={imageSrc} alt={title} />
-            </div>
+            <ResponsiveImage onClick={flick} src={imageSrc} alt={title} />
             {on && (
               <Modal onRequestClose={flick}>
                 <Video src={videoSrc} title={title} />
@@ -120,7 +118,7 @@ const Creator = () => {
 
       <Card inverse header title="Film: Murphy The Frug" pt={0}>
         <RenderVideo
-          imageSrc="https://i.vimeocdn.com/video/846857707.webp?mw=1000&mh=500"
+          imageSrc="https://i.vimeocdn.com/video/846857707_1280x720.jpg"
           videoSrc="https://player.vimeo.com/video/384943841"
         />
       </Card>
