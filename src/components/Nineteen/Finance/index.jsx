@@ -17,7 +17,7 @@ const Finance = () => {
         Finance
       </HeadingOne>
       <Card header title="Expenses">
-        <Row>
+        <Row justifyContent="center">
           <Col lg={6} sm={12}>
             <MetricBox
               color="rgb(36, 101, 65)"

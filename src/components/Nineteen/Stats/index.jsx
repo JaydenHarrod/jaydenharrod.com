@@ -13,12 +13,11 @@ import {
 import sydney from "./cities/sydney.jpg";
 import newcastle from "./cities/newcastle.jpg";
 import brisbane from "./cities/brisbane.jpg";
-import wingham from "./cities/wingham.jpg";
 import gloucester from "./cities/gloucester.jpg";
 import TopCitiesBox from "../../YearInReview/Stats/TopCitiesBox";
 
 const FactBox = styled("div")`
-  width: 120px;
+  width: 100px;
   padding: 10px;
   background: #e8e8e8;
   color: #4c3a2e;
@@ -26,7 +25,7 @@ const FactBox = styled("div")`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
@@ -79,12 +78,6 @@ const Stats = () => {
             </EmojiIcon>
             7 companies
           </FactBox>
-          <FactBox>
-            <EmojiIcon role="img" aria-label="related-emoji">
-              🏆
-            </EmojiIcon>
-            best year award
-          </FactBox>
         </Row>
       </Card>
 
@@ -124,7 +117,6 @@ const Stats = () => {
           <TopCitiesBox city="Sydney" src={sydney} />
           <TopCitiesBox city="Gloucester" src={gloucester} />
           <TopCitiesBox city="Brisbane" src={brisbane} />
-          <TopCitiesBox city="Wingham" src={wingham} />
         </Row>
       </Card>
 

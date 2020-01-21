@@ -28,8 +28,7 @@ const Image = styled("img")`
   object-fit: cover;
   display: flex;
   flex-grow: 1;
-  width: 384px;
-  height: 384px;
+  height: auto;
 `;
 
 const RenderVideo = ({ imageSrc, videoSrc, title }) => {
@@ -64,53 +63,48 @@ const Creator = () => {
         Digital Creator
       </HeadingOne>
 
-      <Row justifyContent="space-evenly" gutter="1rem">
-        <Col lg={6} sm={12}>
-          <Card inverse header title="YouTube" pt={0}>
-            <Row mb="1rem">
-              <Col lg={6}>
-                <div
-                  className="g-ytsubscribe"
-                  title="Subscribe to JaydenHarrod on YouTube"
-                  data-channelid="UCOdFl-yPqum9818JPntA6DQ"
-                  data-layout="full"
-                  data-count="default"
-                  data-theme="dark"
-                />
-                <Stats inverse title="WATCH TIME (mins)" metric="24,300" />
-                <Stats inverse title="VIEWS" metric="16.7K" />
-                <Stats inverse title="SUBSCRIBERS" metric="+77" />
-              </Col>
-              <Col lg={6}>
-                <div
-                  className="g-ytsubscribe"
-                  title="Subscribe to SquizzFilms on YouTube"
-                  data-channel="SquizzFilms"
-                  data-layout="full"
-                  data-count="default"
-                  data-theme="dark"
-                />
-                <Stats inverse title="WATCH TIME (mins)" metric="55,200" />
-                <Stats inverse title="VIEWS" metric="32.8K" />
-                <Stats inverse title="SUBSCRIBERS" metric="-149" />
-              </Col>
-            </Row>
-          </Card>
-        </Col>
-        <Col lg={6} sm={12}>
-          <Card inverse header title="Allsides" pt={0}>
-            <iframe
-              src="https://open.spotify.com/embed/track/594vGYnxt8UgLRbao5RH9m"
-              title="Spotify Allsides release"
-              width="100%"
-              height="298"
-              frameBorder="0"
-              allowTransparency="true"
-              allow="encrypted-media"
+      <Card inverse header title="YouTube">
+        <Row mb="1rem" pt={{ xs: 2, lg: 0 }}>
+          <Col lg={6}>
+            <div
+              className="g-ytsubscribe"
+              title="Subscribe to JaydenHarrod on YouTube"
+              data-channelid="UCOdFl-yPqum9818JPntA6DQ"
+              data-layout="full"
+              data-count="default"
+              data-theme="dark"
             />
-          </Card>
-        </Col>
-      </Row>
+            <Stats inverse title="WATCH TIME (mins)" metric="24,300" />
+            <Stats inverse title="VIEWS" metric="16.7K" />
+            <Stats inverse title="SUBSCRIBERS" metric="+77" />
+          </Col>
+          <Col lg={6} mt={{ xs: 2, lg: 0 }}>
+            <div
+              className="g-ytsubscribe"
+              title="Subscribe to SquizzFilms on YouTube"
+              data-channel="SquizzFilms"
+              data-layout="full"
+              data-count="default"
+              data-theme="dark"
+            />
+            <Stats inverse title="WATCH TIME (mins)" metric="55,200" />
+            <Stats inverse title="VIEWS" metric="32.8K" />
+            <Stats inverse title="SUBSCRIBERS" metric="-149" />
+          </Col>
+        </Row>
+      </Card>
+
+      <Card inverse header title="Allsides" pt={0}>
+        <iframe
+          src="https://open.spotify.com/embed/track/594vGYnxt8UgLRbao5RH9m"
+          title="Spotify Allsides release"
+          width="100%"
+          height="298"
+          frameBorder="0"
+          allowTransparency="true"
+          allow="encrypted-media"
+        />
+      </Card>
 
       <Card inverse header title="Home Studio 2019" pt={0}>
         <ResponsiveImage src={homestudio} />
@@ -123,7 +117,7 @@ const Creator = () => {
         />
       </Card>
 
-      <Card header inverse title="Instagram @jaydenharrod" pb="0.4rem" pt={0}>
+      <Card header inverse title="Instagram @jaydenharrod" pb={0} pt={0}>
         <Row justifyContent="center">
           <Image width="33%" height="400px" alt="ig-photo" src={ig4} />
           <Image width="33%" height="400px" alt="ig-photo" src={ig9} />

@@ -43,8 +43,8 @@ const FinancePieChart = () => {
           isAnimationActive={true}
           data={data}
           cx="50%"
-          cy={200}
-          outerRadius={150}
+          cy={mobile ? 150 : 200}
+          outerRadius={125}
           fill="#8884d8"
           label={mobile ? null : renderLabel}
         >

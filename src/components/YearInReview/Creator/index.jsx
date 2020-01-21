@@ -42,8 +42,8 @@ const Media = () => {
       </HeadingOne>
 
       <Card inverse header title="YouTube" pt={0}>
-        <Row mb="1rem">
-          <Col lg={6} mt="2rem">
+        <Row mb="1rem" pt={{ xs: 2, lg: 0 }}>
+          <Col lg={6}>
             <div
               className="g-ytsubscribe"
               title="Subscribe to JaydenHarrod on YouTube"
@@ -61,7 +61,7 @@ const Media = () => {
             <Stats inverse title="VIEWS" metric="40K" />
             <Stats inverse title="SUBSCRIBERS" metric="+304" />
           </Col>
-          <Col lg={6} mt="2rem">
+          <Col lg={6} pt={{ xs: 2, lg: 0 }}>
             <div
               className="g-ytsubscribe"
               title="Subscribe to SquizzFilms on YouTube"

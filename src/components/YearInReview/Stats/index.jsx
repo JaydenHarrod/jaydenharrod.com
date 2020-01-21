@@ -17,7 +17,6 @@ import MediaBox from "./MediaBox";
 import newcastle from "./cities/newcastle.jpg";
 import bowral from "./cities/bowral.jpg";
 import cairns from "./cities/cairns.jpg";
-import airliebeach from "./cities/airliebeach.jpg";
 import brisbane from "./cities/brisbane.jpg";
 import nineNine from "./images/brooklyn-nine-nine.jpg";
 import dirkGently from "./images/dirk-gently.jpg";
@@ -171,7 +170,6 @@ const Stats = () => {
           <TopCitiesBox city="Bowral" src={bowral} />
           <TopCitiesBox city="Brisbane" src={brisbane} />
           <TopCitiesBox city="Cairns" src={cairns} />
-          <TopCitiesBox city="Airlie Beach" src={airliebeach} />
         </Row>
       </Card>
       <Card header title="2018 Location Data" pl="1rem">

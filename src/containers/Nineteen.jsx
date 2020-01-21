@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import styled from "styled-components";
 import { Helmet } from "react-helmet";
 import { Row, Col, Header, Container, Footer } from "../shared";
 
@@ -7,11 +6,6 @@ import Summary from "../components/Nineteen/Summary";
 import Stats from "../components/Nineteen/Stats";
 import Creator from "../components/Nineteen/Creator";
 import Finance from "../components/Nineteen/Finance";
-
-const Border = styled.div`
-  box-shadow: 2px 3px 4px ${props => props.theme.grey};
-  border-top: 1px solid ${props => props.theme.grey};
-`;
 
 class Nineteen extends Component {
   state = {
@@ -30,7 +24,7 @@ class Nineteen extends Component {
     const { toggle } = this.state;
 
     return (
-      <>
+      <Container>
         <Helmet>
           <title>2019 | Jayden Harrod</title>
           <meta
@@ -41,18 +35,9 @@ class Nineteen extends Component {
           />
           <script src="https://apis.google.com/js/platform.js" />
         </Helmet>
-        <Container>
-          <Header />
-        </Container>
-        <Border />
+        <Header />
         <Row justifyContent="center">
-          <Col
-            alignItems="center"
-            xs={12}
-            sm={10}
-            md={8}
-            order={{ xs: 2, lg: 1 }}
-          >
+          <Col xs={12}>
             <Summary toggle={toggle} handleToggle={this.handleToggle} />
             <Stats />
             <Creator />
@@ -60,7 +45,7 @@ class Nineteen extends Component {
             <Footer />
           </Col>
         </Row>
-      </>
+      </Container>
     );
   }
 }

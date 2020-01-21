@@ -39,7 +39,7 @@ const FinancePieChart = () => {
           data={data}
           cx="50%"
           cy={200}
-          outerRadius={150}
+          outerRadius={125}
           fill="#8884d8"
           label={mobile ? null : renderLabel}
         >
