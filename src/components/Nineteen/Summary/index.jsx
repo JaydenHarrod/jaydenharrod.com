@@ -3,12 +3,12 @@ import { Card, HeadingOne, Paragraph, HeadingTwo } from "../../../shared";
 import styled from "styled-components";
 
 const UnorderedList = styled("ul")`
-  background-color: #f3f3f3;
+  background-color: ${props => props.theme.cardTitle};
+  color: ${props => props.theme.text};
   border-radius: 4px;
   margin-top: -50px;
   padding: 20px;
-  padding-top: 50px;
-  color: #484848;
+  padding-top: 36px;
 
   li {
     padding-top: 4px;
@@ -19,12 +19,13 @@ const UnorderedList = styled("ul")`
 
 const ToggleButton = styled("button")`
   border: 0;
-  background-color: #e4e4e4;
+  background-color: ${props => props.theme.cardTitle};
+  color: ${props => props.theme.text};
   text-align: left;
   width: 100%;
-  color: #616161;
   border-radius: 4px;
-  padding: 8px;
+  padding: 12px 16px;
+  outline: none;
 `;
 
 const Summary = ({ handleToggle, toggle }) => {

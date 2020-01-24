@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { Footer, Row, Col, Header, Container } from "../shared";
+import { Row, Col, Container } from "../shared";
 
 import Summary from "../components/YearInReview/Summary";
 import Stats from "../components/YearInReview/Stats";
@@ -20,14 +20,12 @@ const YearInReview = () => {
         />
         <script src="https://apis.google.com/js/platform.js" />
       </Helmet>
-      <Header />
       <Row justifyContent="center">
         <Col xs={12}>
           <Summary />
           <Stats />
           <Creator />
           <Finance />
-          <Footer />
         </Col>
       </Row>
     </Container>

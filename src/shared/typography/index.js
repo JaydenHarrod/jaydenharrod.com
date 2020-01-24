@@ -9,7 +9,7 @@ export const HeadingOne = styled.h1`
   margin-bottom: 0;
   padding: 0;
   text-align: ${props => (props.center ? "center" : "left")};
-  color: ${props => (props.inverse ? "white" : "#333333")};
+  color: ${props => props.theme.text};
   ${space};
 `;
 
@@ -18,7 +18,7 @@ export const HeadingTwo = styled.h2`
   line-height: 1.2;
   margin: 1.414rem 0 0.5rem;
   padding: 0;
-  color: ${props => (props.inverse ? "white" : "#333333")};
+  color: ${props => props.theme.text};
   text-align: ${props => (props.center ? "center" : "left")};
   ${space};
 `;
@@ -30,7 +30,7 @@ export const Paragraph = styled.p`
   padding: 0;
   text-align: ${props => (props.center ? "center" : "left")};
   font-weight: ${props => (props.bold ? "600" : "normal")};
-  color: ${props => (props.inverse ? "white" : "#333333")};
+  color: ${props => props.theme.text};
   ${space};
 `;
 
@@ -42,7 +42,7 @@ export const Anchor = styled.a`
   display: ${props => (props.block ? "block" : "")};
   text-align: ${props => (props.center ? "center" : "left")};
   font-weight: ${props => (props.bold ? "600" : "normal")};
-  color: ${props => (props.active ? props.theme.text : props.theme.darkGrey)};
+  color: ${props => (props.active ? props.theme.text : props.theme.highlight)};
   text-decoration: none;
   cursor: pointer;
   ${space};
@@ -51,7 +51,7 @@ export const Anchor = styled.a`
     text-decoration: underline;
   }
   :active {
-    color: ${props => props.theme.darkGrey};
+    color: ${props => props.theme.highlight};
   }
 `;
 
@@ -60,7 +60,7 @@ export const TinyText = styled.p`
   line-height: 1.45rem;
   margin: 0.1rem 0 0 0;
   padding: 0;
-  color: ${props => (props.inverse ? "white" : "#333333")};
+  color: ${props => props.theme.text};
   text-align: ${props => (props.center ? "center" : "left")};
   ${space};
 `;

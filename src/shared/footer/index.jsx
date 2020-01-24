@@ -4,47 +4,52 @@ import { TinyText, Anchor } from "../typography";
 export const Footer = () => {
   return (
     <TinyText center mb="1rem">
-      &copy; Jayden Harrod{" "}
+      &copy; Jayden Harrod -{" "}
       <Anchor
         mr="0.3rem"
         rel="noopener"
         target="_blank"
         href="https://youtube.com/jaydenharrod"
       >
-        YouTube -
+        YouTube
       </Anchor>
+      -{" "}
       <Anchor
         mr="0.3rem"
         rel="noopener"
         target="_blank"
         href="https://instagram.com/jaydenharrod"
       >
-        Instagram -
+        Instagram
       </Anchor>
+      -{" "}
       <Anchor
         mr="0.3rem"
         rel="noopener"
         target="_blank"
         href="https://twitter.com/jaydenharrod"
       >
-        Twitter -
+        Twitter
       </Anchor>
+      -{" "}
       <Anchor
         mr="0.3rem"
         rel="noopener"
         target="_blank"
         href="https://github.com/jaydenharrod"
       >
-        Github -
+        Github
       </Anchor>
+      -{" "}
       <Anchor
         mr="0.3rem"
         rel="noopener"
         target="_blank"
         href="https://medium.com/@jaydenharrod"
       >
-        Medium -
+        Medium
       </Anchor>
+      -{" "}
       <Anchor
         mr="0.3rem"
         rel="noopener"

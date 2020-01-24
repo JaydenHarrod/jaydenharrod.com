@@ -9,7 +9,7 @@ const Container = styled.div`
   border-radius: 4px;
   background: #fff;
   margin-bottom: 1rem;
-  box-shadow: 0px 1px 6px ${props => props.theme.grey};
+  box-shadow: ${props => props.theme.boxShadow};
   @media (max-width: 30rem) {
     border-radius: 0;
   }
@@ -17,8 +17,8 @@ const Container = styled.div`
 
 const Padding = styled.div`
   padding: 1rem;
-  background-color: ${props => (props.inverse === true ? "#000" : "#fff")};
-  color: ${props => (props.inverse === false ? "#000" : "unset")};
+  background-color: ${props => props.theme.card};
+  color: ${props => props.theme.text};
   ${space};
 `;
 
@@ -29,27 +29,25 @@ const Header = styled.div`
   color: #fff;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  background-color: #000;
+  background-color: ${props => props.theme.cardTitle};
   padding-left: 1rem;
   @media (max-width: 30rem) {
     border-radius: 0;
   }
 `;
 
-export const Card = ({ header, title, children, inverse, ...rest }) => {
+export const Card = ({ header, title, children, ...rest }) => {
   return (
     <>
       <Container>
         {header && (
           <Header>
-            <HeadingTwo inverse={true} mt={0} mb={0}>
+            <HeadingTwo mt={0} mb={0}>
               {title}
             </HeadingTwo>
           </Header>
         )}
-        <Padding inverse={inverse} {...rest}>
-          {children}
-        </Padding>
+        <Padding {...rest}>{children}</Padding>
       </Container>
     </>
   );

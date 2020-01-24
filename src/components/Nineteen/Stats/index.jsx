@@ -19,8 +19,8 @@ import TopCitiesBox from "../../YearInReview/Stats/TopCitiesBox";
 const FactBox = styled("div")`
   width: 100px;
   padding: 10px;
-  background: #e8e8e8;
-  color: #4c3a2e;
+  background-color: ${props => props.theme.cardTitle};
+  color: ${props => props.theme.text};
   border-radius: 4px;
   display: flex;
   flex-direction: column;
@@ -29,9 +29,6 @@ const FactBox = styled("div")`
   text-align: center;
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
-  :hover {
-    background: #eeee;
-  }
 `;
 
 const EmojiIcon = styled("span")`
@@ -81,7 +78,7 @@ const Stats = () => {
         </Row>
       </Card>
 
-      <Card header title="Todoist" pt={0} ml="1rem" mr="1rem">
+      <Card header title="Todoist" pt={0} pl="2rem" pr="2rem">
         <Row justifyContent="space-between">
           <StatsBox title="TASKS" metric="1182" />
           <StatsBox title="KARMA POINTS" metric="6,483" />
@@ -94,7 +91,7 @@ const Stats = () => {
         </Row>
       </Card>
 
-      <Card header title="Streaming" pt={0} ml="1rem" mr="1rem">
+      <Card header title="Streaming" pt={0} pl="2rem" pr="2rem">
         <Row justifyContent="space-between">
           <StatsBox title="YOUTUBE WATCHED" metric="400 hours" />
           <StatsBox title="SPOTIFY LISTENED" metric="27,241 mins" />
@@ -102,7 +99,7 @@ const Stats = () => {
         </Row>
       </Card>
 
-      <Card header title="Whatpulse" pt={0} ml="1rem" mr="1rem">
+      <Card header title="Whatpulse" pt={0} pl="2rem" pr="2rem">
         <Row justifyContent="space-between">
           <StatsBox title="KEYS ⌨️" metric="2,799,881" />
           <StatsBox title="CLICKS 🖱" metric="3,011,896" />

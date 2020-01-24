@@ -54,7 +54,8 @@ const RenderVideo = ({ imageSrc, videoSrc, title }) => {
   );
 };
 
-const Creator = () => {
+const Creator = props => {
+  const theme = props.isDarkMode ? "dark" : "light";
   return (
     <>
       <div id="creator" />
@@ -62,7 +63,7 @@ const Creator = () => {
         Digital Creator
       </HeadingOne>
 
-      <Card inverse header title="YouTube">
+      <Card header title="YouTube">
         <Row mb="1rem" pt={{ xs: 2, lg: 0 }}>
           <Col lg={6}>
             <div
@@ -71,11 +72,11 @@ const Creator = () => {
               data-channelid="UCOdFl-yPqum9818JPntA6DQ"
               data-layout="full"
               data-count="default"
-              data-theme="dark"
+              data-theme={theme}
             />
-            <Stats inverse title="WATCH TIME (mins)" metric="24,300" />
-            <Stats inverse title="VIEWS" metric="16.7K" />
-            <Stats inverse title="SUBSCRIBERS" metric="+77" />
+            <Stats title="WATCH TIME (mins)" metric="24,300" />
+            <Stats title="VIEWS" metric="16.7K" />
+            <Stats title="SUBSCRIBERS" metric="+77" />
           </Col>
           <Col lg={6} mt={{ xs: 2, lg: 0 }}>
             <div
@@ -84,16 +85,16 @@ const Creator = () => {
               data-channel="SquizzFilms"
               data-layout="full"
               data-count="default"
-              data-theme="dark"
+              data-theme={theme}
             />
-            <Stats inverse title="WATCH TIME (mins)" metric="55,200" />
-            <Stats inverse title="VIEWS" metric="32.8K" />
-            <Stats inverse title="SUBSCRIBERS" metric="-149" />
+            <Stats title="WATCH TIME (mins)" metric="55,200" />
+            <Stats title="VIEWS" metric="32.8K" />
+            <Stats title="SUBSCRIBERS" metric="-149" />
           </Col>
         </Row>
       </Card>
 
-      <Card inverse header title="Allsides" pt={0}>
+      <Card header title="Allsides">
         <iframe
           src="https://open.spotify.com/embed/track/594vGYnxt8UgLRbao5RH9m"
           title="Spotify Allsides release"
@@ -105,18 +106,18 @@ const Creator = () => {
         />
       </Card>
 
-      <Card inverse header title="Home Studio 2019" pt={0}>
+      <Card header title="Home Studio 2019" pt={0}>
         <ResponsiveImage src={homestudio} />
       </Card>
 
-      <Card inverse header title="Film: Murphy The Frug" pt={0}>
+      <Card header title="Film: Murphy The Frug" pt={0}>
         <RenderVideo
           imageSrc="https://i.vimeocdn.com/video/846857707_1280x720.jpg"
           videoSrc="https://player.vimeo.com/video/384943841"
         />
       </Card>
 
-      <Card header inverse title="Instagram @jaydenharrod" pb={0} pt={0}>
+      <Card header title="Instagram @jaydenharrod" pb={0} pt={0}>
         <Row justifyContent="center">
           <Image width="33%" alt="ig-photo" src={ig4} />
           <Image width="33%" alt="ig-photo" src={ig9} />

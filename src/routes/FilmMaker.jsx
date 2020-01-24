@@ -1,7 +1,7 @@
-import React, { Suspense } from 'react';
-import { Loader } from '../shared';
+import React, { Suspense } from "react";
+import { Loader } from "../shared";
 
-const Container = React.lazy(() => import('../containers/FilmMaker'));
+const Container = React.lazy(() => import("../containers/FilmMaker"));
 
 const FilmMaker = () => {
   return (

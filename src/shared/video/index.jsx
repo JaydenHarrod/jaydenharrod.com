@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import { space } from 'styled-system';
+import React from "react";
+import styled from "styled-components";
+import { space } from "styled-system";
 
 const VideoFrame = styled.div`
   position: relative;
@@ -24,7 +24,7 @@ export const Video = ({ src, title, ...rest }) => {
         title={title}
         frameBorder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
+        allowFullScreen
       />
     </VideoFrame>
   );

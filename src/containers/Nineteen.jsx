@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Helmet } from "react-helmet";
-import { Row, Col, Header, Container, Footer } from "../shared";
+import { Row, Col, Container } from "../shared";
 
 import Summary from "../components/Nineteen/Summary";
 import Stats from "../components/Nineteen/Stats";
@@ -35,14 +35,12 @@ class Nineteen extends Component {
           />
           <script src="https://apis.google.com/js/platform.js" />
         </Helmet>
-        <Header />
         <Row justifyContent="center">
           <Col xs={12}>
             <Summary toggle={toggle} handleToggle={this.handleToggle} />
             <Stats />
             <Creator />
             <Finance />
-            <Footer />
           </Col>
         </Row>
       </Container>

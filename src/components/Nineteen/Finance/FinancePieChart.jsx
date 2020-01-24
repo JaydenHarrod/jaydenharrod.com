@@ -15,6 +15,7 @@ const data = [
   { value: 1500, name: "Utilities" },
   { value: 600, name: "Personal Care" }
 ];
+
 const COLORS = [
   "rgb(101, 36, 36)",
   "rgb(116, 41, 41)",
@@ -45,7 +46,6 @@ const FinancePieChart = () => {
           cx="50%"
           cy={mobile ? 150 : 200}
           outerRadius={125}
-          fill="#8884d8"
           label={mobile ? null : renderLabel}
         >
           {data.map((entry, index) => (

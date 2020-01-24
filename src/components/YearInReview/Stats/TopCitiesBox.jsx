@@ -13,7 +13,7 @@ const Box = styled.div`
   margin-right: 1rem;
   margin-bottom: 1rem;
   border-radius: 8px;
-  border: 1px solid rgb(222, 222, 222);
+  border: ${props => props.theme.border};
 `;
 
 const ImageBox = styled.div`
@@ -23,7 +23,6 @@ const ImageBox = styled.div`
   border-top-right-radius: 7px;
   border-bottom-left-radius: none;
   border-bottom-right-radius: none;
-  border-bottom: 1px solid ${props => props.theme.lightGrey};
   color: #fff;
   background-size: cover;
   background-position: top center;

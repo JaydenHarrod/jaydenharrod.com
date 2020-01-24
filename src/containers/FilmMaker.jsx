@@ -7,8 +7,6 @@ import {
   Card,
   Label,
   Video,
-  Footer,
-  Header,
   Container,
   Col,
   Image,
@@ -52,7 +50,6 @@ const FilmMaker = () => {
           videography services with a focus on destinations and experiences."
         />
       </Helmet>
-      <Header />
       <Card>
         <Row pl="1rem" pr="1rem">
           <Col xs={12}>
@@ -110,7 +107,6 @@ const FilmMaker = () => {
           </Col>
         </Row>
       </Card>
-      <Footer />
     </Container>
   );
 };

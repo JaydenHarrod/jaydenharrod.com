@@ -1,16 +1,19 @@
-import React from "react";
+/* eslint-disable jsx-a11y/accessible-emoji */
+import React, { Component } from "react";
 import styled from "styled-components";
-import { Link as RouteLink } from "react-router-dom";
+import { withRouter } from "react-router";
+import { NavLink } from "react-router-dom";
 import { Row, Col, Container } from "../layout";
 import { Anchor } from "../typography";
-import logo from "../../components/images/logo.png";
+import wlogo from "../../components/images/logo.png";
+import dlogo from "../../components/images/dlogo.png";
 
-const MenuLink = Anchor.withComponent(RouteLink);
+const MenuLink = Anchor.withComponent(NavLink);
 
 const StyledRow = styled(Row)`
   display: flex;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 3rem;
   background-color: ${props => (props.full ? "#fff" : "inherit")};
   box-shadow: ${props =>
     props.full ? "0px 2px 6px rgb(175, 175, 175)" : "none"};
@@ -43,68 +46,102 @@ const Logo = styled.img`
 const MobileNav = styled.div`
   display: flex;
   flex-direction: row;
+  align-items: baseline;
 `;
 
-export const Header = ({ props, full }) => {
-  const activePath = window.location.pathname;
-  return (
-    <Container>
-      <StyledRow full={full}>
-        <StyledCol xs={12}>
-          <MenuLink to="/" mt={0}>
-            <Logo src={logo} alt="Navigate Home" />
-          </MenuLink>
-          <MobileNav>
-            <MenuLink
-              to="/"
-              mt="0"
-              ml="1rem"
-              mr="0.3rem"
-              mb="0.5rem"
-              title="Navigate Home"
-              active={activePath === "/" ? true : false}
-            >
-              Home
-            </MenuLink>
+const ThemeToggleBtn = styled.div`
+  border: ${props => props.theme.border};
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 14px;
+  padding: 8px 12px;
+  background-color: ${props => props.theme.cardTitle};
+  color: ${props => props.theme.text};
+  height: 100%;
+`;
 
-            <MenuLink
-              to="/filmmaker"
-              mt="0"
-              ml="1rem"
-              mr="0.3rem"
-              mb="0.5rem"
-              title="Navigate to Film Maker"
-              active={activePath === "/filmmaker" ? true : false}
-            >
-              Film Maker
+class Header extends Component {
+  render() {
+    const { full, isDarkMode, onDarkModeClick } = this.props;
+    const pathname = this.props.location.pathname;
+    return (
+      <Container>
+        <StyledRow full={full}>
+          <StyledCol xs={12}>
+            <MenuLink to="/" mt={0}>
+              <Logo src={isDarkMode ? dlogo : wlogo} alt="Navigate Home" />
             </MenuLink>
+            <MobileNav>
+              <MenuLink
+                to="/"
+                mt="0"
+                ml="1rem"
+                mr="0.3rem"
+                mb="0.5rem"
+                title="Navigate Home"
+                active={pathname === "/" ? true : false}
+              >
+                Home
+              </MenuLink>
 
-            <MenuLink
-              to="/2018"
-              mt="0"
-              ml="1rem"
-              mr="0.3rem"
-              mb="0.5rem"
-              title="Navigate to Year In Review"
-              active={activePath === "/2018" ? true : false}
-            >
-              2018
-            </MenuLink>
+              <MenuLink
+                to="/filmmaker"
+                mt="0"
+                ml="1rem"
+                mr="0.3rem"
+                mb="0.5rem"
+                title="Navigate to Film Maker"
+                active={pathname === "/filmmaker" ? true : false}
+              >
+                Film Maker
+              </MenuLink>
 
-            <MenuLink
-              to="/2019"
-              mt="0"
-              ml="1rem"
-              mr="0.3rem"
-              mb="0.5rem"
-              title="Navigate to Year In Review"
-              active={activePath === "/2019" ? true : false}
-            >
-              2019
-            </MenuLink>
-          </MobileNav>
-        </StyledCol>
-      </StyledRow>
-    </Container>
-  );
-};
+              <MenuLink
+                to="/2018"
+                mt="0"
+                ml="1rem"
+                mr="0.3rem"
+                mb="0.5rem"
+                title="Navigate to Year In Review"
+                active={pathname === "/2018" ? true : false}
+              >
+                2018
+              </MenuLink>
+
+              <MenuLink
+                to="/2019"
+                mt="0"
+                ml="1rem"
+                mr="0.3rem"
+                mb="0.5rem"
+                title="Navigate to Year In Review"
+                active={pathname === "/2019" ? true : false}
+              >
+                2019
+              </MenuLink>
+              {isDarkMode ? (
+                <ThemeToggleBtn
+                  aria-label="enable dark mode"
+                  onClick={onDarkModeClick}
+                  isDarkMode={isDarkMode}
+                >
+                  Light 💡
+                </ThemeToggleBtn>
+              ) : (
+                <ThemeToggleBtn
+                  aria-label="disable dark mode"
+                  onClick={onDarkModeClick}
+                  isDarkMode={isDarkMode}
+                >
+                  Dark 🌚
+                </ThemeToggleBtn>
+              )}
+            </MobileNav>
+          </StyledCol>
+        </StyledRow>
+      </Container>
+    );
+  }
+}
+
+export default withRouter(Header);

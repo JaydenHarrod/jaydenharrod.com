@@ -39,7 +39,7 @@ const Media = () => {
         Digital Creator
       </HeadingOne>
 
-      <Card inverse header title="YouTube" pt={0}>
+      <Card header title="YouTube">
         <Row mb="1rem" pt={{ xs: 2, lg: 0 }}>
           <Col lg={6}>
             <div
@@ -48,16 +48,14 @@ const Media = () => {
               data-channelid="UCOdFl-yPqum9818JPntA6DQ"
               data-layout="full"
               data-count="default"
-              data-theme="dark"
             />
             <Stats
-              inverse
               title="WATCH TIME (mins)"
               metric="60K"
               fact="(part-time for a year at 20 hrs a week)"
             />
-            <Stats inverse title="VIEWS" metric="40K" />
-            <Stats inverse title="SUBSCRIBERS" metric="+304" />
+            <Stats title="VIEWS" metric="40K" />
+            <Stats title="SUBSCRIBERS" metric="+304" />
           </Col>
           <Col lg={6} pt={{ xs: 2, lg: 0 }}>
             <div
@@ -66,22 +64,20 @@ const Media = () => {
               data-channel="SquizzFilms"
               data-layout="full"
               data-count="default"
-              data-theme="dark"
             />
             <Stats
-              inverse
               title="WATCH TIME (mins)"
               metric="152K"
               fact="(more than the duration of winter)"
             />
-            <Stats inverse title="VIEWS" metric="75K" />
-            <Stats inverse title="SUBSCRIBERS" metric="-116" />
+            <Stats title="VIEWS" metric="75K" />
+            <Stats title="SUBSCRIBERS" metric="-116" />
           </Col>
         </Row>
       </Card>
 
-      <Card inverse header title="Allsides" pt={0}>
-        <Paragraph inverse mt={0}>
+      <Card header title="Allsides">
+        <Paragraph mt={0}>
           In 2018 I started my hard dance music alias Allsides. I released my
           first single followed by a 12 track album avaliable on all major
           portals.
@@ -97,16 +93,14 @@ const Media = () => {
         />
       </Card>
 
-      <Card inverse header title="Home Studio 2018" pt={0}>
+      <Card header title="Home Studio 2018">
         <ResponsiveImage src={homestudio} />
       </Card>
 
       <Card
-        inverse
         header
         title="Young Endeavour V15/18"
         pl="1rem"
-        pt={0}
         style={{ position: "relative" }}
       >
         <Switch>
@@ -131,7 +125,7 @@ const Media = () => {
         </Switch>
       </Card>
 
-      <Card inverse header title="Instagram @jaydenharrod" pt={0}>
+      <Card header title="Instagram @jaydenharrod">
         <Row justifyContent="center" pl="1rem" pr="1rem">
           <Image width="33%" alt="ig-photo" src={ig1} />
           <Image width="33%" alt="ig-photo" src={ig4} />

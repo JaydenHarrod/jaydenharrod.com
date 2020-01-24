@@ -10,8 +10,8 @@ const Box = styled.div`
   height: 6rem;
   border-radius: 8px;
   margin-bottom: 2rem;
-  color: #fff;
-  box-shadow: 0px 2px 4px ${props => props.theme.grey};
+  text-align: center;
+  box-shadow: ${props => props.theme.boxShadow};
   background-image: url(${props => props.src});
   background-color: ${props => props.color};
   background-position: center center;
@@ -23,21 +23,25 @@ const Box = styled.div`
   }
 `;
 
+const InverseParagraph = styled(Paragraph)`
+  color: #fff;
+`;
+
 const MediaBox = ({ entity, src, type }) => {
   return (
     <>
       {type === "spotify" && (
         <Box src={src} color="rgb(29,185,84, 0.5)">
-          <Paragraph inverse={true} bold>
+          <InverseParagraph center bold>
             {entity}
-          </Paragraph>
+          </InverseParagraph>
         </Box>
       )}
       {type === "netflix" && (
         <Box src={src} color="rgb(229, 9, 20, 0.5)">
-          <Paragraph inverse={true} bold>
+          <InverseParagraph center bold>
             {entity}
-          </Paragraph>
+          </InverseParagraph>
         </Box>
       )}
     </>

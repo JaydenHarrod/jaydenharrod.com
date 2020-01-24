@@ -1,15 +1,6 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import {
-  Container,
-  Row,
-  Col,
-  Header,
-  Footer,
-  Card,
-  HeadingOne,
-  Paragraph
-} from '../shared';
+import React from "react";
+import { Helmet } from "react-helmet";
+import { Container, Row, Col, Card, HeadingOne, Paragraph } from "../shared";
 
 const Projects = () => {
   return (
@@ -23,7 +14,6 @@ const Projects = () => {
           Australia. He's best known for his YouTube channels."
         />
       </Helmet>
-      <Header />
       <Card>
         <Row pl="1rem" pr="1rem">
           <Col xs={12}>
@@ -41,7 +31,6 @@ const Projects = () => {
           </Col>
         </Row>
       </Card>
-      <Footer />
     </Container>
   );
 };

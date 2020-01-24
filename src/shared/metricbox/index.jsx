@@ -11,8 +11,8 @@ const Box = styled.div`
   margin-left: ${props => (props.vertical ? props.vertical : "1rem")};
   margin-right: ${props => (props.vertical ? props.vertical : "1rem")};
   padding: 1rem;
-  color: #fff;
-  box-shadow: 0px 2px 4px ${props => props.theme.grey};
+  color: ${props => props.theme.textAlternate};
+  box-shadow: ${props => props.theme.boxShadow};
   background-color: ${props => (props.color ? props.color : props.theme.info)};
   background-position: center center;
   background-blend-mode: multiply;
@@ -24,15 +24,21 @@ const Box = styled.div`
   }
 `;
 
-export const MetricBox = ({ title, metric, color, vertical, inverse }) => {
+const InverseParagraph = styled(Paragraph)`
+  color: inherit;
+`;
+
+const InverseHeadingOne = styled(HeadingOne)`
+  color: inherit;
+`;
+
+export const MetricBox = ({ title, metric, color, vertical }) => {
   return (
     <Box color={color} vertical={vertical}>
-      <Paragraph inverse={inverse} bold mt={0} mb={0} mr="1rem">
+      <InverseParagraph bold mt={0} mb={0} mr="1rem">
         {title}
-      </Paragraph>
-      <HeadingOne inverse={inverse} mt={0}>
-        {metric}
-      </HeadingOne>
+      </InverseParagraph>
+      <InverseHeadingOne mt={0}>{metric}</InverseHeadingOne>
     </Box>
   );
 };

@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import { space } from 'styled-system';
+import React from "react";
+import styled from "styled-components";
+import { space } from "styled-system";
 
 const Pill = styled.div`
   background-color: ${props =>
@@ -17,7 +17,7 @@ const Pill = styled.div`
   margin-bottom: 1rem;
   ${space};
   :hover {
-    border: 1px solid #001b44;
+    border: ${props => props.theme.border};
     transition: border 0.2s ease-out;
     box-shadow: 1px 1px 3px #333;
     transition: box-shadow 0.2s ease-out;

@@ -45,7 +45,7 @@ const Stats = () => {
         <FitBitChart />
       </Card>
 
-      <Card header title="Todoist" pt={0} ml="1rem" mr="1rem">
+      <Card header title="Todoist" pt={0} pl="2rem" pr="2rem">
         <Row justifyContent="space-between">
           <StatsBox title="TASKS" metric="871" />
           <StatsBox title="KARMA POINTS" metric="4,061" />
@@ -58,7 +58,7 @@ const Stats = () => {
         </Row>
       </Card>
 
-      <Card header title="Whatpulse" pt={0} ml="1rem" mr="1rem">
+      <Card header title="Whatpulse" pt={0} pl="2rem" pr="2rem">
         <Row justifyContent="space-between">
           <StatsBox title="KEYS ⌨️" metric="3,374,383" />
           <StatsBox title="CLICKS 🖱" metric="2,282,244" />
@@ -69,7 +69,7 @@ const Stats = () => {
 
       <Row justifyContent="space-evenly" gutter="1rem">
         <Col xs={12} md={6} lg={6} order={{ xs: 2, lg: 1 }}>
-          <Card header title="Spotify" pt={0} pb={0}>
+          <Card header title="Spotify" pb={0}>
             <StatsBox
               title="MINUTES STREAMED"
               metric="36,526"
@@ -118,13 +118,7 @@ const Stats = () => {
         </Col>
 
         <Col xs={12} md={6} lg={6} order={{ xs: 2, lg: 1 }} gutter="1rem">
-          <Card
-            header
-            title="Netflix"
-            pt={0}
-            pb={0}
-            style={{ minHeight: "526px" }}
-          >
+          <Card header title="Netflix" pb={4} style={{ minHeight: "526px" }}>
             <StatsBox title="EPISODES WATCHED" metric="384" />
             <StatsBox
               title="EST HOURS WATCHED"

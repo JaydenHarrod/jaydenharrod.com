@@ -1,7 +1,7 @@
-import React, { Suspense } from 'react';
-import { Loader } from '../shared';
+import React, { Suspense } from "react";
+import { Loader } from "../shared";
 
-const Container = React.lazy(() => import('../containers/Home'));
+const Container = React.lazy(() => import("../containers/Home"));
 
 const Home = () => {
   return (
