@@ -28,6 +28,10 @@ const Image = styled("img")`
   object-fit: cover;
   display: flex;
   flex-grow: 1;
+  max-height: 109px;
+  @media (min-width: 768px) {
+    max-height: unset;
+  }
 `;
 
 const RenderVideo = ({ imageSrc, videoSrc, title }) => {
@@ -106,11 +110,11 @@ const Creator = props => {
         />
       </Card>
 
-      <Card header title="Home Studio 2019" pt={0}>
+      <Card header title="Home Studio 2019">
         <ResponsiveImage src={homestudio} />
       </Card>
 
-      <Card header title="Film: Murphy The Frug" pt={0}>
+      <Card header title="Film: Murphy The Frug">
         <RenderVideo
           imageSrc="https://i.vimeocdn.com/video/846857707_1280x720.jpg"
           videoSrc="https://player.vimeo.com/video/384943841"

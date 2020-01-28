@@ -55,6 +55,7 @@ const ThemeToggleBtn = styled.div`
   cursor: pointer;
   margin-left: 14px;
   padding: 8px 12px;
+  padding-left: 16px;
   background-color: ${props => props.theme.cardTitle};
   color: ${props => props.theme.text};
   height: 100%;
@@ -93,7 +94,7 @@ class Header extends Component {
                 title="Navigate to Film Maker"
                 active={pathname === "/filmmaker" ? true : false}
               >
-                Film Maker
+                Filmer
               </MenuLink>
 
               <MenuLink
@@ -125,7 +126,7 @@ class Header extends Component {
                   onClick={onDarkModeClick}
                   isDarkMode={isDarkMode}
                 >
-                  Light 💡
+                  💡
                 </ThemeToggleBtn>
               ) : (
                 <ThemeToggleBtn
@@ -133,7 +134,7 @@ class Header extends Component {
                   onClick={onDarkModeClick}
                   isDarkMode={isDarkMode}
                 >
-                  Dark 🌚
+                  🌚
                 </ThemeToggleBtn>
               )}
             </MobileNav>

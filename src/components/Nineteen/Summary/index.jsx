@@ -50,7 +50,7 @@ const Summary = ({ handleToggle, toggle }) => {
           not my identity or a place I saw myself living long-term. With the
           reward potentials high and the timing right, I took a huge risk and
           moved back to my hometown of Newcastle, NSW to completely redefine how
-          I lived my life in 2019.
+          I live.
         </Paragraph>
         <HeadingTwo>Achievements</HeadingTwo>
         <Paragraph>

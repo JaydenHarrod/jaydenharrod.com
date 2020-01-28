@@ -13,6 +13,8 @@ const VideoFrame = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
+    max-width: 1280px;
+    max-height: 720px;
   }
 `;
 
