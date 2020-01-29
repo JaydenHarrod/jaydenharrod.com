@@ -5,12 +5,15 @@ import { space } from "styled-system";
 const VideoFrame = styled.div`
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
-  padding-top: 25px;
+  width: 100%;
+  margin: 0 auto;
   ${space}
   iframe {
     position: absolute;
-    top: 0;
     left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
     height: 100%;
     max-width: 1280px;

@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
-import ScrollLock from 'react-scrolllock';
-import ReactDOM from 'react-dom';
-import styled from 'styled-components';
-import { Row, Col } from '../layout';
+import React, { Component } from "react";
+import ScrollLock from "react-scrolllock";
+import ReactDOM from "react-dom";
+import styled from "styled-components";
 
 const Overlay = styled.div`
   position: fixed;
@@ -18,9 +17,12 @@ const Overlay = styled.div`
 const Close = styled.div`
   font-size: 1rem;
   text-align: right;
-  margin-bottom: 1rem;
+  padding: 1rem 0;
   color: #fff;
   cursor: pointer;
+  width: 100vw;
+  max-width: 1280px;
+  margin: 0 auto;
   :hover {
     text-decoration: underline;
   }
@@ -46,25 +48,21 @@ export class Modal extends Component {
   componentDidMount() {
     const { ignoreEscape } = this.props;
     if (!ignoreEscape) {
-      document.addEventListener('keydown', this.handleEscapeKey);
+      document.addEventListener("keydown", this.handleEscapeKey);
     }
   }
 
   componentWillUnmount() {
-    document.removeEventListener('keydown', this.handleEscapeKey);
+    document.removeEventListener("keydown", this.handleEscapeKey);
   }
 
   render() {
     const { children, ...rest } = this.props;
     const elements = (
       <Overlay onClick={this.onRequestClose} {...rest}>
-        <Row justifyContent="center" p="1rem">
-          <Col xs={12} md={8}>
-            <Close onClick={this.onRequestClose}>Tap or ESC to close</Close>
-            <ScrollLock />
-            {children}
-          </Col>
-        </Row>
+        <Close onClick={this.onRequestClose}>Tap or ESC to close</Close>
+        <ScrollLock />
+        {children}
       </Overlay>
     );
 
