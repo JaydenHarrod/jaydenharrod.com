@@ -15,6 +15,7 @@ const VideoFrame = styled.div`
     height: 100%;
     max-width: 1280px;
     max-height: 720px;
+    margin: 0 auto;
   }
 `;
 
