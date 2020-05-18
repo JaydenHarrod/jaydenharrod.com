@@ -12,8 +12,9 @@ export {
   HeadingTwo,
   Paragraph,
   Anchor,
-  TinyText
+  TinyText,
 } from "./typography";
 export { Video } from "./video";
 export { Switch } from "./switch";
 export { Modal } from "./modal";
+export { Page } from "./page";

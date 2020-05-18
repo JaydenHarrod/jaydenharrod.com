@@ -9,9 +9,8 @@ const Overlay = styled.div`
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.9);
-  @media (max-width: 30rem) {
-    padding: 0;
-  }
+  padding: 20px;
+  box-sizing: border-box;
 `;
 
 const Close = styled.div`
@@ -20,7 +19,7 @@ const Close = styled.div`
   padding: 1rem 0;
   color: #fff;
   cursor: pointer;
-  width: 100vw;
+  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   :hover {
@@ -35,13 +34,13 @@ export class Modal extends Component {
     onRequestClose();
   };
 
-  handleEscapeKey = event => {
+  handleEscapeKey = (event) => {
     if (event && event.keyCode === 27) {
       this.onRequestClose();
     }
   };
 
-  handleModalClick = event => {
+  handleModalClick = (event) => {
     event.stopPropagation();
   };
 
