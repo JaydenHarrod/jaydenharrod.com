@@ -8,19 +8,19 @@ import {
   Row,
   Stats as StatsBox,
   Anchor,
-  MetricBox
+  MetricBox,
 } from "../../../shared";
 import sydney from "./cities/sydney.jpg";
 import newcastle from "./cities/newcastle.jpg";
 import brisbane from "./cities/brisbane.jpg";
 import gloucester from "./cities/gloucester.jpg";
-import TopCitiesBox from "../../YearInReview/Stats/TopCitiesBox";
+import TopCitiesBox from "../../Eighteen/Stats/TopCitiesBox";
 
 const FactBox = styled("div")`
   width: 100px;
   padding: 10px;
-  background-color: ${props => props.theme.cardTitle};
-  color: ${props => props.theme.text};
+  background-color: ${(props) => props.theme.cardTitle};
+  color: ${(props) => props.theme.text};
   border-radius: 4px;
   display: flex;
   flex-direction: column;
