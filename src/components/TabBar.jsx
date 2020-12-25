@@ -34,7 +34,27 @@ const TabItem = styled(NavLink)`
   }
 `;
 
-const TabBar = ({ tabs, activeTab }) => {
+const TabBar = () => {
+  const tabs = [
+    {
+      key: "software",
+      route: "/",
+      label: "Software",
+    },
+    {
+      key: "video",
+      route: "/filmmaker",
+      label: "Films",
+    },
+    {
+      key: "music",
+      route: "/music",
+      label: "Music",
+    },
+  ];
+
+  const activeTab = window.location.pathname;
+
   return (
     <Container>
       {tabs.map((tab) => (

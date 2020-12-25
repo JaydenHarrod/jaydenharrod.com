@@ -94,6 +94,19 @@ class Header extends Component {
               >
                 2019
               </MenuLink>
+
+              <MenuLink
+                to="/2020"
+                mt="0"
+                ml="1rem"
+                mr="0.3rem"
+                mb="0.5rem"
+                title="Navigate to Year In Review"
+                active={pathname === "/2020" ? true : false}
+                bold
+              >
+                2020
+              </MenuLink>
               {isDarkMode ? (
                 <ThemeToggleBtn
                   aria-label="enable dark mode"

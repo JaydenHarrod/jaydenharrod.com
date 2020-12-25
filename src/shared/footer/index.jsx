@@ -49,15 +49,6 @@ export const Footer = () => {
       >
         Medium
       </Anchor>
-      -{" "}
-      <Anchor
-        mr="0.3rem"
-        rel="noopener"
-        target="_blank"
-        href="https://facebook.com/harrodjayden"
-      >
-        Facebook
-      </Anchor>
     </TinyText>
   );
 };

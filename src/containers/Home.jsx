@@ -9,24 +9,6 @@ import TabBar from "../components/TabBar";
 
 class Home extends Component {
   render() {
-    const tabs = [
-      {
-        key: "software",
-        route: "/",
-        label: "Frontend Developer",
-      },
-      {
-        key: "video",
-        route: "/filmmaker",
-        label: "Film Maker",
-      },
-      {
-        key: "music",
-        route: "/music",
-        label: "Music Producer",
-      },
-    ];
-
     const subApps = homeRoutes.map(
       ({ exact, path, component, subPage }, key) => (
         <Route exact path={path} key={key} component={component} />
@@ -50,8 +32,7 @@ class Home extends Component {
           />
         </Helmet>
 
-        <TabBar tabs={tabs} activeTab={window.location.pathname} />
-
+        <TabBar />
         {subApps}
       </Container>
     );

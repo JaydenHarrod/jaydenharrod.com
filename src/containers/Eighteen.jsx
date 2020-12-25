@@ -2,10 +2,10 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { Row, Col, Container } from "../shared";
 
-import Summary from "../components/YearInReview/Summary";
-import Stats from "../components/YearInReview/Stats";
-import Creator from "../components/YearInReview/Creator";
-import Finance from "../components/YearInReview/Finance";
+import Summary from "../components/Eighteen/Summary";
+import Stats from "../components/Eighteen/Stats";
+import Creator from "../components/Eighteen/Creator";
+import Finance from "../components/Eighteen/Finance";
 
 const YearInReview = () => {
   return (
