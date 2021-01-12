@@ -3,18 +3,17 @@ import { Helmet } from "react-helmet";
 import { Row, Col, Container } from "../shared";
 
 import Summary from "../components/Twenty/Summary";
+import Stats from "../components/Twenty/Stats";
+import Creator from "../components/Twenty/Creator";
+import Finance from "../components/Twenty/Finance";
 
-class Nineteen extends Component {
+class Twenty extends Component {
   state = {
     toggle: false,
   };
 
   handleToggle = () => {
-    if (this.state.toggle) {
-      return this.setState({ toggle: false });
-    } else {
-      return this.setState({ toggle: true });
-    }
+    return this.setState({ toggle: !this.state.toggle });
   };
 
   render() {
@@ -35,6 +34,9 @@ class Nineteen extends Component {
         <Row justifyContent="center">
           <Col xs={12}>
             <Summary toggle={toggle} handleToggle={this.handleToggle} />
+            <Stats />
+            <Creator />
+            <Finance />
           </Col>
         </Row>
       </Container>
@@ -42,4 +44,4 @@ class Nineteen extends Component {
   }
 }
 
-export default Nineteen;
+export default Twenty;
