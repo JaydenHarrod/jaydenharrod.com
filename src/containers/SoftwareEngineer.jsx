@@ -8,22 +8,20 @@ const SoftwareEngineer = () => {
 
   return (
     <Page>
-      <HeadingOne>Product & Engineering</HeadingOne>
+      <HeadingOne>Design Technologist</HeadingOne>
       <Paragraph>
-        Jayden Harrod passionately creates digital products using software. He
-        is currently a Technical Lead at BetMakers Technology Group.
+        I'm a professional in the Software Design and Development industry as
+        both a Senior Frontend Developer (JavaScript - TypeScript - React) and
+        Product Design (UX - UI - Ops)
       </Paragraph>
       <Paragraph>
-        With over 10 years of experience in programming, design, business, and
-        marketing, he has the gift of quick discernment when it comes to
-        optimising value creation between business, service, and development
-        practices.
-      </Paragraph>
-      <Paragraph>
-        My technical skills in software development include AWS Infrastructure,
-        JavaScript Frontend Engineering, and Product Design. I also enjoy
-        mentoring and leading people to feel their best and have a big personal
-        passion for personal development.
+        I'm motivated by the team clarity good systems design, domain driven
+        design, and information architecture has on a products long-term
+        success. And how close collaboration with product teams can be used to
+        create consistent, reliable, and maintainable frontend codebases that
+        align with the business. This often involves being the engineer for the
+        UX team to work closely to implement Design Systems and Component
+        Libraries, experiments, and migrations across an organisation.
       </Paragraph>
       <Image alt="github" src={githubImage} />
     </Page>

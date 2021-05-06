@@ -5,7 +5,7 @@ const MusicProducer = () => {
   return (
     <Page>
       <HeadingOne>Music Producer</HeadingOne>
-      <Paragraph>Spotify</Paragraph>
+      <Paragraph>As a hobby, I enjoy making music using FL Studio.</Paragraph>
       <iframe
         src="https://open.spotify.com/embed/artist/2ERwsdfJZQX8jpYA8qACvr"
         width="100%"

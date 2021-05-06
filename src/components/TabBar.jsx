@@ -39,7 +39,7 @@ const TabBar = () => {
     {
       key: "software",
       route: "/",
-      label: "Software",
+      label: "Design",
     },
     {
       key: "video",

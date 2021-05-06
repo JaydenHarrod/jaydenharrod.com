@@ -13,7 +13,7 @@ const MenuLink = Anchor.withComponent(NavLink);
 const StyledRow = styled(Row)`
   display: flex;
   align-items: center;
-  padding: 0.5rem 3rem;
+  padding: 1rem 2rem;
   background-color: ${(props) => (props.full ? "#fff" : "inherit")};
   box-shadow: ${(props) =>
     props.full ? "0px 2px 6px rgb(175, 175, 175)" : "none"};
@@ -60,7 +60,7 @@ const ThemeToggleBtn = styled.div`
 class Header extends Component {
   render() {
     const { full, isDarkMode, onDarkModeClick } = this.props;
-    const pathname = this.props.location.pathname;
+    // const pathname = this.props.location.pathname;
     return (
       <Container>
         <StyledRow full={full}>
@@ -69,7 +69,7 @@ class Header extends Component {
               <Logo src={isDarkMode ? dlogo : wlogo} alt="Navigate Home" />
             </MenuLink>
             <MobileNav>
-              <MenuLink
+              {/* <MenuLink
                 to="/2018"
                 mt="0"
                 ml="1rem"
@@ -106,7 +106,7 @@ class Header extends Component {
                 bold
               >
                 2020
-              </MenuLink>
+              </MenuLink> */}
               {isDarkMode ? (
                 <ThemeToggleBtn
                   aria-label="enable dark mode"

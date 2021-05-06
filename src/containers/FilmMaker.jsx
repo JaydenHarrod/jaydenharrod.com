@@ -36,35 +36,35 @@ const FilmMaker = () => {
   return (
     <Page>
       <HeadingOne>Films</HeadingOne>
+      <Paragraph>
+        Prior to starting a software design and development career, I produced
+        video content for social media marketing purposes. Here's some of my
+        work.
+      </Paragraph>
       <RenderVideo
         imageSrc="http://i3.ytimg.com/vi/aguE5W3kHXU/maxresdefault.jpg"
         videoSrc="https://www.youtube.com/embed/aguE5W3kHXU"
-        title="Young Endeavour Promotional"
+        title="STS Young Endeavour - Advertisement"
       />
       <RenderVideo
         imageSrc="https://i.vimeocdn.com/video/677248506_1280x720.jpg"
         videoSrc="https://player.vimeo.com/video/251011540"
-        title="Sohoapp promotional launch #ad | sohoapp.com"
+        title="Soho App - Advertisement"
       />
       <RenderVideo
         imageSrc="https://i.vimeocdn.com/video/677249032_1280x720.jpg"
         videoSrc="https://player.vimeo.com/video/251011915"
-        title="Will and Steve in the kitchen social short | lenovo.com.au"
+        title="Lenovo - Will and Steve"
       />
       <RenderVideo
         imageSrc="https://i.vimeocdn.com/video/616335173_1280x720.jpg?q=60"
         videoSrc="https://player.vimeo.com/video/202331004"
-        title="WipeHero INCUBATE documentary | wipehero.com.au"
+        title="WipeHero - INCUBATE Documentary"
       />
       <RenderVideo
         imageSrc="https://i.vimeocdn.com/video/677248431_1280x720.jpg"
         videoSrc="https://player.vimeo.com/video/251011507"
-        title="Timelapse showreel"
-      />
-      <RenderVideo
-        imageSrc="https://i.vimeocdn.com/video/677248275_1280x720.jpg"
-        videoSrc="https://player.vimeo.com/video/251011370"
-        title="Umina Beach Sony cinematics"
+        title="Timelapse Showreel"
       />
     </Page>
   );
